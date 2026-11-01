@@ -1,0 +1,2 @@
+# Preserve frozen snapshot bytes and release SHA256 on every platform.
+* -text
