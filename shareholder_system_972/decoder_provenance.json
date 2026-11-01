@@ -1,0 +1,12 @@
+{
+  "source_url": "https://raw.githubusercontent.com/akfamily/akshare/main/akshare/stock/cons.py",
+  "source_sha256": "58d8fbf101666abb64b4cd159bcefd188569c95705031ac85634e7925098a5fd",
+  "retrieved_at_utc": "2026-11-01T15:40:00Z",
+  "selected_python_ast_assignment": "hk_js_decode",
+  "execution": "Extracted only string constant; no Python source executed. Node runs extracted mathematical decoder; appends own local file read and JSON output. No install or credentials used.",
+  "decoder_file": "sina_decoder.js",
+  "decoder_sha256": "d3ffa399a1c66a33ef87614244dad727b074204ecc4c105e5ae77afe89a99412",
+  "license_url": "https://raw.githubusercontent.com/akfamily/akshare/main/LICENSE",
+  "license_sha256": "d1c84fbaccd5fdbc75cd12ab9a05f4f791d89ee266569bc976c8b0befafc2d65",
+  "attribution": "Decoder hk_js_decode copied from AKShare official repository; not authored in this research project. See AKSHARE_LICENSE.txt."
+}

@@ -1,0 +1,9 @@
+{
+  "complete": true,
+  "rows": 65557,
+  "unique_stocks": 453,
+  "source_page_files": 133,
+  "all_page_hashes_valid": true,
+  "events_csv_sha256": "0a1e03cea801120586c10fb4dac3700afcf5b25f976e2e5147d84750d4f9cc50",
+  "all_raw_sha256": "a9454a03fdbf8738676b4f8a1688dfad65f55bb78e7bfdcfc33230931a9b4557"
+}

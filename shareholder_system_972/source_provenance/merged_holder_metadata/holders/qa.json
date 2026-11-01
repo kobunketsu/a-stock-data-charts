@@ -1,0 +1,20 @@
+{
+  "rows": 128070,
+  "stocks": 982,
+  "missing_codes": [],
+  "negative_lag_count": 335,
+  "year_counts": {
+    "2020": 11179,
+    "2021": 13324,
+    "2022": 15370,
+    "2023": 17344,
+    "2024": 21864,
+    "2025": 25082,
+    "2026": 23907
+  },
+  "first_announcement": "2020-01-01 00:00:00",
+  "last_announcement": "2026-10-31 00:00:00",
+  "observed_five_year_stock_count": 908,
+  "exact_duplicate_excess": 0,
+  "warning": "Raw anomalous future endpoint dates retained for downstream exclusion; observed history does not verify listing age; source announcement date not verified first public timestamp."
+}

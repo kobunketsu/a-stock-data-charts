@@ -1,0 +1,2 @@
+var sz300603hfq={"total":6,"data":[{"d":"2020-07-13", "f":"2.5789691972819000"},{"d":"2019-06-28", "f":"1.7121682098337000"},{"d":"2018-07-23", "f":"1.0040492588531000"},{"d":"2017-06-09", "f":"1.0012391573730000"},{"d":"2017-01-26", "f":"1.0000000000000000"},{"d":"1900-01-01", "f":"1.0000000000000000"}]}
+/* nrhRvdikFKlquCPs1SNa3ALaIxwewXjGs7wx6PiwDm6Jbm+n7W0jp4YX1yxD6P8dYmfmBhQQq/lXwj/V8giy2CDg34SqZzQREdY+ZJK8zPlaS/iULyTeF/xqmACHGnNCMltZA+zdeH7SaFSK1Vybz/K6wB4hiipcUxzOCYbEvN+eH++w5Dhlws+iMzBFf47stMjH5qsFvZwWwvlHgTXqerueWgtTsJI2xWotytbPfb3AjGhMHqAOEEJ4QzvHUUON+v/pTLV604o= */

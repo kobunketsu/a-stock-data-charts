@@ -1,0 +1,29 @@
+{
+  "shared_stock_pool": 452,
+  "old_events": 48700,
+  "new_events_for_shared_pool": 48700,
+  "old_missing_new": 0,
+  "new_not_old": 0,
+  "field_max_errors": {
+    "holder_num": 0.0,
+    "previous_holder_num": 0.0,
+    "holder_delta": 3.3881317890172014e-21,
+    "endpoint_gap": 0.0,
+    "lag_days": 0.0,
+    "entry_open": 5.684341886080802e-14
+  },
+  "matrix_comparison": {
+    "public_nextopen_returns": {
+      "finite_mask_mismatches": 0,
+      "max_absolute_error": 4.440892098500626e-16
+    },
+    "stat_returns": {
+      "finite_mask_mismatches": 0,
+      "max_absolute_error": 0.0
+    }
+  },
+  "strict_market60_errors": {
+    "mom60": 0.0,
+    "stat_mom60": 4.440892098500626e-16
+  }
+}

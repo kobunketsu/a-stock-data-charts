@@ -1,0 +1,2 @@
+var sz000995hfq={"total":4,"data":[{"d":"2006-07-19", "f":"1.6852000000000000"},{"d":"2003-05-20", "f":"1.1000000000000000"},{"d":"2000-08-07", "f":"1.0000000000000000"},{"d":"1900-01-01", "f":"1.0000000000000000"}]}
+/* voEtpeCNTHSrZigQpNtSebjtyYlsest7c5IhIfblER+lLbYonHu9PNAWsbtv7tKOx0t3dXbgS810FtTiyWmM//IBRXpCOObta50TnNww7DOZmcvSrAGt39pbGN7s7XYH05K21KCxvk8n66D7U8kVYyfvfdPyhZvXVpq+7e7pvew6znl1nh5llceTAM80Ge+5/LtTKTuQpxt42UUFntaYDg3HCYBsfd5UqVFLqz4HY1GeUawJ8kn2v+DIdjj4kMPnALmxQrXFd1U= */

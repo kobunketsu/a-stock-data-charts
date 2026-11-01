@@ -1,0 +1,12 @@
+{
+  "pool": 972,
+  "statuses": {
+    "ok": 972
+  },
+  "rows": 1578116,
+  "stocks_history_at_least_5years": 796,
+  "missing_codes": [],
+  "qa_errors": [],
+  "candidate_pool_count": 982,
+  "explanation": "972 is cleaned main pool; full982 price fetch preserved as candidate acquisition record."
+}

@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "scope": "merged raw holder CSVs + frozen 972-stock pool + adjusted stock prices + date calendar -> cleaning -> event paths -> matrix",
+  "checks": {
+    "holder_matrix_4bins/curves_ui.json": {
+      "expected_sha256": "3ae5cdd9a23f101a122d121815594d7c5494a80ce0616f25bf948b5d2f0fb0d4",
+      "rebuilt_sha256": "3ae5cdd9a23f101a122d121815594d7c5494a80ce0616f25bf948b5d2f0fb0d4",
+      "exact_match": true
+    },
+    "holder_matrix_4bins/curves.json": {
+      "expected_sha256": "56c369bb5e8058759bc527c1758bdc26e89c19f85674f2caa4773272bb39bb0e",
+      "rebuilt_sha256": "56c369bb5e8058759bc527c1758bdc26e89c19f85674f2caa4773272bb39bb0e",
+      "exact_match": true
+    },
+    "holder_matrix_4bins/daily.csv": {
+      "expected_sha256": "b397798c61d7346a263027d84414924c9261d6c4600fe8a91cec8d8bb24d16e4",
+      "rebuilt_sha256": "b397798c61d7346a263027d84414924c9261d6c4600fe8a91cec8d8bb24d16e4",
+      "exact_match": true
+    },
+    "holder_matrix_4bins/event_membership.csv": {
+      "expected_sha256": "d79de771d1d004ffcd9a1424e9645216eb2d3b2afb21c55fa6f4b1e32e1f27a8",
+      "rebuilt_sha256": "d79de771d1d004ffcd9a1424e9645216eb2d3b2afb21c55fa6f4b1e32e1f27a8",
+      "exact_match": true
+    }
+  },
+  "independent_matrix_audit": {
+    "status": "PASS",
+    "checks": [
+      "128 cells independently reconstructed with direct interval masks",
+      "membership exact event-id sets",
+      "counts and unique stocks",
+      "9 horizons mean/median against separate panel columns",
+      "low-sample flags",
+      "empty cells preserved as null"
+    ],
+    "maximum_absolute_return_error": 9.550711693728786e-09,
+    "cells": 128
+  },
+  "input_validation": {
+    "required_raw_and_price_inputs": 977,
+    "script_sha_checks": 4,
+    "supporting_metadata_sha_checks": 1,
+    "all_passed": true
+  },
+  "execution": {
+    "fresh_separate_directory": true,
+    "inputs_real_copies_not_mutated": true,
+    "all_steps_rerun_after_dependency_fix": true,
+    "native_source_numerical_code_unchanged": true
+  },
+  "missing_input_refusal_test": "PASS",
+  "scope_limits": [
+    "No fresh online re-download",
+    "No re-training of historical453 regression model",
+    "No claim all972 stocks contribute complete250-day events",
+    "UI sync option not exercised in this independent run"
+  ],
+  "rebuild_panel_qa": {
+    "holders": {
+      "raw_rows": 137345,
+      "candidate_raw_rows": 137473,
+      "candidate_main_2020plus_rows": 128070,
+      "candidate_negative_lag_rows": 365,
+      "main_2020plus_raw_rows": 127943,
+      "baseline2019_raw_rows": 9402,
+      "negative_lag_excluded": 346,
+      "main_negative_lag_excluded": 316,
+      "baseline_negative_lag_excluded": 30,
+      "backward_removed": 13220,
+      "public_advancing_records": 110482,
+      "eligible_events": 91485
+    },
+    "prices": {
+      "missing_price": 0,
+      "missing_entry": 810,
+      "missing_history": 718
+    },
+    "event_panel_records": 89957,
+    "event_panel_stocks": 971,
+    "event_panel_stocks_with_5year_price_span": 796,
+    "raw_candidate_pool": 982,
+    "valid_main_pool": 972,
+    "pool_codes_without_panel": [
+      "920285"
+    ],
+    "matched_nonzero_complete250": 61074,
+    "matched_nonzero_stocks": 907,
+    "notice_min": "2020-01-01 00:00:00",
+    "notice_max": "2025-10-18 00:00:00",
+    "source_calendar": "frozen original market calendar dates only, no index return read"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "cells": 128,
+  "row_order": [
+    "decline_over30",
+    "decline_2",
+    "decline_1",
+    "decline_0",
+    "rise_0",
+    "rise_1",
+    "rise_2",
+    "rise_over30"
+  ],
+  "column_order": [
+    "down_3",
+    "down_2",
+    "down_1",
+    "down_0",
+    "up_0",
+    "up_1",
+    "up_2",
+    "up_3"
+  ],
+  "count_mismatches": 0,
+  "membership_mismatches": 0,
+  "flag_mismatches": 0,
+  "empty_values_mismatches": 0,
+  "max_curve_error": {
+    "mean": 0.0,
+    "median": 0.0,
+    "positive_fraction": 0.0,
+    "p10": 0.0,
+    "p90": 0.0
+  },
+  "signed_row_order_pass": true,
+  "signed_column_order_pass": true,
+  "duplicate_membership_within_anchor": 0
+}

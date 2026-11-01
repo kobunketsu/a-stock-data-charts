@@ -1,0 +1,19 @@
+{
+  "raw_count": 17991,
+  "unique_raw_rows": 17991,
+  "all_codes": 5443,
+  "excluded_codes": [],
+  "latest_table_codes": 5577,
+  "latest_non_retired_name_codes": 5554,
+  "ashare_codes": 5442,
+  "qualifying_base_6events_60days": 630,
+  "strict_internal_max_lt14": 0,
+  "strict_edges_lt14": 0,
+  "median_lt14": 551,
+  "mean_lt14": 469,
+  "mean_lt14_recent": 453,
+  "mean_le14_recent": 472,
+  "strict_edges_le14": 2,
+  "median_endpoint_lt14": 592,
+  "any_event_pair_lt14": 1051
+}

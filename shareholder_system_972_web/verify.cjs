@@ -1,0 +1,6 @@
+const assert=require('assert'),fs=require('fs'),d=JSON.parse(fs.readFileSync('dist/curves_ui.json'));
+assert.equal(d.rows.length,8);assert.equal(d.columns.length,8);assert.equal(d.curves.length,128);for(const c of d.curves){for(const s of ['mean','median','p10','p90']){assert.equal(c[s].length,251);assert(c[s].every(v=>v===null||Number.isFinite(v)));assert.equal(c[s][0],c.empty?null:0);if(c.empty)assert(c[s].every(v=>v===null));}assert.equal(c.small_sample,c.count_events<50||c.count_stocks<10);for(let h=0;h<251;h++)assert(c.p10[h]<=c.median[h]&&c.median[h]<=c.p90[h]);}
+for(const a of ['public_nextopen','stat_close']){assert.equal(d.curves.filter(c=>c.anchor===a).reduce((s,c)=>s+c.count_events,0),d.metadata[a].main_grid_events);assert.equal(d.metadata[a].main_grid_events+d.special_price_counts.filter(x=>x.anchor===a).reduce((s,x)=>s+x.count_events,0),d.metadata[a].main_holder_count.count_events);}
+console.log('PASS: 8×8×2; 251 horizons; counts/exclusions reconcile; finite series; ordered percentiles; small-cell flags; zero baseline.');
+
+assert.deepEqual(d.rows.map(r=>r.id),['decline_over30','decline_2','decline_1','decline_0','rise_0','rise_1','rise_2','rise_over30']);assert.equal(d.metadata.holder_tail_groups_are_excluded,false);assert.equal(d.curves.filter(c=>c.empty).length,d.metadata.public_nextopen.empty_cells+d.metadata.stat_close.empty_cells);

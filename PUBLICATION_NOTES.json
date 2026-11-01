@@ -1,0 +1,64 @@
+{
+  "source_release": "972-stock release, nine delivered ZIP archives",
+  "extracted_file_count": 3325,
+  "original_manifest_validation": "PASS: all code, evidence and web hashes before publication",
+  "data_and_matrix_algorithm_changed": false,
+  "sanitizations": [
+    {
+      "path": "shareholder_system_972/source_provenance/frequency_selection/analyze.py",
+      "reason": "Replace historical execution-machine absolute path with generic relative historical-capture placeholder. Archival reference only.",
+      "original_sha256": "05db9d5dec0073128526d8e61c917ef486ceb14f078541ea25b3b6815cfda4d6",
+      "public_sha256": "16f94a5deb355d0cea0de752c6dc5c3ecbe50d44b92984cac57bcc5d7a8b4be3"
+    },
+    {
+      "path": "shareholder_system_972/source_provenance/holder_captures/added529_holders/manifest.json",
+      "reason": "Replace historical execution-machine absolute path with generic relative historical-capture placeholder. Archival reference only.",
+      "original_sha256": "4cf014ae06464e13ca795d99263f7028c84e4297c0fc94dd739a8c69826a2b00",
+      "public_sha256": "5e0763549d5b1f83efc85f2ee21c108526e4fcfb687b5c13bcc1c09dc250f9a7"
+    },
+    {
+      "path": "shareholder_system_972/source_provenance/holder_captures/original453_baseline2019/manifest.json",
+      "reason": "Replace historical execution-machine absolute path with generic relative historical-capture placeholder. Archival reference only.",
+      "original_sha256": "6cc3cb37c993cb922496b2ad31cbe23e8148cd2a6bfc843ceb6da0970067cc57",
+      "public_sha256": "2591c009758071177c3cc7732fb1113872d724d7c93430017b620d0445f3f17b"
+    },
+    {
+      "path": "shareholder_system_972/source_provenance/holder_captures/original453_holders/manifest.json",
+      "reason": "Replace historical execution-machine absolute path with generic relative historical-capture placeholder. Archival reference only.",
+      "original_sha256": "afc7b67e0609762b023187f2a44fd454f1febe054407c652927bdf249d561efa",
+      "public_sha256": "dd9049b258f1f0940c07ff8e4d7ac5283c588de299fdd61223d90f684868d57c"
+    },
+    {
+      "path": "shareholder_system_972/source_provenance/holder_merge_manifest.json",
+      "reason": "Replace historical execution-machine absolute path with generic relative historical-capture placeholder. Archival reference only.",
+      "original_sha256": "356df6335ee0a23d0e938ebf550995dc9ec6e96c7b016df1ad6d380a4b9baf11",
+      "public_sha256": "e8fc0f53e9e3b95e2f95ee376b4dc195bb608c260cb7fbe7e08b33b1c6eec91c"
+    },
+    {
+      "path": "shareholder_system_972/source_provenance/pool_audit/audit_pool.py",
+      "reason": "Replace historical execution-machine absolute path with generic relative historical-capture placeholder. Archival reference only.",
+      "original_sha256": "24ecf6fdc7d36a5f44cdf6b2a09b50cece89c68ea5995ab3732024e446015596",
+      "public_sha256": "6f14585694520afa74cc8d68e65ddb04d0619724bf048c661873f39e5876603f"
+    },
+    {
+      "path": "shareholder_system_972/source_provenance/price_provenance/fetch_added_prices.py",
+      "reason": "Replace historical execution-machine absolute path with generic relative historical-capture placeholder. Archival reference only.",
+      "original_sha256": "a3683ea19ab5856a1614b4db65a9d9e9e9b3922942bc5025753a1cfd632bfb91",
+      "public_sha256": "3e9c811ec5edf434ab4956577a440eae6957c34d09fc14ec4eb64b08a8a20a6e"
+    },
+    {
+      "path": "shareholder_system_972/source_provenance/price_provenance/original453_fetch_prices.py",
+      "reason": "Replace historical execution-machine absolute path with generic relative historical-capture placeholder. Archival reference only.",
+      "original_sha256": "f92e3e7cc167c57c30ef8b667df0b1b612fb5664113bab9fa6a8c266e156e4c2",
+      "public_sha256": "1b42e82db77a9d48a2ddc4b3faf7e1f6ece87ac54bce23a43a853bed3af96be2"
+    },
+    {
+      "path": "shareholder_system_972/source_provenance/price_provenance/qa_added_prices.py",
+      "reason": "Replace historical execution-machine absolute path with generic relative historical-capture placeholder. Archival reference only.",
+      "original_sha256": "bec8860a7732c4b065345facd95d843b3b6d06dda71cc0aff4b5a4d4e7b445c6",
+      "public_sha256": "0a2f13bf1d9edaf70bdf5ebad2d9098305a408ce3cc6463942d2aa61b04cd2ed"
+    }
+  ],
+  "evidence_manifest": "Updated bytes and SHA256 for sanitized historical references; original hashes retained above.",
+  "excluded": "Transfer metadata/helpers, ZIP duplicates, credentials, deployment identity, unrelated files, generated rebuild cache and event panels."
+}

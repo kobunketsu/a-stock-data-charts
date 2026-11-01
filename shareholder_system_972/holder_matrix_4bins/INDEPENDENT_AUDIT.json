@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checks": [
+    "128 cells independently reconstructed with direct interval masks",
+    "membership exact event-id sets",
+    "counts and unique stocks",
+    "9 horizons mean/median against separate panel columns",
+    "low-sample flags",
+    "empty cells preserved as null"
+  ],
+  "maximum_absolute_return_error": 9.550711693728786e-09,
+  "cells": 128
+}

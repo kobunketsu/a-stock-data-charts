@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "raw_pages_hashed": 138,
+  "new529_rows": 67259,
+  "new529_all_present": true,
+  "combined2020_rows": 128070,
+  "combined2019_rows": 9403,
+  "combined_csv_json_row_counts_match": true,
+  "original453_sources_unchanged": true,
+  "source_manifest": "holder_merge_manifest.json"
+}

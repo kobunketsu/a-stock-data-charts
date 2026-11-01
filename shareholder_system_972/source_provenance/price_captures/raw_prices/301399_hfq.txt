@@ -1,0 +1,2 @@
+var sz301399hfq={"total":6,"data":[{"d":"2026-05-21", "f":"2.2039005656698000"},{"d":"2025-05-29", "f":"2.1930097722186000"},{"d":"2024-05-29", "f":"1.4937640292845000"},{"d":"2023-09-08", "f":"1.0147648175490000"},{"d":"2023-05-23", "f":"1.0000000000000000"},{"d":"1900-01-01", "f":"1.0000000000000000"}]}
+/* CpuoeinNNKSRzkp+pkyYWInpnwz2LPScrlhpCkdrSTWo/W/urAOzDVpCqom0IH/m5szAs6Aiafyy6mDRMTsLYkWvNnaKCQAHdxxm3LiuBH2NKhyK4HvypIAJyyEw6zUh89xSCmI3RX2zsf+mLBdDYJHAZjphcRvgDnrdlnA4zp7n7WSvgtsg99qYIGOBs6ErL1vOmKiKgXhhUmUO43p+iUxAYI51lBkMztnjXsTX0hnHMH7JkaS06BhTux6cDp89xsTpRf3g+5Q= */

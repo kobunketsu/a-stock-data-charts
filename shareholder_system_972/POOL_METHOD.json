@@ -1,0 +1,37 @@
+{
+  "window": [
+    "2026-08-01",
+    "2026-10-31"
+  ],
+  "min_events": 3,
+  "min_span_days": 60,
+  "mean_gap_le": 30,
+  "last_gap_le": 30,
+  "pool_count": 972,
+  "added": 520,
+  "old_pool": 453,
+  "six_event_control_pool": 630,
+  "strict_max30_control_pool": 582,
+  "warning": "Average frequency <=30 days, NOT every interval <=30 days; current-selected pool historical bias.",
+  "raw_candidate_pool": 982,
+  "old453_retained": 452,
+  "new_to_old453": 520,
+  "removed_invalid_date_candidates": [
+    "001232",
+    "301686",
+    "920025",
+    "920162",
+    "920196",
+    "920202",
+    "920229",
+    "920268",
+    "920269",
+    "920288"
+  ],
+  "cleaning": "remove END_DATE > HOLD_NOTICE_DATE before event de-duplication and frequency aggregation",
+  "raw_candidate_added": 529,
+  "net_pool_increase": 519,
+  "controls_apply_to_raw_before_negative_lag_clean": true,
+  "date_valid_six_event_control": 629,
+  "date_valid_max_gap30_control": 581
+}

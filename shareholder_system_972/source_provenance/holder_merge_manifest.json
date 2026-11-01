@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "pool": 982,
+  "new_stocks_requested": 529,
+  "new_stocks_received": 529,
+  "new_raw_rows": 67259,
+  "premerge_rows": 137473,
+  "post_exact_dedup_rows": 137473,
+  "sources": [
+    {
+      "path": "historical-capture/shareholder_model_v2/holders/all_raw.json",
+      "sha256": "a9454a03fdbf8738676b4f8a1688dfad65f55bb78e7bfdcfc33230931a9b4557"
+    },
+    {
+      "path": "historical-capture/shareholder_model_v2/holders_baseline_2019/all_raw.json",
+      "sha256": "8ae15002e8903f9520fb0642b85eb5b9a1653d4ebdf0753b17f5b275554dad41"
+    },
+    {
+      "path": "historical-capture/shareholder_model_monthly982/holders_added/all_raw.json",
+      "sha256": "17a62bc5ce4d4b64dcceaf800e580143b3f90cef89d843b97e6f7ce04af9f9f9"
+    }
+  ],
+  "method": "Reuse original453 frozen snapshots; acquire529 new2019-2026 histories; exact-row dedup and split at notice2020-01-01; retained raw anomalies for downstream filtering"
+}

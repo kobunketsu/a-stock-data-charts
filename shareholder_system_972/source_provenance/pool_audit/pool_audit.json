@@ -1,0 +1,39 @@
+{
+  "raw_rows": 17991,
+  "source_dates_outside_window": 0,
+  "eligible_source_rows": 17989,
+  "raw_negative_lag": 37,
+  "eligible_negative_lag": 37,
+  "replicated_pool": 982,
+  "candidate_missing": [],
+  "candidate_extra": [],
+  "old453_not_in_new": [],
+  "new_additions": 529,
+  "pool_after_negative_lag_clean": 972,
+  "removed_by_negative_lag_clean": [
+    "001232",
+    "301686",
+    "920025",
+    "920162",
+    "920196",
+    "920202",
+    "920229",
+    "920268",
+    "920269",
+    "920288"
+  ],
+  "added_by_negative_lag_clean": [],
+  "old453_lost_after_clean": [
+    "001232"
+  ],
+  "boundary_counts": {
+    "events_exact3": 9,
+    "span_exact60": 15,
+    "mean_exact30": 10,
+    "last_gap_exact30": 0,
+    "internal_gap_over30": 400,
+    "first_gap_over30": 0
+  },
+  "six_event_control": 630,
+  "max_gap_le30_control": 582
+}

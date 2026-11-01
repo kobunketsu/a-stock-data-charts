@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "pool": 972,
+  "verified": 972,
+  "old_selected": 452,
+  "new_selected": 520,
+  "errors": [],
+  "pool_sha256": "a82f8c0bf80c928884a501a63657f473dc00d80e56820d56f43e8db00ef765fb",
+  "scope": "Frozen selected stock CSV/source captures only, no new data download"
+}

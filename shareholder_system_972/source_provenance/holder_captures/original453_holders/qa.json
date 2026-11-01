@@ -1,0 +1,30 @@
+{
+  "rows": 65557,
+  "stocks": 453,
+  "missing_codes": [],
+  "announcement_year_rows": {
+    "2020": 5554,
+    "2021": 6721,
+    "2022": 7853,
+    "2023": 8891,
+    "2024": 11152,
+    "2025": 12792,
+    "2026": 12594
+  },
+  "null_critical_fields": {},
+  "negative_lag_count": 145,
+  "lag_over_30_days": 6762,
+  "share_change_rows": 2580,
+  "exact_duplicate_excess": 0,
+  "code_endpoint_announcement_duplicate_excess": 0,
+  "stocks_with_five_year_observed_span": 419,
+  "stocks_with_2020_announcement": 400,
+  "min_announcement": "2020-01-01 00:00:00",
+  "max_announcement": "2026-10-31 00:00:00",
+  "announcement_first_public_timestamp_verified": false,
+  "listing_date_verified": false,
+  "warning": "Observed data span does not establish listing date; raw rows retained including anomalous dates. Model must filter anomalies and reconstruct PIT previous count from prior known announcements.",
+  "actual_unique_stocks": 453,
+  "requested_stocks": 453,
+  "collection_complete": true
+}

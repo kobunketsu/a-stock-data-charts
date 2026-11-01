@@ -1,0 +1,8 @@
+{
+  "complete": true,
+  "rows": 4657,
+  "stocks_with_2019_records": 357,
+  "requested_pool_stocks": 453,
+  "missing_2019_records_not_collection_errors": true,
+  "pages": 12
+}

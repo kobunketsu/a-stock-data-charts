@@ -1,0 +1,11 @@
+{
+  "date_valid_pool": 972,
+  "old453_retained": 452,
+  "new_to_old453": 520,
+  "max_gap_le30_count": 581,
+  "any_internal_gap_over30": 391,
+  "six_event_control_count": 629,
+  "events_exact3": 9,
+  "mean_exact30": 10,
+  "span_exact60": 15
+}

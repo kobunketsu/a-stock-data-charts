@@ -1,0 +1,2 @@
+var sz301049hfq={"total":3,"data":[{"d":"2022-05-18", "f":"1.0114731528224000"},{"d":"2021-08-24", "f":"1.0000000000000000"},{"d":"1900-01-01", "f":"1.0000000000000000"}]}
+/* Pi7dxNnNdKEiN85nUGdw5pmkKBwddfDfUWDZ1C4tMiXx+I7xGXKLRcmFpmWsLi5k1UsO9su+YNR87HPd9IoJidu8HgHM/zUNzXiljoJZNigqNUWBQcoCdN9nlhY7hwwsa8ZqNpcKqu+iXbkXFqSPXg+cafX8ktaiH5shZss/LL7ZiYEa5Jh7mBoL/mlzyeKLJ0ESRiLe2sjaWJ9mvN5xbOs3gcG7ro1YGUiioTkq5iJCwHUf5Lsbw+HMuLpyq9ndA0m90Lnycis= */

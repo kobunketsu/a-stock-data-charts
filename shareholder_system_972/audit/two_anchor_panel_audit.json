@@ -1,0 +1,35 @@
+{
+  "events": 89957,
+  "stocks": 971,
+  "main_pool": 972,
+  "common_nonzero_events": 61074,
+  "common_stocks": 907,
+  "violations": {
+    "outside_main_pool": 0,
+    "future_endpoint": 0,
+    "prior_notice_not_before": 0,
+    "prior_endpoint_not_before": 0,
+    "bad_gap": 0,
+    "bad_lag": 0,
+    "duplicate_code_notice": 0,
+    "entry_index_wrong": 0,
+    "stat_index_wrong": 0,
+    "array_eventid_mismatch": 0,
+    "matched_membership_difference": 0,
+    "balancedflag_mismatch": 0,
+    "nonzero_public_origin": 0,
+    "nonzero_finite_stat_origin": 0
+  },
+  "sample_recompute": {
+    "events": 400,
+    "observed_labels": 6824,
+    "max_errors": {
+      "public_return": 1.0662640947955992e-07,
+      "stat_return": 1.0897125379827344e-07,
+      "public_mom60": 2.220446049250313e-16,
+      "stat_mom60": 9.71445146547012e-17,
+      "holder_delta": 4.440892098500626e-16
+    },
+    "violations": []
+  }
+}

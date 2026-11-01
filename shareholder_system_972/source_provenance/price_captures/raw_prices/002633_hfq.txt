@@ -1,0 +1,2 @@
+var sz002633hfq={"total":3,"data":[{"d":"2012-05-25", "f":"1.5225394440270000"},{"d":"2011-11-22", "f":"1.0000000000000000"},{"d":"1900-01-01", "f":"1.0000000000000000"}]}
+/* DuuAid/qLG9v8J8pXyHcxvSvuU8Xtb62ewzezDkj7lUnzHVWCWox6o3inGaco/jGMCt9spReoY6l5vFi62pjCyVdidikwkmZLh9O2SQUDic6tjtWvW++ybhZWnpz2/2X6kqXGH6YI7000fFRM3huD/SBuqp1UKFpsAPtveBf9RKRwplvkcrcytLPEys3eDDn3QbU5ByAzAiRRFjUro4U/vcRh6sQ4jGlcEAUUHO5Y+30WkYVIG8qYq/0xLJXLZBo6Nh2jV0W1hK85d0x */
