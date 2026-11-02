@@ -1,0 +1,18 @@
+{
+  "status": "PASS_SECOND_ACTUAL_PACKAGED_REBUILD",
+  "exit_code": 0,
+  "elapsed_rebuild_seconds": 520.4941220283508,
+  "elapsed_unpack_verify_rebuild_seconds": 547.7275283336639,
+  "peak_work_allocated_bytes_sampled": 4952657920,
+  "disk_sampling_seconds": 10,
+  "source_allocated_bytes": 2059161600,
+  "python": "3.12.14",
+  "dependencies": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  },
+  "network_calls": 0,
+  "comparison_pending": false,
+  "source": "Actual18 frozenZIPs independently extracted and SHA/CRC/per-file verified before execution",
+  "original18_archives_unchanged_after_test": true
+}

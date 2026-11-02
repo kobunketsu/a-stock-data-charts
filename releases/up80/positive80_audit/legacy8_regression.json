@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "legacy_matrix_cells_and_stability_series_checked": 7200,
+  "max_numeric_difference": 4.440892098500626e-16,
+  "difference_count": 0,
+  "first_5000_differences": [],
+  "tail_count_checks": 180,
+  "limitation": "Frozen1494 full member IDs unavailable; compares published old8 stats/counts and saved positive-tail counts, not individual event membership."
+}

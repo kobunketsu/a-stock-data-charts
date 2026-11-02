@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "run_identity": "second_run_using_actual_sanitized_packaged_sources_not_first_prefreeze_test",
+  "utc": "2026-11-02T09:10:01.913531+00:00",
+  "zip_count": 18,
+  "zip_manifest_records_verified": 28660,
+  "matrix_json_exact_bytes": 15,
+  "feature_panel_membership_csv_exact_bytes": 15,
+  "npz_arrays_exact_equal_nan": 15,
+  "query_gzip_exact_bytes": 11108,
+  "query_stocks_per_bundle": 5554,
+  "metadata_ignored": false,
+  "differences": {},
+  "code_sha_policy": "Actual package SHA values; original aggregate SHA is comparison evidence only, never represented as packaged SHA",
+  "network_used": false,
+  "limits": [
+    "1494 research rebuilt from frozen shareholder/price inputs",
+    "5554 query only migrates frozen published base andfive-lookback data; original4060 vendor-response archive not fully recovered",
+    "No Mac Python3.13/ARM execution has been tested",
+    "Disk figure is 10-second sampled work-directory allocation, excludes source archive/extraction and is not instantaneous global-system peak"
+  ]
+}

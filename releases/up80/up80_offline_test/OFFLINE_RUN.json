@@ -1,0 +1,67 @@
+{
+  "status": "internal_checks_completed_pending_independent_audit",
+  "network_used": false,
+  "publication_performed": false,
+  "files": [
+    {
+      "file": "prior/10/all.json",
+      "sha256": "3c5a58afbf543daea0aa9e892bad4ee3a8287b2df3d62261848001ce6dd96ac0"
+    },
+    {
+      "file": "prior/10/recent.json",
+      "sha256": "76df7b0f9793da061fe56df59c25509247e991c332397ab7dd9dcd1b9ae116a2"
+    },
+    {
+      "file": "prior/10/stability.json",
+      "sha256": "4229ef663c5e69c32a25aebb7001f4b8b0cf7a87a4cac9077ac81c782eab70f0"
+    },
+    {
+      "file": "prior/20/all.json",
+      "sha256": "6a1b516c7eede4ed9b284c355ea896c7fac103e0696cdfea13b7df4e79f2b468"
+    },
+    {
+      "file": "prior/20/recent.json",
+      "sha256": "4e9717c0e7ca65a86aa0f141e94ecf169061d2d5e8bcd8630d96b71887fec015"
+    },
+    {
+      "file": "prior/20/stability.json",
+      "sha256": "884493ede022cddd8d4fdcbb88dc8a8643d834113cab04ec003493ef5cf5f12a"
+    },
+    {
+      "file": "prior/30/all.json",
+      "sha256": "2d8a2685117b80a2b00dd0a3608c3270a6f67074af9e64fe80437ee624a4f06a"
+    },
+    {
+      "file": "prior/30/recent.json",
+      "sha256": "57d839850acabb521a6408fe978bfd4f90758c28490bd26ab893cde4a5a7b04c"
+    },
+    {
+      "file": "prior/30/stability.json",
+      "sha256": "4d6b8674938a81c4a49d40ec5f16c7352246a776f7231656b693db586d6ae45a"
+    },
+    {
+      "file": "prior/60/all.json",
+      "sha256": "e04041e0e5e04d488d5f0634e18c1ba11ab8d2464c0907b05ccd93b618cde46e"
+    },
+    {
+      "file": "prior/60/recent.json",
+      "sha256": "f36a3bc867be58e4f3e056263740e1183b7c39061ce342d1ad408dc728f16118"
+    },
+    {
+      "file": "prior/60/stability.json",
+      "sha256": "379f04a2b2e0b1c4056f8476034d6003242d9b1411b489373598af97a57427a9"
+    },
+    {
+      "file": "prior/120/all.json",
+      "sha256": "d2644f322a1e64d7091d4f576727baeacc186c1f9ccd81527b4addb43402707d"
+    },
+    {
+      "file": "prior/120/recent.json",
+      "sha256": "a513e08f7c29ba81ec0541bdde2ad7430c089c4729fdd16620da667ba56cb4f6"
+    },
+    {
+      "file": "prior/120/stability.json",
+      "sha256": "548e538d3adbdacd3864454f8c93c8fcddddf5bae4cebdec399af37941ac037b"
+    }
+  ]
+}

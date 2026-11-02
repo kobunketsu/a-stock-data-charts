@@ -1,0 +1,1372 @@
+[
+  {
+    "n": 10,
+    "history": "all",
+    "positive_tail_events": {
+      "public_nextopen": 64,
+      "stat_close": 73
+    },
+    "per_holder_row": [
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_over30",
+        "category": "price_up_at_least_80pct",
+        "count_events": 0,
+        "count_stocks": 0
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 1,
+        "count_stocks": 1
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 2,
+        "count_stocks": 2
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 9,
+        "count_stocks": 9
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 8,
+        "count_stocks": 7
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 4,
+        "count_stocks": 4
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 9,
+        "count_stocks": 8
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_30to100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 24,
+        "count_stocks": 23
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_over100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 7,
+        "count_stocks": 7
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_over30",
+        "category": "price_up_at_least_80pct",
+        "count_events": 1,
+        "count_stocks": 1
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 3,
+        "count_stocks": 3
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 1,
+        "count_stocks": 1
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 5,
+        "count_stocks": 5
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 2,
+        "count_stocks": 2
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 3,
+        "count_stocks": 3
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 10,
+        "count_stocks": 10
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_30to100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 27,
+        "count_stocks": 26
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_over100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 21,
+        "count_stocks": 21
+      }
+    ],
+    "event_ids_sha256": "88352fdb4f93d0af5eb8b157ac9440e95d2ae2385a14733b983772e43feb943a"
+  },
+  {
+    "n": 10,
+    "history": "recent",
+    "positive_tail_events": {
+      "public_nextopen": 59,
+      "stat_close": 62
+    },
+    "per_holder_row": [
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_over30",
+        "category": "price_up_at_least_80pct",
+        "count_events": 0,
+        "count_stocks": 0
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 0,
+        "count_stocks": 0
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 2,
+        "count_stocks": 2
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 8,
+        "count_stocks": 8
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 8,
+        "count_stocks": 7
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 4,
+        "count_stocks": 4
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 8,
+        "count_stocks": 7
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_30to100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 22,
+        "count_stocks": 21
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_over100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 7,
+        "count_stocks": 7
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_over30",
+        "category": "price_up_at_least_80pct",
+        "count_events": 0,
+        "count_stocks": 0
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 1,
+        "count_stocks": 1
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 1,
+        "count_stocks": 1
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 4,
+        "count_stocks": 4
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 2,
+        "count_stocks": 2
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 3,
+        "count_stocks": 3
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 8,
+        "count_stocks": 8
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_30to100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 24,
+        "count_stocks": 23
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_over100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 19,
+        "count_stocks": 19
+      }
+    ],
+    "event_ids_sha256": "d7b229baf9ed003e256872863b3924087e733e6919ee772c19264b2a98b1671e"
+  },
+  {
+    "n": 20,
+    "history": "all",
+    "positive_tail_events": {
+      "public_nextopen": 232,
+      "stat_close": 248
+    },
+    "per_holder_row": [
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_over30",
+        "category": "price_up_at_least_80pct",
+        "count_events": 9,
+        "count_stocks": 9
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 8,
+        "count_stocks": 7
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 24,
+        "count_stocks": 24
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 21,
+        "count_stocks": 21
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 19,
+        "count_stocks": 18
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 16,
+        "count_stocks": 16
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 28,
+        "count_stocks": 27
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_30to100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 81,
+        "count_stocks": 70
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_over100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 26,
+        "count_stocks": 26
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_over30",
+        "category": "price_up_at_least_80pct",
+        "count_events": 14,
+        "count_stocks": 13
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 15,
+        "count_stocks": 14
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 30,
+        "count_stocks": 29
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 14,
+        "count_stocks": 14
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 13,
+        "count_stocks": 13
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 25,
+        "count_stocks": 23
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 30,
+        "count_stocks": 27
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_30to100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 67,
+        "count_stocks": 61
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_over100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 40,
+        "count_stocks": 40
+      }
+    ],
+    "event_ids_sha256": "2ad54bf0b69a4c50e80b30925a848fc0b39a6ad9736f9f389b9552c96f5bbe0b"
+  },
+  {
+    "n": 20,
+    "history": "recent",
+    "positive_tail_events": {
+      "public_nextopen": 197,
+      "stat_close": 202
+    },
+    "per_holder_row": [
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_over30",
+        "category": "price_up_at_least_80pct",
+        "count_events": 3,
+        "count_stocks": 3
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 4,
+        "count_stocks": 4
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 21,
+        "count_stocks": 21
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 20,
+        "count_stocks": 20
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 16,
+        "count_stocks": 15
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 15,
+        "count_stocks": 15
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 23,
+        "count_stocks": 22
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_30to100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 70,
+        "count_stocks": 62
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_over100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 25,
+        "count_stocks": 25
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_over30",
+        "category": "price_up_at_least_80pct",
+        "count_events": 3,
+        "count_stocks": 3
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 8,
+        "count_stocks": 8
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 26,
+        "count_stocks": 25
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 12,
+        "count_stocks": 12
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 13,
+        "count_stocks": 13
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 22,
+        "count_stocks": 21
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 24,
+        "count_stocks": 22
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_30to100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 55,
+        "count_stocks": 51
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_over100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 39,
+        "count_stocks": 39
+      }
+    ],
+    "event_ids_sha256": "90d640137b57909784dbef37be46b92d1fd28cd27b574b7ec4a05f63599832c1"
+  },
+  {
+    "n": 30,
+    "history": "all",
+    "positive_tail_events": {
+      "public_nextopen": 478,
+      "stat_close": 490
+    },
+    "per_holder_row": [
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_over30",
+        "category": "price_up_at_least_80pct",
+        "count_events": 5,
+        "count_stocks": 5
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 27,
+        "count_stocks": 27
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 87,
+        "count_stocks": 77
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 53,
+        "count_stocks": 48
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 55,
+        "count_stocks": 52
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 44,
+        "count_stocks": 39
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 55,
+        "count_stocks": 49
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_30to100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 115,
+        "count_stocks": 96
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_over100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 37,
+        "count_stocks": 37
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_over30",
+        "category": "price_up_at_least_80pct",
+        "count_events": 7,
+        "count_stocks": 7
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 27,
+        "count_stocks": 27
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 84,
+        "count_stocks": 76
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 54,
+        "count_stocks": 47
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 40,
+        "count_stocks": 38
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 57,
+        "count_stocks": 51
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 54,
+        "count_stocks": 47
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_30to100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 120,
+        "count_stocks": 108
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_over100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 47,
+        "count_stocks": 47
+      }
+    ],
+    "event_ids_sha256": "ad72fe76fa6b24fded620f987d0ba8833b184ec9c39bc339c1fac7415e9059b5"
+  },
+  {
+    "n": 30,
+    "history": "recent",
+    "positive_tail_events": {
+      "public_nextopen": 410,
+      "stat_close": 423
+    },
+    "per_holder_row": [
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_over30",
+        "category": "price_up_at_least_80pct",
+        "count_events": 4,
+        "count_stocks": 4
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 21,
+        "count_stocks": 21
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 72,
+        "count_stocks": 62
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 44,
+        "count_stocks": 42
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 48,
+        "count_stocks": 45
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 39,
+        "count_stocks": 36
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 49,
+        "count_stocks": 43
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_30to100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 97,
+        "count_stocks": 84
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_over100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 36,
+        "count_stocks": 36
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_over30",
+        "category": "price_up_at_least_80pct",
+        "count_events": 3,
+        "count_stocks": 3
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 20,
+        "count_stocks": 20
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 65,
+        "count_stocks": 58
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 44,
+        "count_stocks": 40
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 37,
+        "count_stocks": 35
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 54,
+        "count_stocks": 49
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 48,
+        "count_stocks": 41
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_30to100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 106,
+        "count_stocks": 96
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_over100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 46,
+        "count_stocks": 46
+      }
+    ],
+    "event_ids_sha256": "fda0496c3e58dae164ac213a7bf5df19c12dfac92bb19ac8b8ac34863e557956"
+  },
+  {
+    "n": 60,
+    "history": "all",
+    "positive_tail_events": {
+      "public_nextopen": 1376,
+      "stat_close": 1410
+    },
+    "per_holder_row": [
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_over30",
+        "category": "price_up_at_least_80pct",
+        "count_events": 10,
+        "count_stocks": 9
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 69,
+        "count_stocks": 64
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 286,
+        "count_stocks": 192
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 212,
+        "count_stocks": 158
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 195,
+        "count_stocks": 158
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 191,
+        "count_stocks": 159
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 161,
+        "count_stocks": 132
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_30to100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 199,
+        "count_stocks": 166
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_over100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 53,
+        "count_stocks": 52
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_over30",
+        "category": "price_up_at_least_80pct",
+        "count_events": 13,
+        "count_stocks": 13
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 75,
+        "count_stocks": 66
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 276,
+        "count_stocks": 192
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 228,
+        "count_stocks": 164
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 179,
+        "count_stocks": 149
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 203,
+        "count_stocks": 163
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 164,
+        "count_stocks": 136
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_30to100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 213,
+        "count_stocks": 174
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_over100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 59,
+        "count_stocks": 57
+      }
+    ],
+    "event_ids_sha256": "13e6b7ee67645ee2ec0f6676f821150e769ec0c2bafd6d215625f6315ba428df"
+  },
+  {
+    "n": 60,
+    "history": "recent",
+    "positive_tail_events": {
+      "public_nextopen": 1195,
+      "stat_close": 1231
+    },
+    "per_holder_row": [
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_over30",
+        "category": "price_up_at_least_80pct",
+        "count_events": 10,
+        "count_stocks": 9
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 62,
+        "count_stocks": 58
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 248,
+        "count_stocks": 166
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 184,
+        "count_stocks": 137
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 163,
+        "count_stocks": 134
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 162,
+        "count_stocks": 135
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 140,
+        "count_stocks": 114
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_30to100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 175,
+        "count_stocks": 148
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_over100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 51,
+        "count_stocks": 51
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_over30",
+        "category": "price_up_at_least_80pct",
+        "count_events": 13,
+        "count_stocks": 13
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 67,
+        "count_stocks": 59
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 240,
+        "count_stocks": 164
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 194,
+        "count_stocks": 142
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 154,
+        "count_stocks": 129
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 177,
+        "count_stocks": 142
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 141,
+        "count_stocks": 120
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_30to100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 189,
+        "count_stocks": 155
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_over100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 56,
+        "count_stocks": 55
+      }
+    ],
+    "event_ids_sha256": "8319c25782611813bad489582242cb38d4151457c74c9e87c4f15057db33d740"
+  },
+  {
+    "n": 120,
+    "history": "all",
+    "positive_tail_events": {
+      "public_nextopen": 3150,
+      "stat_close": 3128
+    },
+    "per_holder_row": [
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_over30",
+        "category": "price_up_at_least_80pct",
+        "count_events": 16,
+        "count_stocks": 15
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 164,
+        "count_stocks": 136
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 659,
+        "count_stocks": 337
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 665,
+        "count_stocks": 331
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 509,
+        "count_stocks": 293
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 524,
+        "count_stocks": 319
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 292,
+        "count_stocks": 213
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_30to100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 268,
+        "count_stocks": 208
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_over100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 53,
+        "count_stocks": 52
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_over30",
+        "category": "price_up_at_least_80pct",
+        "count_events": 15,
+        "count_stocks": 15
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 146,
+        "count_stocks": 125
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 627,
+        "count_stocks": 324
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 650,
+        "count_stocks": 323
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 512,
+        "count_stocks": 290
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 519,
+        "count_stocks": 312
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 310,
+        "count_stocks": 225
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_30to100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 280,
+        "count_stocks": 221
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_over100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 69,
+        "count_stocks": 67
+      }
+    ],
+    "event_ids_sha256": "42c5eca8a9c7f80adc1f36956694a0b27f6320ea3f97692a9b8afa72292b543c"
+  },
+  {
+    "n": 120,
+    "history": "recent",
+    "positive_tail_events": {
+      "public_nextopen": 2860,
+      "stat_close": 2818
+    },
+    "per_holder_row": [
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_over30",
+        "category": "price_up_at_least_80pct",
+        "count_events": 16,
+        "count_stocks": 15
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 157,
+        "count_stocks": 130
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 613,
+        "count_stocks": 311
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "decline_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 605,
+        "count_stocks": 303
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 448,
+        "count_stocks": 259
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 463,
+        "count_stocks": 286
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 263,
+        "count_stocks": 192
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_30to100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 243,
+        "count_stocks": 191
+      },
+      {
+        "anchor": "public_nextopen",
+        "row_id": "rise_over100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 52,
+        "count_stocks": 51
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_over30",
+        "category": "price_up_at_least_80pct",
+        "count_events": 15,
+        "count_stocks": 15
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 137,
+        "count_stocks": 117
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 584,
+        "count_stocks": 300
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "decline_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 584,
+        "count_stocks": 297
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_0",
+        "category": "price_up_at_least_80pct",
+        "count_events": 442,
+        "count_stocks": 256
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_1",
+        "category": "price_up_at_least_80pct",
+        "count_events": 459,
+        "count_stocks": 281
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_2",
+        "category": "price_up_at_least_80pct",
+        "count_events": 273,
+        "count_stocks": 202
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_30to100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 258,
+        "count_stocks": 206
+      },
+      {
+        "anchor": "stat_close",
+        "row_id": "rise_over100",
+        "category": "price_up_at_least_80pct",
+        "count_events": 66,
+        "count_stocks": 64
+      }
+    ],
+    "event_ids_sha256": "73ef013988ca10be996c2ed9af38f31474c38da6a07a2e7fae573fd423639e57"
+  }
+]

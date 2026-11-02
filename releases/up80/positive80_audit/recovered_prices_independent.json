@@ -1,0 +1,11 @@
+{
+  "status": "PASS_SOURCE_PRICE_RESTORATION",
+  "stocks": 1494,
+  "price_rows": 3910038,
+  "all_raw_OHLC_volume_and_dated_factors_verified": true,
+  "all_source_csv_hashes_verified": true,
+  "original972_2019plus_bytes_identical": 972,
+  "maximum_adjusted_numeric_error": 0,
+  "calendar_union_exact": 4328,
+  "limitation": "Only972 historical bytes survive; refetched522 must still pass old8 published-result regression."
+}

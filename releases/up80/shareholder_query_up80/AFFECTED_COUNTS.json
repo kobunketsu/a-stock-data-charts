@@ -1,0 +1,37 @@
+{
+  "status": "count_only",
+  "stocks": 5554,
+  "lookback_anchor_counts": {
+    "10": {
+      "anchors": 113160,
+      "old_eligible": 53848,
+      "positive_ge80": 52,
+      "potentially_eligible_pending_reference": 26
+    },
+    "20": {
+      "anchors": 113160,
+      "old_eligible": 53774,
+      "positive_ge80": 352,
+      "potentially_eligible_pending_reference": 164
+    },
+    "30": {
+      "anchors": 113160,
+      "old_eligible": 53649,
+      "positive_ge80": 607,
+      "potentially_eligible_pending_reference": 319
+    },
+    "60": {
+      "anchors": 113160,
+      "old_eligible": 53085,
+      "positive_ge80": 2035,
+      "potentially_eligible_pending_reference": 882
+    },
+    "120": {
+      "anchors": 113160,
+      "old_eligible": 51332,
+      "positive_ge80": 5172,
+      "potentially_eligible_pending_reference": 2515
+    }
+  },
+  "unchanged_prior8_reference_checks": {}
+}

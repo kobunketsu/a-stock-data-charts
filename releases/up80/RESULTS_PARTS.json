@@ -1,0 +1,42 @@
+{
+  "data_parts": [
+    {
+      "file": "UP80_CODE_RESULTS_DATA_01.zip",
+      "bytes": 45432570,
+      "sha256": "054b5b786ebc3d68015087b69b13543ae4ef041cabee7909cea9a86125b1894c",
+      "entries": 3784,
+      "crc": "PASS"
+    },
+    {
+      "file": "UP80_CODE_RESULTS_DATA_02.zip",
+      "bytes": 45436118,
+      "sha256": "44c3f1f4795240e868abbc4f56d2f3a9adcc20907db10611800ea4f03fe1b9e2",
+      "entries": 3708,
+      "crc": "PASS"
+    },
+    {
+      "file": "UP80_CODE_RESULTS_DATA_03.zip",
+      "bytes": 45528197,
+      "sha256": "d2202f97d9f63c436f97367108a71b9699c31ce16f1bd585eae92cc253eb39db",
+      "entries": 3267,
+      "crc": "PASS"
+    },
+    {
+      "file": "UP80_CODE_RESULTS_DATA_04.zip",
+      "bytes": 45693309,
+      "sha256": "d98a9b176f01a061cf8b07ac453bf0eec3fba582b51e46a23d3fc7f676ff9335",
+      "entries": 554,
+      "crc": "PASS"
+    },
+    {
+      "file": "UP80_CODE_RESULTS_DATA_05.zip",
+      "bytes": 4039744,
+      "sha256": "7f22d8c583328c414122ce700a68b65296e17dfae28f8630819922a2c41b6469",
+      "entries": 18,
+      "crc": "PASS"
+    }
+  ],
+  "metadata_part": "UP80_CODE_RESULTS_META.zip",
+  "status": "COMPLETE_CODE_RESULTS_OFFLINE_VALIDATED",
+  "relative_paths_only": true
+}

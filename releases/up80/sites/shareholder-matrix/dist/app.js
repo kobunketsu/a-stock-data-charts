@@ -1,0 +1,78 @@
+'use strict';
+let D=window.RESEARCH_DATASETS.all;
+let S=window.STABILITY_DATA;
+const $=id=>document.getElementById(id), pct=v=>v==null?'无数据':`${v>0?'+':''}${(v*100).toFixed(2)}%`, num=v=>v.toLocaleString('zh-CN');
+const COLUMN_ORDER=['down_3','down_2','down_1','down_0','up_0','up_1','up_2','up_3','up_4'];
+D.columns.sort((a,b)=>COLUMN_ORDER.indexOf(a.id)-COLUMN_ORDER.indexOf(b.id));
+let view='curves',axis='independent';
+let anchor='public_nextopen',stat='mean',day=20,row='decline_0',col='down_0',compare=[];
+const compactRow=r=>({decline_over30:'＜−30%',decline_2:'−30%～−15%',decline_1:'−15%～−5%',decline_0:'−5%～0%',rise_0:'0%-5%',rise_1:'5%-15%',rise_2:'15%-30%',rise_30to100:'30%-100%',rise_over100:'>100%'}[r.id]);
+const compactCol=c=>c.direction==='up'&&c.bin===4?'上涨≥80%':(c.direction==='down'?['−10%～0%','−20%～−10%','−40%～−20%','−80%～−40%']:['0%-10%','10%-20%','20%-40%','40%-80%'])[c.bin];
+const anchorText=a=>a==='public_nextopen'?'公布后首个市场交易日开盘':'统计日收盘（事后观察，当时户数未知）';
+const cell=(r=row,c=col,a=anchor)=>D.curves.find(x=>x.anchor===a&&x.row_id===r&&x.column_id===c);
+const label=c=>D.rows.find(r=>r.id===c.row_id).label+'；'+D.columns.find(r=>r.id===c.column_id).label;
+function symmetricScale(h,s){return Math.max(.0001,...D.curves.filter(c=>!c.empty).map(c=>Math.abs(c[s][h]??0)));}
+const signColor=v=>v==null||v===0?'#626262':v>0?'#a93238':'#176b4b';
+function signPaths(arr,X,Y,width=1.8,dash='',muted=false){const paths={positive:'',negative:'',zero:''};let lastKey=null;const add=(k,i,a,j,b)=>{paths[k]+=(lastKey===k?'':`M${X(i).toFixed(2)},${Y(a).toFixed(2)}`)+`L${X(j).toFixed(2)},${Y(b).toFixed(2)}`;lastKey=k;};for(let i=1;i<arr.length;i++){const a=arr[i-1],b=arr[i];if(!Number.isFinite(a)||!Number.isFinite(b)){lastKey=null;continue;}if(a*b<0){const z=i-1-a/(b-a);add(a>0?'positive':'negative',i-1,a,z,0);add(b>0?'positive':'negative',z,0,i,b);}else add(a===0&&b===0?'zero':(a+b)>0?'positive':'negative',i-1,a,i,b);}return Object.entries(paths).filter(([,d])=>d).map(([k,d])=>`<path data-sign="${k}" d="${d}" fill="none" stroke="${muted?'#777':k==='positive'?'#a93238':k==='negative'?'#176b4b':'#777'}" stroke-width="${width}" ${dash?`stroke-dasharray="${dash}"`:''}/>`).join('');}
+function color(v,max){if(v==null)return '#eeeeee';let t=Math.min(Math.abs(v)/max,1)*.62;let target=v>=0?[185,78,83]:[69,144,110];return `rgb(${target.map(x=>Math.round(255+(x-255)*t)).join(',')})`;}
+function curveBounds(c,withBand=false){let lo=0,hi=0;const cells=c?[c]:D.curves;for(const k of cells)for(const v of [...k.mean,...k.median,...(withBand?[...k.p10,...k.p90]:[])])if(Number.isFinite(v)){lo=Math.min(lo,v);hi=Math.max(hi,v);}const pad=(hi-lo||.02)*.06;return [lo-pad,hi+pad];}
+function bandArea(c,X,Y){
+ if(c.empty||![...c.p10,...c.p90].every(Number.isFinite))return '';
+ const points=c.p10.map((v,i)=>[i,v]).concat(c.p90.map((v,i)=>[i,v]).reverse());
+ return '<path data-band="p10-p90" d="'+points.map(([i,v],j)=>(j?'L':'M')+X(i).toFixed(2)+','+Y(v).toFixed(2)).join(' ')+'Z" fill="#d4d4d4" fill-opacity=".7"/>';
+}
+let clearMiniHover=null;
+function bindCellHover(b,bounds){
+ const c=cell(b.dataset.row,b.dataset.col);if(view!=='curves'||c.empty)return;
+ const normal=axis==='shared'?bounds:curveBounds(c);let active=false;
+ const change=show=>{if(active===show)return;if(show&&clearMiniHover)clearMiniHover();active=show;clearMiniHover=show?()=>change(false):null;b.dataset.distribution=String(show);const svg=b.querySelector('.mini-curve');if(svg)svg.outerHTML=miniCurve(c,show?curveBounds(c,true):normal,show);};
+ b.onmouseenter=()=>change(true);b.onmouseleave=()=>change(false);
+ b.onfocus=()=>{if(b.matches(':focus-visible'))change(true);};b.onblur=()=>change(false);
+}
+function miniCurve(c,bounds,withBand=false){if(c.empty)return '<span class="empty-curve" aria-label="此分组无记录，不绘制曲线"></span>';const [lo,hi]=bounds,actual=[...c.mean,...c.median,...(withBand?[...c.p10,...c.p90]:[])].filter(Number.isFinite),actualLow=Math.min(...actual),actualHigh=Math.max(...actual),X=i=>5+i/250*150,Y=v=>110-(v-lo)/(hi-lo)*88;return `<svg class="mini-curve" viewBox="0 0 160 130" role="img" aria-label="${label(c)}，后续0至250个市场交易日平均收益实线与收益中位数虚线，${withBand?'悬停分位区间临时局部纵轴':'两条曲线共用纵轴'}${pct(lo)}至${pct(hi)}"><text x="5" y="13" style="fill:${signColor(actualHigh)}">${withBand?'区间高':'高'} ${pct(actualHigh)}</text><text x="5" y="126" style="fill:${signColor(actualLow)}">${withBand?'区间低':'低'} ${pct(actualLow)}</text>${withBand?bandArea(c,X,Y):''}<line x1="5" x2="155" y1="${Y(0)}" y2="${Y(0)}" stroke="#b9b9b9"/><g data-series="mean">${signPaths(c.mean,X,Y,1.8,'',false)}</g><g data-series="median">${signPaths(c.median,X,Y,1.8,'5 3',false)}</g><line x1="${X(day)}" x2="${X(day)}" y1="22" y2="110" stroke="#aaa" stroke-dasharray="2 2"/><circle cx="${X(day)}" cy="${Y(c[stat][day])}" r="2" fill="${signColor(c[stat][day])}"/></svg>`;}
+function render(){$('matrix').style.setProperty('--matrix-columns',String(D.columns.length));if(clearMiniHover)clearMiniHover();$('view').querySelector('[value="curves"]').textContent=`${D.rows.length*D.columns.length}格走势图`;const max=symmetricScale(day,stat),meta=D.metadata[anchor],bounds=curveBounds();$('matrix').classList.toggle('curve-matrix',view==='curves');$('axis-control').hidden=view!=='curves';$('scale').hidden=view==='curves';$('legend').textContent=view==='curves'?'红＝相对起点上涨，绿＝相对起点下跌；不是当天涨跌或预测。零线为灰色，竖线标所选日；平均收益为实线，中位数为虚线，两条始终同时显示。样本不足保留文字提示（少于50条记录或10只股票），不改变统计量线型。各格股票可能重复。':'红＝相对起点上涨，绿＝相对起点下跌；不是当天涨跌或预测。样本不足仍按收益红绿显示并保留提示，空格无记录；各格股票可能重复。';$('view-note').textContent=view==='curves'?(axis==='shared'?`${D.rows.length*D.columns.length}格共用横轴0-250交易日；统一纵轴${pct(bounds[0])}至${pct(bounds[1])}；竖线＝第${day}日。纵轴由两个起点的均值和中位数全部曲线共同确定，切换起点不变。高/低为本格两条完整曲线合计的实际最大/最小值。`:`${D.rows.length*D.columns.length}格自动缩放，只比较形状；比较涨跌大小请看数值或切换统一刻度。所有小图横轴0-250交易日；竖线＝第${day}日；高/低为本格均值与中位数两条完整曲线合计的实际最大/最小收益，不是预测。两条线共用本格纵轴。`):'色块显示所选后续时点的收益，不代表完整走势。';$('day-label').textContent=day;$('slider').value=day;$('horizon').value=String(day);$('summary').textContent=`后续第${day}个市场交易日 · ${stat==='mean'?'平均收益':'收益中位数'} · 当前矩阵 ${num(meta.main_grid_events)}条记录 · 两个起点共用固定样本${num(D.metadata.cohort.count_events)}条、${D.metadata.cohort.count_stocks}只股票`;$('scale').textContent=`两个起点共用对称色阶：${pct(-max)} 至 ${pct(max)}（当前观察长度与统计量；切换起点不变）。`;
+$('matrix').innerHTML=`<table><thead><tr><th scope="col">此前股价变化 →<br>股东人数变化 ↓</th>${D.columns.map(c=>`<th scope="col" title="${c.label}" aria-label="${c.label}">${compactCol(c)}</th>`).join('')}</tr></thead><tbody>${D.rows.map(r=>`<tr><th scope="row" title="${r.label}" aria-label="${r.label}">${compactRow(r)}</th>${D.columns.map(c=>{const v=cell(r.id,c.id),value=v[stat][day];return `<td><button data-row="${r.id}" data-col="${c.id}" class="${v.small_sample?'small':''}" style="background-color:${v.empty?'#eeeeee':color(value,view==='curves'?max*4:max)}" aria-pressed="${r.id===row&&c.id===col}" aria-label="${label(v)}，后续${day}个交易日${stat==='mean'?'平均收益':'收益中位数'}${pct(value)}，${v.count_events}条记录，${v.count_stocks}只股票${v.small_sample?'，样本不足':''}">${view==='curves'?miniCurve(v,axis==='shared'?bounds:curveBounds(v)):''}<strong style="color:${signColor(value)}">${v.empty?'无记录':pct(value)}</strong><span>${num(v.count_events)}条 · ${v.count_stocks}只</span>${v.small_sample&&!v.empty?'<small>样本不足</small>':''}</button></td>`;}).join('')}</tr>`).join('')}</tbody></table>`;
+$('matrix').querySelectorAll('button').forEach(b=>{b.onclick=()=>{row=b.dataset.row;col=b.dataset.col;render();};bindCellHover(b,bounds);});renderDetail();renderCounts();renderStability();}
+function renderDetail(){const c=cell();$('selection').textContent=label(c)+'｜'+anchorText(anchor);$('selected-value').textContent=`${num(c.count_events)}条记录 · ${c.count_stocks}只股票；后续第${day}个市场交易日：平均${pct(c.mean[day])}，中位数${pct(c.median[day])}。${c.small_sample?'样本不足：少于50条记录或10只股票，勿过度解读。':''}`;
+const band=$('band').checked,series=['mean','median',...(band?['p10','p90']:[])];let values=series.flatMap(s=>c[s]).filter(Number.isFinite);if(!values.length){$('chart').textContent='此分组无记录，不绘制收益曲线，也不以零收益替代。';renderCompare();return;}let lo=Math.min(0,...values),hi=Math.max(0,...values),pad=(hi-lo||.02)*.1;lo-=pad;hi+=pad;const X=h=>72+h/250*850,Y=v=>330-(v-lo)/(hi-lo)*300,path=arr=>arr.map((v,i)=>`${i?'L':'M'}${X(i).toFixed(2)},${Y(v).toFixed(2)}`).join(' ');let ticks='';for(let i=0;i<=4;i++){let v=lo+(hi-lo)*i/4;ticks+=`<line x1="72" x2="922" y1="${Y(v)}" y2="${Y(v)}" stroke="#e5e5e5"/><text x="63" y="${Y(v)+4}" text-anchor="end">${(v*100).toFixed(1)}%</text>`;}for(let h=0;h<=250;h+=50)ticks+=`<text x="${X(h)}" y="355" text-anchor="middle">${h}</text>`;
+let area=band?`<path d="${path(c.p10)} ${c.p90.map((v,i)=>[v,i]).reverse().map(([v,i])=>`L${X(i)},${Y(v)}`).join(' ')} Z" fill="#e4e4e4"/>`:'';
+$('chart').innerHTML=`<svg class="chart-svg" viewBox="0 0 950 380" xmlns="http://www.w3.org/2000/svg" role="img"><title>${label(c)}：平均收益与收益中位数曲线</title><g font-family="system-ui,sans-serif" font-size="13" fill="#626262">${ticks}${area}<line x1="72" x2="922" y1="${Y(0)}" y2="${Y(0)}" stroke="#999"/><g data-series="mean">${signPaths(c.mean,X,Y,2.5,'',false)}</g><g data-series="median">${signPaths(c.median,X,Y,2,'7 4',false)}</g><line x1="${X(day)}" x2="${X(day)}" y1="30" y2="330" stroke="#777" stroke-dasharray="2 4"/><text x="925" y="375" text-anchor="end">后续市场交易日</text></g></svg>`;renderCompare();}
+function renderStability(){
+ const mode=$('stability-mode').value,h=+$('stability-horizon').value;
+ const early=S.periods.find(p=>p.sample_mode==='all_events'),months=S.metadata.early_period_month_counts||{'04':270,'05':2};$('early-coverage').textContent='早期覆盖警示：2010起采集，但2010、2011年最终主样本均为0。'+early.period+'期仅'+num(early.source_events)+'条记录（'+Object.entries(months).map(([m,n])=>Number(m)+'月'+num(n)+'条').join('、')+'），覆盖稀疏且有强季节偏差；各格样本不足按实际记录数和股票数判断，不代表完整早期市场。';
+ const records=S.series.filter(c=>c.sample_mode===mode&&c.anchor===anchor&&c.row_id===row&&c.column_id===col);
+ $('stability-selection').textContent=label(cell())+'｜'+anchorText(anchor)+'｜后续第'+h+'个市场交易日';
+ const value=v=>'<span style="color:'+signColor(v)+'">'+pct(v)+'</span>';
+ $('stability-table').innerHTML='<table><thead><tr><th>时期</th><th>事件均值</th><th>事件中位数</th><th>股票等权均值</th><th>当前格样本</th><th>当前格公布日期</th><th>时期固定基底</th></tr></thead><tbody>'+S.periods.filter(p=>p.sample_mode===mode).map(p=>{
+ const c=records.find(c=>c.period===p.period),i=c.horizons.indexOf(h);
+ return '<tr><th>'+p.period+'</th><td>'+value(c.mean[i])+'</td><td>'+value(c.median[i])+'</td><td>'+value(c.equal_stock_mean[i])+'</td><td>'+num(c.count_events)+'条 · '+c.count_stocks+'只'+(c.count_events===0?' · 无记录':c.small_sample?' · 样本不足':'')+'</td><td>'+(c.first_notice?c.first_notice+' 至 '+c.last_notice:'—')+'</td><td>'+num(p.source_events)+'条 · '+p.source_stocks+'只</td></tr>';
+ }).join('')+'</tbody></table>';
+ if(S.yearly_coverage[0]?.year==null){$('year-coverage').innerHTML='<table><thead><tr><th>年份</th><th>当前分期口径固定基底</th><th>股票数</th></tr></thead><tbody>'+S.yearly_coverage.filter(y=>y.sample_mode===mode).map(y=>'<tr><th>'+y.period+'</th><td>'+num(y.source_events)+'</td><td>'+num(y.source_stocks)+'</td></tr>').join('')+'</tbody></table>';}else{
+ $('year-coverage').innerHTML='<table><thead><tr><th>年份</th><th>原始记录</th><th>价格特征事件</th><th>共同完整250日且人数非零</th><th>股票数</th></tr></thead><tbody>'+S.yearly_coverage.map(y=>'<tr><th>'+y.year+'</th><td>'+num(y.raw_records)+'</td><td>'+num(y.price_panel_records)+'</td><td>'+num(y.both_complete250_nonzero_records)+'</td><td>'+num(y.both_complete250_nonzero_stocks)+'</td></tr>').join('')+'</tbody></table>';
+ }
+}
+function renderCompare(){$('comparisons').innerHTML=compare.length?`<h3>所选观察长度的对照 · 第${day}个市场交易日</h3>`+compare.map(c=>`<p>${label(c)}｜${anchorText(c.anchor)}<br>${num(c.count_events)}条记录 · ${c.count_stocks}只股票 · 平均<span style="color:${signColor(c.mean[day])}">${pct(c.mean[day])}</span> · 中位数<span style="color:${signColor(c.median[day])}">${pct(c.median[day])}</span>${c.small_sample?' · 样本不足':''}</p>`).join(''):'';const c=cell();$('compare').disabled=compare.length>=3||compare.includes(c);}
+function renderCounts(){const m=D.metadata,sp=D.special_price_counts.filter(x=>x.anchor===anchor),sum=k=>sp.filter(x=>x.category===k).reduce((s,x)=>s+x.count_events,0);$('counts').innerHTML=`<p>完整固定样本（含人数不变）：${num(m.broader_eligible_cohort_including_unchanged.count_events)}条记录、${m.broader_eligible_cohort_including_unchanged.count_stocks}只股票。公布日期范围：${m.notice_min} 至 ${m.notice_max}。</p><p>人数不变：${num(m.holder_unchanged.count_events)}条，不进入主矩阵。减少超过30%、增加30%-100%及增加超过100%已作为三行纳入矩阵（仍须满足此前股价范围）。</p><p>人数非零样本：${num(m[anchor].main_holder_count.count_events)}条、${m[anchor].main_holder_count.count_stocks}只股票。其中此前股价不变${num(sum('price_unchanged'))}条、下跌至少80% ${num(sum('price_down_at_least_80pct'))}条，不进入主矩阵。上涨≥80%已纳入最右列，共${num(D.curves.filter(c=>c.anchor===anchor&&D.columns.find(k=>k.id===c.column_id)?.bin===4).reduce((n,c)=>n+c.count_events,0))}条；恰好上涨80%也在此列。</p><p>当前主矩阵：${num(m[anchor].main_grid_events)}条记录；${m[anchor].small_cells}格低样本（含${m[anchor].empty_cells}格无记录）。</p>`;$('pool-summary').textContent=`样本筛选（最终样本按下方所选历史样本期）：${num(m.pool.pool_count)}只候选研究股票 → ${m.sample_funnel.event_panel_stocks}只有效事件股票、${num(m.sample_funnel.event_panel_records)}条事件 → 两起点共同完整250日且户数变化非零的${m.cohort.count_stocks}只股票、${num(m.cohort.count_events)}条记录。主矩阵还排除此前股价为0或下跌达到80%的记录；上涨≥80%已纳入最右列。`;$('history-note').textContent=`历史样本期：${m.notice_min}至${m.notice_max}；当前1,494只候选池中，两起点共同完整250日且户数非零样本共${num(m.cohort.count_events)}条、${num(m.cohort.count_stocks)}只股票。${$('history').value==='all'?'2010年起采集，但2010与2011最终无主样本；实际从2012年起，早期覆盖稀疏。':'这是扩池后的2020年起子样本，不是旧972池对照。'}增加历史或股票数量不保证稳定。`;
+$('version').textContent='冻结数据版本：'+m.version+' · 收益以百分数显示，底层为小数。';}
+$('history').onchange=e=>{D=(window.PRIOR_RESEARCH?.datasets||window.RESEARCH_DATASETS)[e.target.value];compare=[];render();};
+$('stability-horizon').onchange=renderStability;
+$('stability-mode').onchange=renderStability;
+$('view').onchange=e=>{view=e.target.value;render();};$('axis').onchange=e=>{axis=e.target.value;render();};
+$('horizon').innerHTML=[0,1,3,5,10,20,40,60,120,250].map(h=>`<option value="${h}">${h}个市场交易日</option>`).join('');$('horizon').value='20';$('anchor').onchange=e=>{anchor=e.target.value;render();};$('stat').onchange=e=>{stat=e.target.value;render();};$('horizon').onchange=e=>{day=+e.target.value;render();};$('slider').oninput=e=>{day=+e.target.value;if(![...$('horizon').options].some(o=>+o.value===day)){const o=document.createElement('option');o.value=day;o.textContent=`${day}个市场交易日（自选）`;o.dataset.custom='true';$('horizon').querySelectorAll('[data-custom]').forEach(x=>x.remove());$('horizon').appendChild(o);}render();};$('band').onchange=renderDetail;$('compare').onclick=()=>{if(compare.length<3&&!compare.includes(cell()))compare.push(cell());renderCompare();};$('clear').onclick=()=>{compare=[];renderCompare();};render();
+
+
+// Button-only fallback: never intercept browser zoom keys, wheel or pinch.
+// The toolbar stays unscaled so reset is always reachable.
+const PAGE_ZOOM_STEPS=[30,40,50,67,80,90,100,110,125,150,175,200];
+let pageZoomIndex=6;
+function applyPageZoom(){
+  const value=PAGE_ZOOM_STEPS[pageZoomIndex];
+  $('main').style.zoom=String(value/100);
+  $('zoom-percent').textContent=value+'%';
+  $('zoom-out').disabled=pageZoomIndex===0;
+  $('zoom-in').disabled=pageZoomIndex===PAGE_ZOOM_STEPS.length-1;
+}
+$('zoom-out').onclick=()=>{pageZoomIndex=Math.max(0,pageZoomIndex-1);applyPageZoom();};
+$('zoom-in').onclick=()=>{pageZoomIndex=Math.min(PAGE_ZOOM_STEPS.length-1,pageZoomIndex+1);applyPageZoom();};
+$('zoom-reset').onclick=()=>{pageZoomIndex=6;applyPageZoom();};
+applyPageZoom();

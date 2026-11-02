@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "superset_rows": 148154,
+  "stocks": 1482,
+  "all251_paths_rebuilt_from_actual_price_dates": true,
+  "prior_stock_index_and_freshness_verified": true,
+  "float32_errors": {
+    "public_nextopen_returns": 0,
+    "stat_returns": 0
+  }
+}

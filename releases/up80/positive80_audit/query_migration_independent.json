@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "stocks": 5554,
+  "anchors_checked": 565800,
+  "nonextreme_anchors_exactly_unchanged": 557575,
+  "new_eligible_by_N": {
+    "10": 26,
+    "20": 164,
+    "30": 319,
+    "60": 882,
+    "120": 2515
+  },
+  "eligible_anchors_by_N": {
+    "10": 53874,
+    "20": 53938,
+    "30": 53968,
+    "60": 53967,
+    "120": 53847
+  },
+  "comparable_stocks_by_N": {
+    "10": 2252,
+    "20": 2244,
+    "30": 2235,
+    "60": 2232,
+    "120": 2221
+  },
+  "prices_calendar_holder_source_fields_unchanged": true,
+  "negative80_still_excluded": true,
+  "base60_patch60_consistent": true,
+  "base_sha256": "11e58f6afe8c9c8a006762035c344bf40e42be5c48ac87ebbcdb50a511c8a481",
+  "patch_sha256": "f420f4e5c3eaa4ab1bc7cb0c54e2c7a954b222f225d7a1ffcb520e60f28af642"
+}

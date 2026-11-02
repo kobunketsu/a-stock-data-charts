@@ -1,0 +1,546 @@
+{
+  "summary": {
+    "status": "PASS",
+    "run_identity": "second_run_using_actual_sanitized_packaged_sources_not_first_prefreeze_test",
+    "utc": "2026-11-02T09:10:01.913531+00:00",
+    "zip_count": 18,
+    "zip_manifest_records_verified": 28660,
+    "matrix_json_exact_bytes": 15,
+    "feature_panel_membership_csv_exact_bytes": 15,
+    "npz_arrays_exact_equal_nan": 15,
+    "query_gzip_exact_bytes": 11108,
+    "query_stocks_per_bundle": 5554,
+    "metadata_ignored": false,
+    "differences": {},
+    "code_sha_policy": "Actual package SHA values; original aggregate SHA is comparison evidence only, never represented as packaged SHA",
+    "network_used": false,
+    "limits": [
+      "1494 research rebuilt from frozen shareholder/price inputs",
+      "5554 query only migrates frozen published base andfive-lookback data; original4060 vendor-response archive not fully recovered",
+      "No Mac Python3.13/ARM execution has been tested",
+      "Disk figure is 10-second sampled work-directory allocation, excludes source archive/extraction and is not instantaneous global-system peak"
+    ]
+  },
+  "package_input_qa": {
+    "status": "PASS_PACKAGE_INPUT_VALIDATION",
+    "zip_count": 18,
+    "zip_files": [
+      {
+        "file": "UP80_INPUT_META.zip",
+        "sha256": "af10854bee82a16c7b3f9ed3be0f0603e5632bfa6e31916319da54e079cc0891",
+        "bytes": 986160
+      },
+      {
+        "file": "UP80_INPUT_DATA_01.zip",
+        "sha256": "32181ea43db896c75be6f5cf0ba6cfb56cea4b711110a1f0f6add6157da12a8b",
+        "bytes": 46022934
+      },
+      {
+        "file": "UP80_INPUT_DATA_02.zip",
+        "sha256": "b906f308faccc0055daa155f2b484a1553f65e34895130ed448464ebac4410cf",
+        "bytes": 46037855
+      },
+      {
+        "file": "UP80_INPUT_DATA_03.zip",
+        "sha256": "c00b8de67c31287632265bf63ed11dcdf16477d8b29265dbfaf420d8d06a7c80",
+        "bytes": 46007746
+      },
+      {
+        "file": "UP80_INPUT_DATA_04.zip",
+        "sha256": "176ce41f74153e2ce81ec41de4d06eab49eaca4c5adb550797ff806978db550b",
+        "bytes": 40346911
+      },
+      {
+        "file": "UP80_INPUT_DATA_05.zip",
+        "sha256": "38409ed91838cada0ec1b34d1dbf42d2379fee997aa28946592572c5f46fcfb7",
+        "bytes": 45861972
+      },
+      {
+        "file": "UP80_INPUT_DATA_06.zip",
+        "sha256": "20ade731b84c6934965eec0adefc604969cbf70fd9c945e63e08513e3c2c92f8",
+        "bytes": 46057205
+      },
+      {
+        "file": "UP80_INPUT_DATA_07.zip",
+        "sha256": "95134ba5b52be8014d08724d15ea2fec73797bb3a859688f437093236c126742",
+        "bytes": 45492830
+      },
+      {
+        "file": "UP80_INPUT_DATA_08.zip",
+        "sha256": "853a3b9b8a9850758268d859c4d68ffd195c801cf6dbf2a45009a59340139179",
+        "bytes": 45389230
+      },
+      {
+        "file": "UP80_INPUT_DATA_09.zip",
+        "sha256": "484ac6785716d4a2b01b77a25d0e43064319bcd8c7b0844f3eb8d61c2b6bf24f",
+        "bytes": 45518800
+      },
+      {
+        "file": "UP80_INPUT_DATA_10.zip",
+        "sha256": "4f6a8c325e2a82a548f8febdb4a169dbcee9518601b48cae536d07dab2a499c4",
+        "bytes": 45877291
+      },
+      {
+        "file": "UP80_INPUT_DATA_11.zip",
+        "sha256": "8271ea5d0b1640dad013f01b644eb0dd838f77691eff80bc6ee4d4a8458d2350",
+        "bytes": 21729851
+      },
+      {
+        "file": "code_results/UP80_CODE_RESULTS_META.zip",
+        "sha256": "63f6877f5c032ed2e44c22ee4a1d4c7064baf6c8d2694b0a2f0aa2806ee62b46",
+        "bytes": 648147
+      },
+      {
+        "file": "code_results/UP80_CODE_RESULTS_DATA_01.zip",
+        "sha256": "054b5b786ebc3d68015087b69b13543ae4ef041cabee7909cea9a86125b1894c",
+        "bytes": 45432570
+      },
+      {
+        "file": "code_results/UP80_CODE_RESULTS_DATA_02.zip",
+        "sha256": "44c3f1f4795240e868abbc4f56d2f3a9adcc20907db10611800ea4f03fe1b9e2",
+        "bytes": 45436118
+      },
+      {
+        "file": "code_results/UP80_CODE_RESULTS_DATA_03.zip",
+        "sha256": "d2202f97d9f63c436f97367108a71b9699c31ce16f1bd585eae92cc253eb39db",
+        "bytes": 45528197
+      },
+      {
+        "file": "code_results/UP80_CODE_RESULTS_DATA_04.zip",
+        "sha256": "d98a9b176f01a061cf8b07ac453bf0eec3fba582b51e46a23d3fc7f676ff9335",
+        "bytes": 45693309
+      },
+      {
+        "file": "code_results/UP80_CODE_RESULTS_DATA_05.zip",
+        "sha256": "7f22d8c583328c414122ce700a68b65296e17dfae28f8630819922a2c41b6469",
+        "bytes": 4039744
+      }
+    ],
+    "manifests": [
+      {
+        "file": "FILE_MANIFEST.jsonl",
+        "sha256": "c89930c636ee348021746c3883d4893a48d900a1862230cc83c7de8fda6c1304",
+        "verified_records": 17329
+      },
+      {
+        "file": "RESULTS_FILE_MANIFEST.jsonl",
+        "sha256": "b714f6fbe8c4bb4a633c07e970c7baba262d036adc79880f754902f4e76d3598",
+        "verified_records": 11331
+      }
+    ],
+    "unique_extracted_files": 28672,
+    "executed_code": [
+      {
+        "file": "up80_recovery/offline_rebuild/run_offline.py",
+        "packaged_sha256": "5e495428da6ad7b190185b050e970e7c29b9bce7e8a418cf4e503573f91e9824"
+      },
+      {
+        "file": "up80_recovery/research/holder_capture/verify_resume_complete.py",
+        "packaged_sha256": "f1513b9aca4b9695556cbafb0e9e71ec5f6eb8b8592a64a41713a3d192ab9e3e"
+      },
+      {
+        "file": "up80_recovery/research/merge_recovered_holders.py",
+        "packaged_sha256": "6889f3d5ace1491838b41bc6702ce62bf804643644fe73b94df35d55e6139e0b"
+      },
+      {
+        "file": "up80_recovery/research/audit_holder_merge_local.py",
+        "packaged_sha256": "1fa5ce54346d2654ce140d30ff14f3cfb7650156691a48b8f6de5f616f686241"
+      },
+      {
+        "file": "up80_recovery/research/build_superset.py",
+        "packaged_sha256": "c3e1937b5aca7c0d5dfe376fc1c9742aa18aad1f08180d65e7453ea128923f73"
+      },
+      {
+        "file": "up80_recovery/research/clean_holders.py",
+        "packaged_sha256": "fb273b0fcf034576dc35bddf7210e52db568a406ccc68bcf093d6a0b5f63c534"
+      },
+      {
+        "file": "up80_recovery/research/lookback_pipeline/prepare_lookback_panels.py",
+        "packaged_sha256": "668e339b8b9091fc4f27a374508a28a64e97067dfdd079fb2bcff6cebfd84a09"
+      },
+      {
+        "file": "up80_recovery/research/lookback_pipeline/aggregate.py",
+        "packaged_sha256": "39028304ff12609a8532356b273ef0f66996d6609454a35b8e1103600ac933c2"
+      },
+      {
+        "file": "shareholder_query_up80/migrate_up80.py",
+        "packaged_sha256": "0f624fc7273e369094ad019117f429ab92a0e700c7845d2bed22dbb1de633e12"
+      }
+    ],
+    "internal_absolute_paths_in_executed_source": false,
+    "note": "Packaged SHA values, not pre-sanitization source hashes"
+  },
+  "packaged_execution": {
+    "status": "PASS_SECOND_ACTUAL_PACKAGED_REBUILD",
+    "exit_code": 0,
+    "elapsed_rebuild_seconds": 520.4941220283508,
+    "elapsed_unpack_verify_rebuild_seconds": 547.7275283336639,
+    "peak_work_allocated_bytes_sampled": 4952657920,
+    "disk_sampling_seconds": 10,
+    "source_allocated_bytes": 2059161600,
+    "python": "3.12.14",
+    "dependencies": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3"
+    },
+    "network_calls": 0,
+    "comparison_pending": false,
+    "source": "Actual18 frozenZIPs independently extracted and SHA/CRC/per-file verified before execution",
+    "original18_archives_unchanged_after_test": true
+  },
+  "sanitized_source_qa": {
+    "status": "PASS",
+    "only_changes": "Two default baseline paths changed to package-relative defaults; runner explicitly supplies both CLI paths",
+    "original_sha256": "61099f71325a4c885a1b43b8ea8e0756e11c1aa8047bb62329a65ccba61ad3ef",
+    "packaged_sha256": "39028304ff12609a8532356b273ef0f66996d6609454a35b8e1103600ac933c2",
+    "exact_expected_two_replacements_match": true,
+    "executed_packaged_source": true
+  },
+  "output_comparison": {
+    "status": "PASS",
+    "json_files": [
+      {
+        "lookback": 10,
+        "kind": "all",
+        "exact_bytes_equal": true,
+        "official_sha256": "3c5a58afbf543daea0aa9e892bad4ee3a8287b2df3d62261848001ce6dd96ac0",
+        "rebuilt_sha256": "3c5a58afbf543daea0aa9e892bad4ee3a8287b2df3d62261848001ce6dd96ac0",
+        "all_values_equal": true
+      },
+      {
+        "lookback": 10,
+        "kind": "recent",
+        "exact_bytes_equal": true,
+        "official_sha256": "76df7b0f9793da061fe56df59c25509247e991c332397ab7dd9dcd1b9ae116a2",
+        "rebuilt_sha256": "76df7b0f9793da061fe56df59c25509247e991c332397ab7dd9dcd1b9ae116a2",
+        "all_values_equal": true
+      },
+      {
+        "lookback": 10,
+        "kind": "stability",
+        "exact_bytes_equal": true,
+        "official_sha256": "4229ef663c5e69c32a25aebb7001f4b8b0cf7a87a4cac9077ac81c782eab70f0",
+        "rebuilt_sha256": "4229ef663c5e69c32a25aebb7001f4b8b0cf7a87a4cac9077ac81c782eab70f0",
+        "all_values_equal": true
+      },
+      {
+        "lookback": 20,
+        "kind": "all",
+        "exact_bytes_equal": true,
+        "official_sha256": "6a1b516c7eede4ed9b284c355ea896c7fac103e0696cdfea13b7df4e79f2b468",
+        "rebuilt_sha256": "6a1b516c7eede4ed9b284c355ea896c7fac103e0696cdfea13b7df4e79f2b468",
+        "all_values_equal": true
+      },
+      {
+        "lookback": 20,
+        "kind": "recent",
+        "exact_bytes_equal": true,
+        "official_sha256": "4e9717c0e7ca65a86aa0f141e94ecf169061d2d5e8bcd8630d96b71887fec015",
+        "rebuilt_sha256": "4e9717c0e7ca65a86aa0f141e94ecf169061d2d5e8bcd8630d96b71887fec015",
+        "all_values_equal": true
+      },
+      {
+        "lookback": 20,
+        "kind": "stability",
+        "exact_bytes_equal": true,
+        "official_sha256": "884493ede022cddd8d4fdcbb88dc8a8643d834113cab04ec003493ef5cf5f12a",
+        "rebuilt_sha256": "884493ede022cddd8d4fdcbb88dc8a8643d834113cab04ec003493ef5cf5f12a",
+        "all_values_equal": true
+      },
+      {
+        "lookback": 30,
+        "kind": "all",
+        "exact_bytes_equal": true,
+        "official_sha256": "2d8a2685117b80a2b00dd0a3608c3270a6f67074af9e64fe80437ee624a4f06a",
+        "rebuilt_sha256": "2d8a2685117b80a2b00dd0a3608c3270a6f67074af9e64fe80437ee624a4f06a",
+        "all_values_equal": true
+      },
+      {
+        "lookback": 30,
+        "kind": "recent",
+        "exact_bytes_equal": true,
+        "official_sha256": "57d839850acabb521a6408fe978bfd4f90758c28490bd26ab893cde4a5a7b04c",
+        "rebuilt_sha256": "57d839850acabb521a6408fe978bfd4f90758c28490bd26ab893cde4a5a7b04c",
+        "all_values_equal": true
+      },
+      {
+        "lookback": 30,
+        "kind": "stability",
+        "exact_bytes_equal": true,
+        "official_sha256": "4d6b8674938a81c4a49d40ec5f16c7352246a776f7231656b693db586d6ae45a",
+        "rebuilt_sha256": "4d6b8674938a81c4a49d40ec5f16c7352246a776f7231656b693db586d6ae45a",
+        "all_values_equal": true
+      },
+      {
+        "lookback": 60,
+        "kind": "all",
+        "exact_bytes_equal": true,
+        "official_sha256": "e04041e0e5e04d488d5f0634e18c1ba11ab8d2464c0907b05ccd93b618cde46e",
+        "rebuilt_sha256": "e04041e0e5e04d488d5f0634e18c1ba11ab8d2464c0907b05ccd93b618cde46e",
+        "all_values_equal": true
+      },
+      {
+        "lookback": 60,
+        "kind": "recent",
+        "exact_bytes_equal": true,
+        "official_sha256": "f36a3bc867be58e4f3e056263740e1183b7c39061ce342d1ad408dc728f16118",
+        "rebuilt_sha256": "f36a3bc867be58e4f3e056263740e1183b7c39061ce342d1ad408dc728f16118",
+        "all_values_equal": true
+      },
+      {
+        "lookback": 60,
+        "kind": "stability",
+        "exact_bytes_equal": true,
+        "official_sha256": "379f04a2b2e0b1c4056f8476034d6003242d9b1411b489373598af97a57427a9",
+        "rebuilt_sha256": "379f04a2b2e0b1c4056f8476034d6003242d9b1411b489373598af97a57427a9",
+        "all_values_equal": true
+      },
+      {
+        "lookback": 120,
+        "kind": "all",
+        "exact_bytes_equal": true,
+        "official_sha256": "d2644f322a1e64d7091d4f576727baeacc186c1f9ccd81527b4addb43402707d",
+        "rebuilt_sha256": "d2644f322a1e64d7091d4f576727baeacc186c1f9ccd81527b4addb43402707d",
+        "all_values_equal": true
+      },
+      {
+        "lookback": 120,
+        "kind": "recent",
+        "exact_bytes_equal": true,
+        "official_sha256": "a513e08f7c29ba81ec0541bdde2ad7430c089c4729fdd16620da667ba56cb4f6",
+        "rebuilt_sha256": "a513e08f7c29ba81ec0541bdde2ad7430c089c4729fdd16620da667ba56cb4f6",
+        "all_values_equal": true
+      },
+      {
+        "lookback": 120,
+        "kind": "stability",
+        "exact_bytes_equal": true,
+        "official_sha256": "548e538d3adbdacd3864454f8c93c8fcddddf5bae4cebdec399af37941ac037b",
+        "rebuilt_sha256": "548e538d3adbdacd3864454f8c93c8fcddddf5bae4cebdec399af37941ac037b",
+        "all_values_equal": true
+      }
+    ],
+    "table_files": [
+      {
+        "lookback": 10,
+        "file": "model/event_panel.csv",
+        "bytes_equal": true
+      },
+      {
+        "lookback": 10,
+        "file": "threshold_curves/ranges_uniform60/lookback_feature_audit.csv",
+        "bytes_equal": true
+      },
+      {
+        "lookback": 10,
+        "file": "threshold_curves/ranges_uniform60/matched_all_years_event_membership.csv",
+        "bytes_equal": true
+      },
+      {
+        "lookback": 20,
+        "file": "model/event_panel.csv",
+        "bytes_equal": true
+      },
+      {
+        "lookback": 20,
+        "file": "threshold_curves/ranges_uniform60/lookback_feature_audit.csv",
+        "bytes_equal": true
+      },
+      {
+        "lookback": 20,
+        "file": "threshold_curves/ranges_uniform60/matched_all_years_event_membership.csv",
+        "bytes_equal": true
+      },
+      {
+        "lookback": 30,
+        "file": "model/event_panel.csv",
+        "bytes_equal": true
+      },
+      {
+        "lookback": 30,
+        "file": "threshold_curves/ranges_uniform60/lookback_feature_audit.csv",
+        "bytes_equal": true
+      },
+      {
+        "lookback": 30,
+        "file": "threshold_curves/ranges_uniform60/matched_all_years_event_membership.csv",
+        "bytes_equal": true
+      },
+      {
+        "lookback": 60,
+        "file": "model/event_panel.csv",
+        "bytes_equal": true
+      },
+      {
+        "lookback": 60,
+        "file": "threshold_curves/ranges_uniform60/lookback_feature_audit.csv",
+        "bytes_equal": true
+      },
+      {
+        "lookback": 60,
+        "file": "threshold_curves/ranges_uniform60/matched_all_years_event_membership.csv",
+        "bytes_equal": true
+      },
+      {
+        "lookback": 120,
+        "file": "model/event_panel.csv",
+        "bytes_equal": true
+      },
+      {
+        "lookback": 120,
+        "file": "threshold_curves/ranges_uniform60/lookback_feature_audit.csv",
+        "bytes_equal": true
+      },
+      {
+        "lookback": 120,
+        "file": "threshold_curves/ranges_uniform60/matched_all_years_event_membership.csv",
+        "bytes_equal": true
+      }
+    ],
+    "array_files": [
+      {
+        "lookback": 10,
+        "array": "event_id",
+        "exact_equal_nan": true,
+        "shape": [
+          148095
+        ]
+      },
+      {
+        "lookback": 10,
+        "array": "public_nextopen_returns",
+        "exact_equal_nan": true,
+        "shape": [
+          148095,
+          251
+        ]
+      },
+      {
+        "lookback": 10,
+        "array": "stat_returns",
+        "exact_equal_nan": true,
+        "shape": [
+          148095,
+          251
+        ]
+      },
+      {
+        "lookback": 20,
+        "array": "event_id",
+        "exact_equal_nan": true,
+        "shape": [
+          147902
+        ]
+      },
+      {
+        "lookback": 20,
+        "array": "public_nextopen_returns",
+        "exact_equal_nan": true,
+        "shape": [
+          147902,
+          251
+        ]
+      },
+      {
+        "lookback": 20,
+        "array": "stat_returns",
+        "exact_equal_nan": true,
+        "shape": [
+          147902,
+          251
+        ]
+      },
+      {
+        "lookback": 30,
+        "array": "event_id",
+        "exact_equal_nan": true,
+        "shape": [
+          147706
+        ]
+      },
+      {
+        "lookback": 30,
+        "array": "public_nextopen_returns",
+        "exact_equal_nan": true,
+        "shape": [
+          147706,
+          251
+        ]
+      },
+      {
+        "lookback": 30,
+        "array": "stat_returns",
+        "exact_equal_nan": true,
+        "shape": [
+          147706,
+          251
+        ]
+      },
+      {
+        "lookback": 60,
+        "array": "event_id",
+        "exact_equal_nan": true,
+        "shape": [
+          146989
+        ]
+      },
+      {
+        "lookback": 60,
+        "array": "public_nextopen_returns",
+        "exact_equal_nan": true,
+        "shape": [
+          146989,
+          251
+        ]
+      },
+      {
+        "lookback": 60,
+        "array": "stat_returns",
+        "exact_equal_nan": true,
+        "shape": [
+          146989,
+          251
+        ]
+      },
+      {
+        "lookback": 120,
+        "array": "event_id",
+        "exact_equal_nan": true,
+        "shape": [
+          145253
+        ]
+      },
+      {
+        "lookback": 120,
+        "array": "public_nextopen_returns",
+        "exact_equal_nan": true,
+        "shape": [
+          145253,
+          251
+        ]
+      },
+      {
+        "lookback": 120,
+        "array": "stat_returns",
+        "exact_equal_nan": true,
+        "shape": [
+          145253,
+          251
+        ]
+      }
+    ],
+    "query": {
+      "single_stock": {
+        "stocks": 5554,
+        "gzip_bytes_equal": 5554
+      },
+      "lookback_patch": {
+        "stocks": 5554,
+        "gzip_bytes_equal": 5554
+      }
+    },
+    "differences": [],
+    "difference_counts": {},
+    "metadata_policy": "No metadata ignored; all value differences fail and are classified separately. Paths/provenance report files are separately documented, not mistaken for model data."
+  }
+}

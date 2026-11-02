@@ -1,0 +1,5 @@
+const fs=require('fs'),assert=require('assert');const src=fs.readFileSync('dist/app.js','utf8');const start=src.indexOf('function signPaths('),end=src.indexOf('function color(',start);const f=Function(src.slice(start,end)+';return signPaths;')();const x=i=>i*10,y=v=>50-v*10;
+let cross=f([-1,1],x,y);assert(cross.includes('M0.00,60.00L5.00,50.00'));assert(cross.includes('M5.00,50.00L10.00,40.00'));assert(cross.includes('#a93238')&&cross.includes('#176b4b'));
+assert(!f([0,0],x,y).includes('#a93238'));assert(f([0,0],x,y).includes('data-sign="zero"'));assert.equal(f([null,null],x,y),'');assert(!f([-1,1],x,y,2,'3 2',true).includes('#a93238'));assert(!f([-1,1],x,y,2,'3 2',true).includes('#176b4b'));assert(!cross.includes('NaN'));console.log('PASS: exact interpolated zero crossing; red positive/green negative; flat zero gray; empty omitted; optional muted helper; production small samples use red/green');
+
+assert(src.includes("signPaths(c.mean,X,Y,1.8,'',false)"));assert(src.includes("signPaths(c.median,X,Y,1.8,'5 3',false)"));assert(!src.includes("v.small_sample?'#f2f2f2'"));assert(src.includes("stat='mean',day=20"));

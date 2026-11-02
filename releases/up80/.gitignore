@@ -1,0 +1,19 @@
+# Frozen inputs restored from datasets/up80/inputs; computational intermediates stay in a separate work directory.
+/up80_recovery/research/prices/
+/up80_recovery/research/raw_prices/
+/up80_recovery/archive972/
+/up80_recovery/research/holders/
+/up80_recovery/research/holders_baseline_2009/
+/up80_recovery/research/holder_capture/*
+!/up80_recovery/research/holder_capture/*.py
+/up80_recovery/research/absolute_only/trading_calendar.csv
+/up80_recovery/research/calendar_source/
+/up80_recovery/research/qualified_pool.csv
+/up80_recovery/qualified_1494.csv
+/positive80_audit/baseline/
+/positive80_audit/baseline60/
+/up80_offline_test/research/
+/up80_offline_test/query_output/
+/up80_offline_test/logs/
+__pycache__/
+*.py[cod]

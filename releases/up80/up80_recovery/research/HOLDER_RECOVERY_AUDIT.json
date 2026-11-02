@@ -1,0 +1,70 @@
+{
+  "status": "complete",
+  "pool": 1494,
+  "captured": {
+    "det_added": {
+      "rows": 67650,
+      "stocks": 522
+    },
+    "det_old_early": {
+      "rows": 29379,
+      "stocks": 706
+    },
+    "f10_all": {
+      "rows": 66860,
+      "stocks": 1201
+    }
+  },
+  "main_rows": 241976,
+  "main_stocks": 1494,
+  "baseline2009_rows": 1465,
+  "baseline2009_stocks": 377,
+  "expected_old_main_rows": 241976,
+  "expected_old_baseline_rows": 1465,
+  "main_count_equals_old": true,
+  "baseline_count_equals_old": true,
+  "all_overlap_rows": 57058,
+  "overlap_A_mismatches": 0,
+  "overlap_notice_mismatches": 0,
+  "dual_class_rows": 335,
+  "dual_class_A_match": 335,
+  "F10_missing_nonpositiveA": 456,
+  "F10_invalid_dates": 768,
+  "F10_added_after_precedence": 9067,
+  "frozen972_2019plus_rows": 137345,
+  "frozen972_2019plus_key_values_exact": true,
+  "negative_lag_raw_main": 984,
+  "year_counts": {
+    "2010": 1798,
+    "2011": 2282,
+    "2012": 2870,
+    "2013": 3261,
+    "2014": 3404,
+    "2015": 5738,
+    "2016": 8998,
+    "2017": 10949,
+    "2018": 11914,
+    "2019": 13710,
+    "2020": 15927,
+    "2021": 18953,
+    "2022": 21721,
+    "2023": 24501,
+    "2024": 31011,
+    "2025": 34924,
+    "2026": 30015
+  },
+  "raw_pages_SHA_verified": true,
+  "old_full1494_membership_archive_unavailable": true,
+  "source_priority": [
+    "Frozen qualified972 original2019+ rows preserved; archive extra candidate codes are not part of freeze",
+    "DET preferred for endpoint keys; F10 fills missing endpoint keys only",
+    "F10 HOLDER_A_NUM only; unknown share capital left NaN; negative lag or missing A quarantined",
+    "Archive-extra 001232 and301686 are added522 source; their35 archived rows match recaptured date/count exactly"
+  ],
+  "archive_candidate_extra_comparison": "ARCHIVE_EXTRA_CODES_COMPARISON.csv",
+  "limits": [
+    "Recovered1494 from frozen972+new public snapshots; matching count is not proof of identical old1494 membership",
+    "All old8-cell curve statistics must be compared with saved frozen15UI before addingpositive80tail",
+    "F10 uses A counts only; no TOTAL fallback; DET endpoint precedence; frozen9722019plus never replaced"
+  ]
+}

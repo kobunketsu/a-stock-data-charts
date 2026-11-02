@@ -1,0 +1,179 @@
+{
+  "status": "PASS_FROZEN_SOURCE_COUNT_ONLY",
+  "counts": {
+    "10": {
+      "positive": 52,
+      "other_conditions_pass": 26
+    },
+    "20": {
+      "positive": 352,
+      "other_conditions_pass": 164
+    },
+    "30": {
+      "positive": 607,
+      "other_conditions_pass": 319
+    },
+    "60": {
+      "positive": 2035,
+      "other_conditions_pass": 882,
+      "negative": 2
+    },
+    "120": {
+      "positive": 5172,
+      "other_conditions_pass": 2515,
+      "negative": 5
+    }
+  },
+  "examples": [
+    {
+      "code": "000426",
+      "id": "hn_4a2126c2c2fc11e2ec61c9a2",
+      "n": 120,
+      "anchor": "public_nextopen",
+      "change": 1.2982535852682777,
+      "base_price": 30.596133200795304,
+      "row_id": "rise_0",
+      "other_reasons": []
+    },
+    {
+      "code": "000426",
+      "id": "hn_4a2126c2c2fc11e2ec61c9a2",
+      "n": 120,
+      "anchor": "stat_close",
+      "change": 1.3014556830696997,
+      "base_price": 30.48643389662035,
+      "row_id": "rise_0",
+      "other_reasons": []
+    },
+    {
+      "code": "000426",
+      "id": "hn_b14b6980a71205f22966a82a",
+      "n": 120,
+      "anchor": "public_nextopen",
+      "change": 1.3458168627389182,
+      "base_price": 30.546269880715776,
+      "row_id": "decline_0",
+      "other_reasons": []
+    },
+    {
+      "code": "000426",
+      "id": "hn_73c536fcec238d7d9e7d7ede",
+      "n": 60,
+      "anchor": "stat_close",
+      "change": 1.160871092377942,
+      "base_price": 61.35182902584508,
+      "row_id": "rise_30to100",
+      "other_reasons": []
+    },
+    {
+      "code": "000506",
+      "id": "hn_7bd5483eb133343571259217",
+      "n": 20,
+      "anchor": "stat_close",
+      "change": 0.9655436447166925,
+      "base_price": 25.670000000000005,
+      "row_id": "rise_over100",
+      "other_reasons": []
+    },
+    {
+      "code": "000506",
+      "id": "hn_7bd5483eb133343571259217",
+      "n": 30,
+      "anchor": "stat_close",
+      "change": 0.9071322436849927,
+      "base_price": 25.670000000000005,
+      "row_id": "rise_over100",
+      "other_reasons": []
+    },
+    {
+      "code": "000506",
+      "id": "hn_7bd5483eb133343571259217",
+      "n": 60,
+      "anchor": "stat_close",
+      "change": 1.105824446267433,
+      "base_price": 25.670000000000005,
+      "row_id": "rise_over100",
+      "other_reasons": []
+    },
+    {
+      "code": "000506",
+      "id": "hn_c52c6fdde7c0d9d65678ce82",
+      "n": 30,
+      "anchor": "stat_close",
+      "change": 0.8206278026905831,
+      "base_price": 20.3,
+      "row_id": "rise_0",
+      "other_reasons": []
+    },
+    {
+      "code": "000510",
+      "id": "hn_0fe41c982eb919efbecccf94",
+      "n": 30,
+      "anchor": "public_nextopen",
+      "change": 0.9171270718232047,
+      "base_price": 10.46,
+      "row_id": "rise_30to100",
+      "other_reasons": []
+    },
+    {
+      "code": "000510",
+      "id": "hn_0fe41c982eb919efbecccf94",
+      "n": 60,
+      "anchor": "public_nextopen",
+      "change": 0.9980806142034551,
+      "base_price": 10.46,
+      "row_id": "rise_30to100",
+      "other_reasons": []
+    },
+    {
+      "code": "000547",
+      "id": "hn_726782b3e90a88b12c438efe",
+      "n": 20,
+      "anchor": "public_nextopen",
+      "change": 0.8207126948775054,
+      "base_price": 16.8,
+      "row_id": "rise_30to100",
+      "other_reasons": []
+    },
+    {
+      "code": "000547",
+      "id": "hn_317c56d7f667d93dc88dbdfa",
+      "n": 20,
+      "anchor": "public_nextopen",
+      "change": 1.264612114771519,
+      "base_price": 20.5,
+      "row_id": "rise_30to100",
+      "other_reasons": []
+    },
+    {
+      "code": "000636",
+      "id": "hn_70e6b9f16dfe66ee015727f0",
+      "n": 10,
+      "anchor": "public_nextopen",
+      "change": 0.8567251461988303,
+      "base_price": 59.90781378776149,
+      "row_id": "rise_30to100",
+      "other_reasons": []
+    },
+    {
+      "code": "000636",
+      "id": "hn_70e6b9f16dfe66ee015727f0",
+      "n": 10,
+      "anchor": "stat_close",
+      "change": 0.9640740740740743,
+      "base_price": 52.948522752749874,
+      "row_id": "rise_30to100",
+      "other_reasons": []
+    },
+    {
+      "code": "002343",
+      "id": "hn_06a1b71cd187ee9e537f644a",
+      "n": 10,
+      "anchor": "public_nextopen",
+      "change": 0.8354203935599283,
+      "base_price": 10.19,
+      "row_id": "decline_0",
+      "other_reasons": []
+    }
+  ]
+}

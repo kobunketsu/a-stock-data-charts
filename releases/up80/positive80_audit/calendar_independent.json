@@ -1,0 +1,9 @@
+{
+  "status": "PASS_CALENDAR_UNION_ONLY",
+  "calendar_sessions": 4328,
+  "stock_csvs_used": 1200,
+  "actual_stock_date_union": 4328,
+  "stock_dates_missing_from_calendar": [],
+  "calendar_dates_without_any_stock_price": [],
+  "source": "existing recovered stock files only; no network; partial stocks not a full1494 restoration"
+}

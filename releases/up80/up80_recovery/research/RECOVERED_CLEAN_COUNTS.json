@@ -1,0 +1,17 @@
+{
+  "raw_rows": 243441,
+  "candidate_raw_rows": 243441,
+  "candidate_main_2010plus_rows": 241976,
+  "candidate_negative_lag_rows": 984,
+  "main_2010plus_raw_rows": 241976,
+  "baseline2009_raw_rows": 1465,
+  "negative_lag_excluded": 984,
+  "main_negative_lag_excluded": 984,
+  "baseline_negative_lag_excluded": 0,
+  "backward_removed": 21616,
+  "public_advancing_records": 193691,
+  "eligible_events": 150628,
+  "unique_event_keys": 150628,
+  "comparison_old_eligible_events": 150628,
+  "matches_old_eligible_count": true
+}

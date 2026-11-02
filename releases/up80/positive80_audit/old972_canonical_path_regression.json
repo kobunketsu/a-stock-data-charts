@@ -1,0 +1,14 @@
+{
+  "status": "PASS_REBUILT_FROM_FROZEN972_INPUTS",
+  "old972_panel_rows": 89957,
+  "old972_complete_nonzero_events": 61074,
+  "canonical_keys_preserved": true,
+  "all251_paths_max_errors": {
+    "public_nextopen_returns": 0.0,
+    "stat_returns": 0.0
+  },
+  "limitation": "Old972 input version survives and was independently rebuilt; does not claim unavailable full1494 old member files existed.",
+  "original_saved_grid_memberships_checked": 120094,
+  "old8_grid_members_canonical_exact": true,
+  "positive_holder_tail_rows_recombined_for_original8holder_schema": true
+}

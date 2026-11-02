@@ -1,0 +1,238 @@
+{
+  "command": [
+    "RUNTIME_PATH_REMOVED/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "./up80_recovery/offline_rebuild/run_offline.py",
+    "--package-root",
+    ".",
+    "--work-root",
+    "./up80_offline_test",
+    "--execute"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 530.5598058700562,
+  "started_unix": 1793609108.8575304,
+  "ended_unix": 1793609639.4173362,
+  "peak_allocated_work_bytes_sampled": 4952297472,
+  "disk_sampling_interval_seconds": 10,
+  "final_allocated_work_bytes": 4952297472,
+  "python": "3.12.14",
+  "dependencies": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  },
+  "samples": [
+    {
+      "elapsed_seconds": 0.0,
+      "allocated_bytes": 0
+    },
+    {
+      "elapsed_seconds": 10.01,
+      "allocated_bytes": 977600512
+    },
+    {
+      "elapsed_seconds": 20.01,
+      "allocated_bytes": 1056858112
+    },
+    {
+      "elapsed_seconds": 30.02,
+      "allocated_bytes": 1056858112
+    },
+    {
+      "elapsed_seconds": 40.02,
+      "allocated_bytes": 1056858112
+    },
+    {
+      "elapsed_seconds": 50.03,
+      "allocated_bytes": 1056858112
+    },
+    {
+      "elapsed_seconds": 60.03,
+      "allocated_bytes": 1056858112
+    },
+    {
+      "elapsed_seconds": 70.04,
+      "allocated_bytes": 1056858112
+    },
+    {
+      "elapsed_seconds": 80.04,
+      "allocated_bytes": 1056858112
+    },
+    {
+      "elapsed_seconds": 90.05,
+      "allocated_bytes": 1090596864
+    },
+    {
+      "elapsed_seconds": 100.05,
+      "allocated_bytes": 1090596864
+    },
+    {
+      "elapsed_seconds": 110.06,
+      "allocated_bytes": 1169707008
+    },
+    {
+      "elapsed_seconds": 120.06,
+      "allocated_bytes": 1313173504
+    },
+    {
+      "elapsed_seconds": 130.07,
+      "allocated_bytes": 1504718848
+    },
+    {
+      "elapsed_seconds": 140.08,
+      "allocated_bytes": 1504718848
+    },
+    {
+      "elapsed_seconds": 150.08,
+      "allocated_bytes": 1596530688
+    },
+    {
+      "elapsed_seconds": 160.09,
+      "allocated_bytes": 1749483520
+    },
+    {
+      "elapsed_seconds": 170.09,
+      "allocated_bytes": 1945874432
+    },
+    {
+      "elapsed_seconds": 180.1,
+      "allocated_bytes": 2074537984
+    },
+    {
+      "elapsed_seconds": 190.1,
+      "allocated_bytes": 2252599296
+    },
+    {
+      "elapsed_seconds": 200.11,
+      "allocated_bytes": 2421817344
+    },
+    {
+      "elapsed_seconds": 210.11,
+      "allocated_bytes": 2560962560
+    },
+    {
+      "elapsed_seconds": 220.12,
+      "allocated_bytes": 2743373824
+    },
+    {
+      "elapsed_seconds": 230.12,
+      "allocated_bytes": 2919288832
+    },
+    {
+      "elapsed_seconds": 240.13,
+      "allocated_bytes": 3065696256
+    },
+    {
+      "elapsed_seconds": 250.13,
+      "allocated_bytes": 3278020608
+    },
+    {
+      "elapsed_seconds": 260.14,
+      "allocated_bytes": 3408769024
+    },
+    {
+      "elapsed_seconds": 270.14,
+      "allocated_bytes": 3551318016
+    },
+    {
+      "elapsed_seconds": 280.15,
+      "allocated_bytes": 3753598976
+    },
+    {
+      "elapsed_seconds": 290.16,
+      "allocated_bytes": 3801231360
+    },
+    {
+      "elapsed_seconds": 300.16,
+      "allocated_bytes": 3818561536
+    },
+    {
+      "elapsed_seconds": 310.17,
+      "allocated_bytes": 3822653440
+    },
+    {
+      "elapsed_seconds": 320.17,
+      "allocated_bytes": 3853766656
+    },
+    {
+      "elapsed_seconds": 330.18,
+      "allocated_bytes": 3859759104
+    },
+    {
+      "elapsed_seconds": 340.19,
+      "allocated_bytes": 3863941120
+    },
+    {
+      "elapsed_seconds": 350.2,
+      "allocated_bytes": 3901202432
+    },
+    {
+      "elapsed_seconds": 360.21,
+      "allocated_bytes": 3901202432
+    },
+    {
+      "elapsed_seconds": 370.22,
+      "allocated_bytes": 3905413120
+    },
+    {
+      "elapsed_seconds": 380.22,
+      "allocated_bytes": 3942428672
+    },
+    {
+      "elapsed_seconds": 390.23,
+      "allocated_bytes": 3942428672
+    },
+    {
+      "elapsed_seconds": 400.23,
+      "allocated_bytes": 3965820928
+    },
+    {
+      "elapsed_seconds": 410.24,
+      "allocated_bytes": 3983540224
+    },
+    {
+      "elapsed_seconds": 420.25,
+      "allocated_bytes": 4030111744
+    },
+    {
+      "elapsed_seconds": 430.26,
+      "allocated_bytes": 4115410944
+    },
+    {
+      "elapsed_seconds": 440.28,
+      "allocated_bytes": 4196564992
+    },
+    {
+      "elapsed_seconds": 450.3,
+      "allocated_bytes": 4285083648
+    },
+    {
+      "elapsed_seconds": 460.33,
+      "allocated_bytes": 4375142400
+    },
+    {
+      "elapsed_seconds": 470.36,
+      "allocated_bytes": 4463845376
+    },
+    {
+      "elapsed_seconds": 480.4,
+      "allocated_bytes": 4543541248
+    },
+    {
+      "elapsed_seconds": 490.43,
+      "allocated_bytes": 4632236032
+    },
+    {
+      "elapsed_seconds": 500.47,
+      "allocated_bytes": 4709560320
+    },
+    {
+      "elapsed_seconds": 510.51,
+      "allocated_bytes": 4803915776
+    },
+    {
+      "elapsed_seconds": 520.56,
+      "allocated_bytes": 4900683776
+    }
+  ],
+  "measurement_note": "Observed peak work-directory allocation sampled every10s, not a guaranteed instantaneous global filesystem peak; /usr/bin/time unavailable"
+}

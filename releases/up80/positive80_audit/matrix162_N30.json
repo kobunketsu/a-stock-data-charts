@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "n": 30,
+  "cells": 324,
+  "horizons": 251,
+  "stats": 5,
+  "max_error": 0.0,
+  "cohorts": {
+    "all": 102991,
+    "recent": 82483
+  },
+  "id_to_row_not_assumed": true
+}

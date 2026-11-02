@@ -1,0 +1,60 @@
+{
+  "status": "PASS_UNIT_ONLY_NOT_RESEARCH_RESULT",
+  "tests": [
+    {
+      "value": null,
+      "positive_tail": false,
+      "negative_excluded_tail": false
+    },
+    {
+      "value": 0,
+      "positive_tail": false,
+      "negative_excluded_tail": false
+    },
+    {
+      "value": 0.8,
+      "positive_tail": true,
+      "negative_excluded_tail": false
+    },
+    {
+      "value": 0.7999999999995,
+      "positive_tail": true,
+      "negative_excluded_tail": false
+    },
+    {
+      "value": 0.7999999999980001,
+      "positive_tail": false,
+      "negative_excluded_tail": false
+    },
+    {
+      "value": 0.8000000000005001,
+      "positive_tail": true,
+      "negative_excluded_tail": false
+    },
+    {
+      "value": 1.2,
+      "positive_tail": true,
+      "negative_excluded_tail": false
+    },
+    {
+      "value": -0.8,
+      "positive_tail": false,
+      "negative_excluded_tail": true
+    },
+    {
+      "value": -0.7999999999995,
+      "positive_tail": false,
+      "negative_excluded_tail": true
+    },
+    {
+      "value": -0.7999999999980001,
+      "positive_tail": false,
+      "negative_excluded_tail": false
+    },
+    {
+      "value": -1.2,
+      "positive_tail": false,
+      "negative_excluded_tail": true
+    }
+  ]
+}

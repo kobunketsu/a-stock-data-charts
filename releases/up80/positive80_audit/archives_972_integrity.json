@@ -1,0 +1,65 @@
+[
+  {
+    "archive": "01_网页程序_972股新版.zip",
+    "sha256": "28ad119d39d8479ee47b93a526c2b391a346389321e20d56bd802807366c18a1",
+    "members": 13,
+    "uncompressed_bytes": 3336004,
+    "crc_all_pass": true
+  },
+  {
+    "archive": "02_分析代码与统计_972股新版.zip",
+    "sha256": "8918427c609ca8151f6a0e53fa47c7e489b8fc4caeccabc938560bb70807e48c",
+    "members": 31,
+    "uncompressed_bytes": 13847140,
+    "crc_all_pass": true
+  },
+  {
+    "archive": "03_972股计算输入_part01of04.zip",
+    "sha256": "ca745c0254fd5a4a2392429bab31549f16660f5b0d15300c9942e2739c3a6835",
+    "members": 103,
+    "uncompressed_bytes": 58266455,
+    "crc_all_pass": true
+  },
+  {
+    "archive": "03_972股计算输入_part02of04.zip",
+    "sha256": "26c200ee91c12988be2cd8d5cdfafa4c1344867ccd12cc514e7777999bfd96d7",
+    "members": 240,
+    "uncompressed_bytes": 60252865,
+    "crc_all_pass": true
+  },
+  {
+    "archive": "03_972股计算输入_part03of04.zip",
+    "sha256": "4c847caffe99b3b5b03d998034e53fec15fc63fcd7c7c0b0ba278ff40eee4e24",
+    "members": 287,
+    "uncompressed_bytes": 67495960,
+    "crc_all_pass": true
+  },
+  {
+    "archive": "03_972股计算输入_part04of04.zip",
+    "sha256": "bfe24d845a3b7f2efb42b7014be4a5194d40a890a310933868cb9d498d1809e6",
+    "members": 347,
+    "uncompressed_bytes": 53983109,
+    "crc_all_pass": true
+  },
+  {
+    "archive": "04_972股原始抓取证据_part01of03.zip",
+    "sha256": "b777efe30c2213e3e2c30bc4d25d00b76ae737ca1b5a3ca6bdf68d27edae961c",
+    "members": 132,
+    "uncompressed_bytes": 112285575,
+    "crc_all_pass": true
+  },
+  {
+    "archive": "04_972股原始抓取证据_part02of03.zip",
+    "sha256": "ed185948500f07ccadc4faec03e850c2f80f2b320d5cfeb945de73b4d47fa42f",
+    "members": 483,
+    "uncompressed_bytes": 89345599,
+    "crc_all_pass": true
+  },
+  {
+    "archive": "04_972股原始抓取证据_part03of03.zip",
+    "sha256": "d0afb72413c255c71cb8b848aac875690cfeeeadb635ea2c56769d0eb7cae354",
+    "members": 1689,
+    "uncompressed_bytes": 14470094,
+    "crc_all_pass": true
+  }
+]

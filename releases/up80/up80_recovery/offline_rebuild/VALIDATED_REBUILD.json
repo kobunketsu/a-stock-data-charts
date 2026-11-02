@@ -1,0 +1,47 @@
+{
+  "status": "PASS_FULL_OFFLINE_REBUILD",
+  "validated_utc": "2026-11-02T08:55:16.251160+00:00",
+  "execution": {
+    "exit_code": 0,
+    "elapsed_seconds": 530.5598058700562,
+    "started_unix": 1793609108.8575304,
+    "ended_unix": 1793609639.4173362,
+    "peak_allocated_work_bytes_sampled": 4952297472,
+    "disk_sampling_interval_seconds": 10,
+    "final_allocated_work_bytes": 4952297472,
+    "python": "3.12.14",
+    "dependencies": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3"
+    },
+    "measurement_note": "Observed peak work-directory allocation sampled every10s, not a guaranteed instantaneous global filesystem peak; /usr/bin/time unavailable"
+  },
+  "comparison": {
+    "matrix_json_files": 15,
+    "all_matrix_bytes_equal": true,
+    "csv_files": 15,
+    "all_csv_bytes_equal": true,
+    "arrays": 15,
+    "all_arrays_equal": true,
+    "query": {
+      "single_stock": {
+        "stocks": 5554,
+        "gzip_bytes_equal": 5554
+      },
+      "lookback_patch": {
+        "stocks": 5554,
+        "gzip_bytes_equal": 5554
+      }
+    },
+    "difference_counts": {},
+    "metadata_ignored": false
+  },
+  "boundary": "1494 research rebuilt from frozen holder/price inputs;5554 query migrated from frozen published base+five-lookback data, not reconstructed from all original vendor responses",
+  "platform_limit": "Mac Python3.13/ARM untested",
+  "evidence_relative_to_package_root": [
+    "up80_offline_test/OFFLINE_COMPARISON.json",
+    "up80_offline_test/STAGED_INPUT_SHA_QA.json",
+    "up80_offline_test/FEATURE_CSV_COMPARISON.json",
+    "up80_offline_measurements.json"
+  ]
+}

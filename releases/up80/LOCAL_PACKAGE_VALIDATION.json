@@ -1,0 +1,133 @@
+{
+  "status": "PASS",
+  "data_files": 11331,
+  "data_bytes": 362291892,
+  "metadata_files": 6,
+  "data_archives": [
+    {
+      "file": "UP80_CODE_RESULTS_DATA_01.zip",
+      "bytes": 45432570,
+      "sha256": "054b5b786ebc3d68015087b69b13543ae4ef041cabee7909cea9a86125b1894c",
+      "entries": 3784,
+      "crc": "PASS",
+      "file_sha256": "PASS"
+    },
+    {
+      "file": "UP80_CODE_RESULTS_DATA_02.zip",
+      "bytes": 45436118,
+      "sha256": "44c3f1f4795240e868abbc4f56d2f3a9adcc20907db10611800ea4f03fe1b9e2",
+      "entries": 3708,
+      "crc": "PASS",
+      "file_sha256": "PASS"
+    },
+    {
+      "file": "UP80_CODE_RESULTS_DATA_03.zip",
+      "bytes": 45528197,
+      "sha256": "d2202f97d9f63c436f97367108a71b9699c31ce16f1bd585eae92cc253eb39db",
+      "entries": 3267,
+      "crc": "PASS",
+      "file_sha256": "PASS"
+    },
+    {
+      "file": "UP80_CODE_RESULTS_DATA_04.zip",
+      "bytes": 45693309,
+      "sha256": "d98a9b176f01a061cf8b07ac453bf0eec3fba582b51e46a23d3fc7f676ff9335",
+      "entries": 554,
+      "crc": "PASS",
+      "file_sha256": "PASS"
+    },
+    {
+      "file": "UP80_CODE_RESULTS_DATA_05.zip",
+      "bytes": 4039744,
+      "sha256": "7f22d8c583328c414122ce700a68b65296e17dfae28f8630819922a2c41b6469",
+      "entries": 18,
+      "crc": "PASS",
+      "file_sha256": "PASS"
+    }
+  ],
+  "unchanged_files_source_sha_verified": 11320,
+  "redacted_files": 11,
+  "redacted_original_source_sha": "Recorded and matched metadata only; pre-redaction originals are not present in this input set.",
+  "sensitive_pattern_candidates": [
+    {
+      "file": "shareholder_query_up80/migrate_up80.py",
+      "category": "private_machine_path"
+    }
+  ],
+  "private_path_candidates": [],
+  "largest_files": [
+    {
+      "file": "up80_recovery/research/holder_source_overlap.csv",
+      "bytes": 29241207
+    },
+    {
+      "file": "up80_recovery/research/lookbacks/lookback_10/holder_matrix_9rows/event_membership.csv",
+      "bytes": 7127953
+    },
+    {
+      "file": "up80_recovery/research/lookbacks/lookback_20/holder_matrix_9rows/event_membership.csv",
+      "bytes": 7126542
+    },
+    {
+      "file": "up80_recovery/research/lookbacks/lookback_30/holder_matrix_9rows/event_membership.csv",
+      "bytes": 7115294
+    },
+    {
+      "file": "up80_recovery/research/lookbacks/lookback_60/holder_matrix_9rows/event_membership.csv",
+      "bytes": 7068052
+    },
+    {
+      "file": "up80_recovery/research/lookbacks/lookback_120/holder_matrix_9rows/event_membership.csv",
+      "bytes": 6943714
+    },
+    {
+      "file": "up80_recovery/research/lookbacks/lookback_30/holder_matrix_9rows/daily.csv",
+      "bytes": 5876422
+    },
+    {
+      "file": "up80_recovery/research/lookbacks/lookback_120/holder_matrix_9rows/daily.csv",
+      "bytes": 5847150
+    },
+    {
+      "file": "up80_recovery/research/lookbacks/lookback_20/holder_matrix_9rows/daily.csv",
+      "bytes": 5831694
+    },
+    {
+      "file": "up80_recovery/research/lookbacks/lookback_60/holder_matrix_9rows/daily.csv",
+      "bytes": 5826671
+    }
+  ],
+  "remaining_free_bytes": 10808479744,
+  "scope": "Code/results package verification only. Final packaged offline acceptance sidecar pending.",
+  "reviewed_false_positives": [
+    {
+      "file": "shareholder_query_up80/migrate_up80.py",
+      "category": "private_machine_path",
+      "line": 76,
+      "reason": "O/root/ is a Path expression using a variable named root, not an absolute path string."
+    }
+  ],
+  "python_ast_syntax_files": 40,
+  "ui_self_checks_passed": 10,
+  "published_query_gzip_crc_and_text_scan": {
+    "files": 11108,
+    "matches": [],
+    "status": "PASS"
+  },
+  "packaged_acceptance_sidecar_received": true,
+  "repository_preparation": "Complete editable source/web/official results and original input ZIPs prepared; final packaged acceptance included. Official result bytes unchanged.",
+  "native_rebuild": {
+    "status": "STOPPED_BY_N10_OLD8_REGRESSION",
+    "exit_code": 1,
+    "maximum_absolute_published_csv_difference": 0.00011475786091347251,
+    "positive_fraction_affected_all_and_recent": true,
+    "report": "validation/MAC_REBUILD_COMPARISON.json",
+    "remaining_lookbacks_and_query_migration_executed": false
+  },
+  "restorer_validation": {
+    "full_17329_input_verification": "PASS",
+    "archive_dry_check": "PASS",
+    "safety_tests": 4
+  },
+  "cloud_packaged_rebuild": "PASS: actual18ZIPs, all metadata retained; see validation/packaged_rebuild/COMPLETE_VALIDATION.json"
+}

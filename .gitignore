@@ -16,3 +16,6 @@ __pycache__/
 /shareholder_system_972/threshold_curves/
 /shareholder_system_972/rebuild_result.json
 /shareholder_system_972/COMPLETE.json
+
+# New release rebuilds use isolated work directories
+/work/

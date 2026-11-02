@@ -1,0 +1,14 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const src=fs.readFileSync('dist/app.js','utf8'),html=fs.readFileSync('dist/index.html','utf8');
+assert(!/preventDefault|addEventListener\(['"](?:keydown|wheel|touch)/.test(src));
+assert(!/user-scalable=no|maximum-scale/.test(html));
+const elements={};for(const id of ['main','zoom-in','zoom-out','zoom-reset','zoom-percent'])elements[id]={style:{}};
+vm.runInNewContext(src.slice(src.indexOf('const PAGE_ZOOM_STEPS')),{$:id=>elements[id]});
+assert.equal(elements.main.style.zoom,'1');
+for(let i=0;i<20;i++)elements['zoom-in'].onclick();
+assert.equal(elements.main.style.zoom,'2');assert(elements['zoom-in'].disabled);
+elements['zoom-reset'].onclick();assert.equal(elements.main.style.zoom,'1');
+for(let i=0;i<20;i++)elements['zoom-out'].onclick();
+assert.equal(elements.main.style.zoom,'0.3');assert(elements['zoom-out'].disabled);
+elements['zoom-reset'].onclick();assert.equal(elements['zoom-percent'].textContent,'100%');
+console.log('PASS button-only 30–200% zoom, bounded steps, reset, no native shortcut interception, no viewport zoom lock');

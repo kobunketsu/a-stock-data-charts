@@ -1,0 +1,181 @@
+{
+  "status": "PASS",
+  "data_files": 17329,
+  "data_bytes": 1624423342,
+  "metadata_files": 6,
+  "data_archives": [
+    {
+      "file": "UP80_INPUT_DATA_01.zip",
+      "bytes": 46022934,
+      "sha256": "32181ea43db896c75be6f5cf0ba6cfb56cea4b711110a1f0f6add6157da12a8b",
+      "entries": 355,
+      "crc": "PASS",
+      "file_sha256": "PASS"
+    },
+    {
+      "file": "UP80_INPUT_DATA_02.zip",
+      "bytes": 46037855,
+      "sha256": "b906f308faccc0055daa155f2b484a1553f65e34895130ed448464ebac4410cf",
+      "entries": 390,
+      "crc": "PASS",
+      "file_sha256": "PASS"
+    },
+    {
+      "file": "UP80_INPUT_DATA_03.zip",
+      "bytes": 46007746,
+      "sha256": "c00b8de67c31287632265bf63ed11dcdf16477d8b29265dbfaf420d8d06a7c80",
+      "entries": 621,
+      "crc": "PASS",
+      "file_sha256": "PASS"
+    },
+    {
+      "file": "UP80_INPUT_DATA_04.zip",
+      "bytes": 40346911,
+      "sha256": "176ce41f74153e2ce81ec41de4d06eab49eaca4c5adb550797ff806978db550b",
+      "entries": 3130,
+      "crc": "PASS",
+      "file_sha256": "PASS"
+    },
+    {
+      "file": "UP80_INPUT_DATA_05.zip",
+      "bytes": 45861972,
+      "sha256": "38409ed91838cada0ec1b34d1dbf42d2379fee997aa28946592572c5f46fcfb7",
+      "entries": 279,
+      "crc": "PASS",
+      "file_sha256": "PASS"
+    },
+    {
+      "file": "UP80_INPUT_DATA_06.zip",
+      "bytes": 46057205,
+      "sha256": "20ade731b84c6934965eec0adefc604969cbf70fd9c945e63e08513e3c2c92f8",
+      "entries": 322,
+      "crc": "PASS",
+      "file_sha256": "PASS"
+    },
+    {
+      "file": "UP80_INPUT_DATA_07.zip",
+      "bytes": 45492830,
+      "sha256": "95134ba5b52be8014d08724d15ea2fec73797bb3a859688f437093236c126742",
+      "entries": 3462,
+      "crc": "PASS",
+      "file_sha256": "PASS"
+    },
+    {
+      "file": "UP80_INPUT_DATA_08.zip",
+      "bytes": 45389230,
+      "sha256": "853a3b9b8a9850758268d859c4d68ffd195c801cf6dbf2a45009a59340139179",
+      "entries": 3894,
+      "crc": "PASS",
+      "file_sha256": "PASS"
+    },
+    {
+      "file": "UP80_INPUT_DATA_09.zip",
+      "bytes": 45518800,
+      "sha256": "484ac6785716d4a2b01b77a25d0e43064319bcd8c7b0844f3eb8d61c2b6bf24f",
+      "entries": 3279,
+      "crc": "PASS",
+      "file_sha256": "PASS"
+    },
+    {
+      "file": "UP80_INPUT_DATA_10.zip",
+      "bytes": 45877291,
+      "sha256": "4f6a8c325e2a82a548f8febdb4a169dbcee9518601b48cae536d07dab2a499c4",
+      "entries": 1191,
+      "crc": "PASS",
+      "file_sha256": "PASS"
+    },
+    {
+      "file": "UP80_INPUT_DATA_11.zip",
+      "bytes": 21729851,
+      "sha256": "8271ea5d0b1640dad013f01b644eb0dd838f77691eff80bc6ee4d4a8458d2350",
+      "entries": 406,
+      "crc": "PASS",
+      "file_sha256": "PASS"
+    }
+  ],
+  "unchanged_files_source_sha_verified": 17321,
+  "redacted_files": 8,
+  "redacted_original_source_sha": "Recorded and matched metadata only; pre-redaction originals are not present in this input set.",
+  "sensitive_pattern_candidates": [],
+  "private_path_candidates": [],
+  "largest_files": [
+    {
+      "file": "up80_recovery/research/holders/events_raw.csv",
+      "bytes": 82401836
+    },
+    {
+      "file": "up80_recovery/research/holder_capture/f10_all_all_raw.json",
+      "bytes": 69891984
+    },
+    {
+      "file": "up80_recovery/research/holder_capture/det_added_all_raw.json",
+      "bytes": 45514252
+    },
+    {
+      "file": "up80_recovery/archive972/shareholder_system_972/source_provenance/holder_captures/added529_holders/all_raw.json",
+      "bytes": 45221929
+    },
+    {
+      "file": "up80_recovery/archive972/shareholder_system_972/source_provenance/holder_captures/original453_holders/all_raw.json",
+      "bytes": 44059767
+    },
+    {
+      "file": "up80_recovery/archive972/shareholder_system_972/holders/events_raw.csv",
+      "bytes": 30266498
+    },
+    {
+      "file": "up80_recovery/research/holder_capture/det_old_early_all_raw.json",
+      "bytes": 19785380
+    },
+    {
+      "file": "up80_recovery/research/holder_capture/det_added_01_all.json",
+      "bytes": 11702775
+    },
+    {
+      "file": "up80_recovery/research/holder_capture/det_added_00_all.json",
+      "bytes": 11677615
+    },
+    {
+      "file": "up80_recovery/research/holder_capture/det_added_02_all.json",
+      "bytes": 10175340
+    }
+  ],
+  "remaining_free_bytes": 14082232320,
+  "scope": "Input verification only. Final source, web, results and offline rebuild pending.",
+  "library_identity_xattr_matches": 12,
+  "research_price_files": 1494,
+  "research_price_rows": 3910038,
+  "bundled_verifier": "17329 files PASS",
+  "legacy_site_baseline": "11129 content files + MANIFEST.json = 11130, exact bytes/SHA all PASS",
+  "personal_filename_candidates": [],
+  "checkout_modified": false,
+  "pushed": false,
+  "query_snapshot_files": {
+    "single_stock": {
+      "files": 5555,
+      "extensions": {
+        ".json": 1,
+        ".gz": 5554
+      },
+      "sample": [
+        "index.json",
+        "000061.json.gz",
+        "002601.json.gz",
+        "000880.json.gz"
+      ]
+    },
+    "single_stock_patch": {
+      "files": 5555,
+      "extensions": {
+        ".json": 1,
+        ".gz": 5554
+      },
+      "sample": [
+        "index.json",
+        "000061.json.gz",
+        "002601.json.gz",
+        "000880.json.gz"
+      ]
+    }
+  }
+}

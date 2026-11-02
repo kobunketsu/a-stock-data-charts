@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "old60_annual_and_era_rows": 23040,
+  "max_difference": {
+    "mean": 0.0,
+    "median": 0.0,
+    "equal_stock_mean": 3.3306690738754696e-16
+  },
+  "new_2026_empty_year_and_positive_tail_rows_not_in_old_csv_are_not_claimed_old_preserved": true
+}

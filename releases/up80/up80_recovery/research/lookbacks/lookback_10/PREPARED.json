@@ -1,0 +1,10 @@
+{
+  "lookback_market_days": 10,
+  "panel_records": 148095,
+  "cohort_events": 103518,
+  "cohort_stocks": 1401,
+  "recent_events": 82787,
+  "event_ids_sha256": "88352fdb4f93d0af5eb8b157ac9440e95d2ae2385a14733b983772e43feb943a",
+  "admission": "zero-based prior_stock_index>=N; actual two market-date close endpoints; both complete251 paths; finite two lookbacks; nonzero holder change",
+  "restored_not_yet_legacy_regression_approved": true
+}

@@ -1,0 +1,422 @@
+{
+  "status": "NATIVE_REBUILD_BLOCKED_BY_OLD8_REGRESSION",
+  "environment": {
+    "python": "3.13.1",
+    "architecture": "arm64"
+  },
+  "execution": {
+    "running": false,
+    "exit_code": 1,
+    "elapsed_seconds": 523.49,
+    "peak_work_bytes_sampled": 3818549248,
+    "sample_interval_seconds": 10,
+    "python": "3.13.1",
+    "architecture": "arm64",
+    "samples": [
+      {
+        "seconds": 0.0,
+        "work_bytes": 0,
+        "free_bytes": 10827915264
+      },
+      {
+        "seconds": 10.0,
+        "work_bytes": 944230400,
+        "free_bytes": 9890615296
+      },
+      {
+        "seconds": 20.1,
+        "work_bytes": 1056677888,
+        "free_bytes": 9776611328
+      },
+      {
+        "seconds": 30.1,
+        "work_bytes": 1056698368,
+        "free_bytes": 9768697856
+      },
+      {
+        "seconds": 40.1,
+        "work_bytes": 1056698368,
+        "free_bytes": 9768357888
+      },
+      {
+        "seconds": 50.2,
+        "work_bytes": 1056698368,
+        "free_bytes": 9767612416
+      },
+      {
+        "seconds": 60.2,
+        "work_bytes": 1056698368,
+        "free_bytes": 9760276480
+      },
+      {
+        "seconds": 70.2,
+        "work_bytes": 1056698368,
+        "free_bytes": 9753427968
+      },
+      {
+        "seconds": 80.3,
+        "work_bytes": 1056698368,
+        "free_bytes": 8675409920
+      },
+      {
+        "seconds": 90.3,
+        "work_bytes": 1056698368,
+        "free_bytes": 8545587200
+      },
+      {
+        "seconds": 100.3,
+        "work_bytes": 1089744896,
+        "free_bytes": 7773999104
+      },
+      {
+        "seconds": 110.4,
+        "work_bytes": 1090437120,
+        "free_bytes": 7761604608
+      },
+      {
+        "seconds": 120.4,
+        "work_bytes": 1090437120,
+        "free_bytes": 7761080320
+      },
+      {
+        "seconds": 130.4,
+        "work_bytes": 1090437120,
+        "free_bytes": 7764631552
+      },
+      {
+        "seconds": 140.5,
+        "work_bytes": 1159491584,
+        "free_bytes": 6745776128
+      },
+      {
+        "seconds": 150.5,
+        "work_bytes": 1254182912,
+        "free_bytes": 6523772928
+      },
+      {
+        "seconds": 160.6,
+        "work_bytes": 1324920832,
+        "free_bytes": 6453829632
+      },
+      {
+        "seconds": 170.6,
+        "work_bytes": 1414393856,
+        "free_bytes": 6360621056
+      },
+      {
+        "seconds": 180.6,
+        "work_bytes": 1504587776,
+        "free_bytes": 6388105216
+      },
+      {
+        "seconds": 190.7,
+        "work_bytes": 1504587776,
+        "free_bytes": 6367277056
+      },
+      {
+        "seconds": 200.7,
+        "work_bytes": 1504587776,
+        "free_bytes": 6261952512
+      },
+      {
+        "seconds": 210.8,
+        "work_bytes": 1521176576,
+        "free_bytes": 6238310400
+      },
+      {
+        "seconds": 220.9,
+        "work_bytes": 1582080000,
+        "free_bytes": 6182154240
+      },
+      {
+        "seconds": 230.9,
+        "work_bytes": 1622536192,
+        "free_bytes": 6128353280
+      },
+      {
+        "seconds": 241.0,
+        "work_bytes": 1682169856,
+        "free_bytes": 6182928384
+      },
+      {
+        "seconds": 251.0,
+        "work_bytes": 1725739008,
+        "free_bytes": 5601640448
+      },
+      {
+        "seconds": 261.8,
+        "work_bytes": 1850654720,
+        "free_bytes": 5328490496
+      },
+      {
+        "seconds": 272.0,
+        "work_bytes": 1957732352,
+        "free_bytes": 5293600768
+      },
+      {
+        "seconds": 282.1,
+        "work_bytes": 1981161472,
+        "free_bytes": 4060905472
+      },
+      {
+        "seconds": 292.2,
+        "work_bytes": 2047115264,
+        "free_bytes": 3971133440
+      },
+      {
+        "seconds": 302.2,
+        "work_bytes": 2162417664,
+        "free_bytes": 3854663680
+      },
+      {
+        "seconds": 312.3,
+        "work_bytes": 2263609344,
+        "free_bytes": 3626496000
+      },
+      {
+        "seconds": 322.3,
+        "work_bytes": 2375827456,
+        "free_bytes": 3494838272
+      },
+      {
+        "seconds": 332.3,
+        "work_bytes": 2479104000,
+        "free_bytes": 4748783616
+      },
+      {
+        "seconds": 342.5,
+        "work_bytes": 2569175040,
+        "free_bytes": 4616175616
+      },
+      {
+        "seconds": 352.5,
+        "work_bytes": 2654162944,
+        "free_bytes": 4399427584
+      },
+      {
+        "seconds": 362.6,
+        "work_bytes": 2766901248,
+        "free_bytes": 4285652992
+      },
+      {
+        "seconds": 372.6,
+        "work_bytes": 2879062016,
+        "free_bytes": 4295262208
+      },
+      {
+        "seconds": 382.7,
+        "work_bytes": 2948452352,
+        "free_bytes": 4083392512
+      },
+      {
+        "seconds": 392.8,
+        "work_bytes": 3047489536,
+        "free_bytes": 3984596992
+      },
+      {
+        "seconds": 402.9,
+        "work_bytes": 3135008768,
+        "free_bytes": 3970932736
+      },
+      {
+        "seconds": 413.0,
+        "work_bytes": 3247263744,
+        "free_bytes": 3827314688
+      },
+      {
+        "seconds": 423.0,
+        "work_bytes": 3330826240,
+        "free_bytes": 3552755712
+      },
+      {
+        "seconds": 433.1,
+        "work_bytes": 3417280512,
+        "free_bytes": 3556712448
+      },
+      {
+        "seconds": 443.1,
+        "work_bytes": 3518181376,
+        "free_bytes": 3517816832
+      },
+      {
+        "seconds": 453.1,
+        "work_bytes": 3628244992,
+        "free_bytes": 4431839232
+      },
+      {
+        "seconds": 463.2,
+        "work_bytes": 3747463168,
+        "free_bytes": 4313661440
+      },
+      {
+        "seconds": 473.3,
+        "work_bytes": 3782111232,
+        "free_bytes": 4361445376
+      },
+      {
+        "seconds": 483.4,
+        "work_bytes": 3801219072,
+        "free_bytes": 4358299648
+      },
+      {
+        "seconds": 493.4,
+        "work_bytes": 3818549248,
+        "free_bytes": 4176826368
+      },
+      {
+        "seconds": 503.5,
+        "work_bytes": 3818549248,
+        "free_bytes": 4221149184
+      },
+      {
+        "seconds": 513.5,
+        "work_bytes": 3818549248,
+        "free_bytes": 4220076032
+      }
+    ],
+    "scope": "Actual packaged source executed without algorithm changes; independent value comparison still required."
+  },
+  "matrix_comparisons": [
+    {
+      "kind": "all",
+      "exact_bytes_equal": false,
+      "different_scalar_values": 1,
+      "maximum_absolute_numeric_difference": 9.209999999998386e-05,
+      "difference_groups": {
+        "positive_fraction": 1
+      },
+      "examples": [
+        {
+          "path": "all.curves[39].positive_fraction[36]",
+          "official": 0.479182,
+          "native": 0.4792741,
+          "absolute_difference": 9.209999999998386e-05
+        }
+      ]
+    },
+    {
+      "kind": "recent",
+      "exact_bytes_equal": false,
+      "different_scalar_values": 1,
+      "maximum_absolute_numeric_difference": 0.00011470000000002312,
+      "difference_groups": {
+        "positive_fraction": 1
+      },
+      "examples": [
+        {
+          "path": "recent.curves[39].positive_fraction[36]",
+          "official": 0.4878357,
+          "native": 0.4879504,
+          "absolute_difference": 0.00011470000000002312
+        }
+      ]
+    },
+    {
+      "kind": "stability",
+      "exact_bytes_equal": true,
+      "different_scalar_values": 0,
+      "maximum_absolute_numeric_difference": 0,
+      "difference_groups": {},
+      "examples": []
+    }
+  ],
+  "scope": "All input hashes and source bytes matched; failed in first N10 aggregation. N20/N30/N60/N120 aggregation and query migration not executed in this native run. Official package results unchanged. Cloud Python3.12/x86_64 full packaged rebuild passed independently.",
+  "policy": "No tolerance widened, algorithm changed or official output overwritten. Native runtime is not claimed to reproduce release.",
+  "affected_cell": {
+    "anchor": "public_nextopen",
+    "row_id": "rise_0",
+    "column_id": "down_0",
+    "count_events": 10856,
+    "count_stocks": 1203
+  },
+  "native_near_zero_positive_observations": {
+    "horizon": 36,
+    "count": 1,
+    "records": [
+      {
+        "event_id": 135335,
+        "code": "600425",
+        "notice": "2024-03-26",
+        "entry_date": "2024-03-27",
+        "entry_open": 23.370948203358356,
+        "stat_date": "2024-02-29"
+      }
+    ],
+    "returns": [
+      2.220446049250313e-16
+    ],
+    "interpretation": "Near-zero positive native returns are consistent with a one-observation positivity-boundary difference. Cloud per-event arrays are absent; individual causality is not independently proved."
+  },
+  "N10_published_csv_comparison": [
+    {
+      "file": "holder_matrix_9rows/cell_counts.csv",
+      "bytes_equal": true
+    },
+    {
+      "file": "holder_matrix_9rows/daily.csv",
+      "bytes_equal": false,
+      "numeric_differences": [
+        {
+          "column": "positive_fraction",
+          "different_values": 1,
+          "maximum_absolute_difference": 9.211495946942483e-05
+        }
+      ]
+    },
+    {
+      "file": "holder_matrix_9rows/event_membership.csv",
+      "bytes_equal": true
+    },
+    {
+      "file": "holder_matrix_9rows/price_special_counts.csv",
+      "bytes_equal": true
+    },
+    {
+      "file": "holder_matrix_9rows/selected_horizons.csv",
+      "bytes_equal": true
+    },
+    {
+      "file": "holder_matrix_9rows_2020plus/cell_counts.csv",
+      "bytes_equal": true
+    },
+    {
+      "file": "holder_matrix_9rows_2020plus/daily.csv",
+      "bytes_equal": false,
+      "numeric_differences": [
+        {
+          "column": "positive_fraction",
+          "different_values": 1,
+          "maximum_absolute_difference": 0.00011475786091347251
+        }
+      ]
+    },
+    {
+      "file": "holder_matrix_9rows_2020plus/event_membership.csv",
+      "bytes_equal": true
+    },
+    {
+      "file": "holder_matrix_9rows_2020plus/price_special_counts.csv",
+      "bytes_equal": true
+    },
+    {
+      "file": "holder_matrix_9rows_2020plus/selected_horizons.csv",
+      "bytes_equal": true
+    },
+    {
+      "file": "stability/nonoverlapping_membership.csv",
+      "bytes_equal": true
+    },
+    {
+      "file": "stability/period_coverage.csv",
+      "bytes_equal": true
+    },
+    {
+      "file": "stability/stability_statistics.csv",
+      "bytes_equal": true
+    },
+    {
+      "file": "stability/yearly_coverage.csv",
+      "bytes_equal": true
+    }
+  ]
+}

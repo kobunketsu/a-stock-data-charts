@@ -1,0 +1,10 @@
+{
+  "running": false,
+  "exit_code": 1,
+  "elapsed_seconds": 523.49,
+  "peak_work_bytes_sampled": 3818549248,
+  "sample_interval_seconds": 10,
+  "python": "3.13.1",
+  "architecture": "arm64",
+  "scope": "Actual packaged source executed without algorithm changes; independent value comparison still required."
+}

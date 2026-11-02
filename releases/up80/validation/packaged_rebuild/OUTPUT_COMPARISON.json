@@ -1,0 +1,347 @@
+{
+  "status": "PASS",
+  "json_files": [
+    {
+      "lookback": 10,
+      "kind": "all",
+      "exact_bytes_equal": true,
+      "official_sha256": "3c5a58afbf543daea0aa9e892bad4ee3a8287b2df3d62261848001ce6dd96ac0",
+      "rebuilt_sha256": "3c5a58afbf543daea0aa9e892bad4ee3a8287b2df3d62261848001ce6dd96ac0",
+      "all_values_equal": true
+    },
+    {
+      "lookback": 10,
+      "kind": "recent",
+      "exact_bytes_equal": true,
+      "official_sha256": "76df7b0f9793da061fe56df59c25509247e991c332397ab7dd9dcd1b9ae116a2",
+      "rebuilt_sha256": "76df7b0f9793da061fe56df59c25509247e991c332397ab7dd9dcd1b9ae116a2",
+      "all_values_equal": true
+    },
+    {
+      "lookback": 10,
+      "kind": "stability",
+      "exact_bytes_equal": true,
+      "official_sha256": "4229ef663c5e69c32a25aebb7001f4b8b0cf7a87a4cac9077ac81c782eab70f0",
+      "rebuilt_sha256": "4229ef663c5e69c32a25aebb7001f4b8b0cf7a87a4cac9077ac81c782eab70f0",
+      "all_values_equal": true
+    },
+    {
+      "lookback": 20,
+      "kind": "all",
+      "exact_bytes_equal": true,
+      "official_sha256": "6a1b516c7eede4ed9b284c355ea896c7fac103e0696cdfea13b7df4e79f2b468",
+      "rebuilt_sha256": "6a1b516c7eede4ed9b284c355ea896c7fac103e0696cdfea13b7df4e79f2b468",
+      "all_values_equal": true
+    },
+    {
+      "lookback": 20,
+      "kind": "recent",
+      "exact_bytes_equal": true,
+      "official_sha256": "4e9717c0e7ca65a86aa0f141e94ecf169061d2d5e8bcd8630d96b71887fec015",
+      "rebuilt_sha256": "4e9717c0e7ca65a86aa0f141e94ecf169061d2d5e8bcd8630d96b71887fec015",
+      "all_values_equal": true
+    },
+    {
+      "lookback": 20,
+      "kind": "stability",
+      "exact_bytes_equal": true,
+      "official_sha256": "884493ede022cddd8d4fdcbb88dc8a8643d834113cab04ec003493ef5cf5f12a",
+      "rebuilt_sha256": "884493ede022cddd8d4fdcbb88dc8a8643d834113cab04ec003493ef5cf5f12a",
+      "all_values_equal": true
+    },
+    {
+      "lookback": 30,
+      "kind": "all",
+      "exact_bytes_equal": true,
+      "official_sha256": "2d8a2685117b80a2b00dd0a3608c3270a6f67074af9e64fe80437ee624a4f06a",
+      "rebuilt_sha256": "2d8a2685117b80a2b00dd0a3608c3270a6f67074af9e64fe80437ee624a4f06a",
+      "all_values_equal": true
+    },
+    {
+      "lookback": 30,
+      "kind": "recent",
+      "exact_bytes_equal": true,
+      "official_sha256": "57d839850acabb521a6408fe978bfd4f90758c28490bd26ab893cde4a5a7b04c",
+      "rebuilt_sha256": "57d839850acabb521a6408fe978bfd4f90758c28490bd26ab893cde4a5a7b04c",
+      "all_values_equal": true
+    },
+    {
+      "lookback": 30,
+      "kind": "stability",
+      "exact_bytes_equal": true,
+      "official_sha256": "4d6b8674938a81c4a49d40ec5f16c7352246a776f7231656b693db586d6ae45a",
+      "rebuilt_sha256": "4d6b8674938a81c4a49d40ec5f16c7352246a776f7231656b693db586d6ae45a",
+      "all_values_equal": true
+    },
+    {
+      "lookback": 60,
+      "kind": "all",
+      "exact_bytes_equal": true,
+      "official_sha256": "e04041e0e5e04d488d5f0634e18c1ba11ab8d2464c0907b05ccd93b618cde46e",
+      "rebuilt_sha256": "e04041e0e5e04d488d5f0634e18c1ba11ab8d2464c0907b05ccd93b618cde46e",
+      "all_values_equal": true
+    },
+    {
+      "lookback": 60,
+      "kind": "recent",
+      "exact_bytes_equal": true,
+      "official_sha256": "f36a3bc867be58e4f3e056263740e1183b7c39061ce342d1ad408dc728f16118",
+      "rebuilt_sha256": "f36a3bc867be58e4f3e056263740e1183b7c39061ce342d1ad408dc728f16118",
+      "all_values_equal": true
+    },
+    {
+      "lookback": 60,
+      "kind": "stability",
+      "exact_bytes_equal": true,
+      "official_sha256": "379f04a2b2e0b1c4056f8476034d6003242d9b1411b489373598af97a57427a9",
+      "rebuilt_sha256": "379f04a2b2e0b1c4056f8476034d6003242d9b1411b489373598af97a57427a9",
+      "all_values_equal": true
+    },
+    {
+      "lookback": 120,
+      "kind": "all",
+      "exact_bytes_equal": true,
+      "official_sha256": "d2644f322a1e64d7091d4f576727baeacc186c1f9ccd81527b4addb43402707d",
+      "rebuilt_sha256": "d2644f322a1e64d7091d4f576727baeacc186c1f9ccd81527b4addb43402707d",
+      "all_values_equal": true
+    },
+    {
+      "lookback": 120,
+      "kind": "recent",
+      "exact_bytes_equal": true,
+      "official_sha256": "a513e08f7c29ba81ec0541bdde2ad7430c089c4729fdd16620da667ba56cb4f6",
+      "rebuilt_sha256": "a513e08f7c29ba81ec0541bdde2ad7430c089c4729fdd16620da667ba56cb4f6",
+      "all_values_equal": true
+    },
+    {
+      "lookback": 120,
+      "kind": "stability",
+      "exact_bytes_equal": true,
+      "official_sha256": "548e538d3adbdacd3864454f8c93c8fcddddf5bae4cebdec399af37941ac037b",
+      "rebuilt_sha256": "548e538d3adbdacd3864454f8c93c8fcddddf5bae4cebdec399af37941ac037b",
+      "all_values_equal": true
+    }
+  ],
+  "table_files": [
+    {
+      "lookback": 10,
+      "file": "model/event_panel.csv",
+      "bytes_equal": true
+    },
+    {
+      "lookback": 10,
+      "file": "threshold_curves/ranges_uniform60/lookback_feature_audit.csv",
+      "bytes_equal": true
+    },
+    {
+      "lookback": 10,
+      "file": "threshold_curves/ranges_uniform60/matched_all_years_event_membership.csv",
+      "bytes_equal": true
+    },
+    {
+      "lookback": 20,
+      "file": "model/event_panel.csv",
+      "bytes_equal": true
+    },
+    {
+      "lookback": 20,
+      "file": "threshold_curves/ranges_uniform60/lookback_feature_audit.csv",
+      "bytes_equal": true
+    },
+    {
+      "lookback": 20,
+      "file": "threshold_curves/ranges_uniform60/matched_all_years_event_membership.csv",
+      "bytes_equal": true
+    },
+    {
+      "lookback": 30,
+      "file": "model/event_panel.csv",
+      "bytes_equal": true
+    },
+    {
+      "lookback": 30,
+      "file": "threshold_curves/ranges_uniform60/lookback_feature_audit.csv",
+      "bytes_equal": true
+    },
+    {
+      "lookback": 30,
+      "file": "threshold_curves/ranges_uniform60/matched_all_years_event_membership.csv",
+      "bytes_equal": true
+    },
+    {
+      "lookback": 60,
+      "file": "model/event_panel.csv",
+      "bytes_equal": true
+    },
+    {
+      "lookback": 60,
+      "file": "threshold_curves/ranges_uniform60/lookback_feature_audit.csv",
+      "bytes_equal": true
+    },
+    {
+      "lookback": 60,
+      "file": "threshold_curves/ranges_uniform60/matched_all_years_event_membership.csv",
+      "bytes_equal": true
+    },
+    {
+      "lookback": 120,
+      "file": "model/event_panel.csv",
+      "bytes_equal": true
+    },
+    {
+      "lookback": 120,
+      "file": "threshold_curves/ranges_uniform60/lookback_feature_audit.csv",
+      "bytes_equal": true
+    },
+    {
+      "lookback": 120,
+      "file": "threshold_curves/ranges_uniform60/matched_all_years_event_membership.csv",
+      "bytes_equal": true
+    }
+  ],
+  "array_files": [
+    {
+      "lookback": 10,
+      "array": "event_id",
+      "exact_equal_nan": true,
+      "shape": [
+        148095
+      ]
+    },
+    {
+      "lookback": 10,
+      "array": "public_nextopen_returns",
+      "exact_equal_nan": true,
+      "shape": [
+        148095,
+        251
+      ]
+    },
+    {
+      "lookback": 10,
+      "array": "stat_returns",
+      "exact_equal_nan": true,
+      "shape": [
+        148095,
+        251
+      ]
+    },
+    {
+      "lookback": 20,
+      "array": "event_id",
+      "exact_equal_nan": true,
+      "shape": [
+        147902
+      ]
+    },
+    {
+      "lookback": 20,
+      "array": "public_nextopen_returns",
+      "exact_equal_nan": true,
+      "shape": [
+        147902,
+        251
+      ]
+    },
+    {
+      "lookback": 20,
+      "array": "stat_returns",
+      "exact_equal_nan": true,
+      "shape": [
+        147902,
+        251
+      ]
+    },
+    {
+      "lookback": 30,
+      "array": "event_id",
+      "exact_equal_nan": true,
+      "shape": [
+        147706
+      ]
+    },
+    {
+      "lookback": 30,
+      "array": "public_nextopen_returns",
+      "exact_equal_nan": true,
+      "shape": [
+        147706,
+        251
+      ]
+    },
+    {
+      "lookback": 30,
+      "array": "stat_returns",
+      "exact_equal_nan": true,
+      "shape": [
+        147706,
+        251
+      ]
+    },
+    {
+      "lookback": 60,
+      "array": "event_id",
+      "exact_equal_nan": true,
+      "shape": [
+        146989
+      ]
+    },
+    {
+      "lookback": 60,
+      "array": "public_nextopen_returns",
+      "exact_equal_nan": true,
+      "shape": [
+        146989,
+        251
+      ]
+    },
+    {
+      "lookback": 60,
+      "array": "stat_returns",
+      "exact_equal_nan": true,
+      "shape": [
+        146989,
+        251
+      ]
+    },
+    {
+      "lookback": 120,
+      "array": "event_id",
+      "exact_equal_nan": true,
+      "shape": [
+        145253
+      ]
+    },
+    {
+      "lookback": 120,
+      "array": "public_nextopen_returns",
+      "exact_equal_nan": true,
+      "shape": [
+        145253,
+        251
+      ]
+    },
+    {
+      "lookback": 120,
+      "array": "stat_returns",
+      "exact_equal_nan": true,
+      "shape": [
+        145253,
+        251
+      ]
+    }
+  ],
+  "query": {
+    "single_stock": {
+      "stocks": 5554,
+      "gzip_bytes_equal": 5554
+    },
+    "lookback_patch": {
+      "stocks": 5554,
+      "gzip_bytes_equal": 5554
+    }
+  },
+  "differences": [],
+  "difference_counts": {},
+  "metadata_policy": "No metadata ignored; all value differences fail and are classified separately. Paths/provenance report files are separately documented, not mistaken for model data."
+}

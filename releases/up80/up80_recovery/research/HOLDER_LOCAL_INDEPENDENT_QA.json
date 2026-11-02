@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "main_rows": 241976,
+  "baseline_rows": 1465,
+  "frozen_972_original_columns_exact": true,
+  "frozen_rows": 137345,
+  "f10_no_total_fallback": true,
+  "f10_no_overlap_with_preferred_det_endpoints": true,
+  "source_counts": {
+    "FROZEN_RPT_HOLDERNUM_DET": 137345,
+    "RPT_HOLDERNUM_DET": 97029,
+    "RPT_F10_EH_HOLDERNUM": 9067
+  },
+  "files": [
+    {
+      "file": "holders/events_raw.csv",
+      "sha256": "536e2e18410a744d19ffd4f38796aa084ae72395546a843d95eb91bf83613a7d"
+    },
+    {
+      "file": "holders_baseline_2009/events_raw.csv",
+      "sha256": "4132be6959f2e09eee24a71c070e956205860091e83c4ca8cea0ddbe4fbf9a5b"
+    }
+  ]
+}

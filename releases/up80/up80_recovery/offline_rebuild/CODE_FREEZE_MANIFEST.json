@@ -1,0 +1,67 @@
+{
+  "status": "frozen_after_full_offline_test",
+  "utc": "2026-11-02T08:55:16.251160+00:00",
+  "paths_relative_to_package_root": true,
+  "files": [
+    {
+      "file": "up80_recovery/offline_rebuild/compare_offline.py",
+      "sha256": "0b137031d2e7b2cf9eecb922cef4eb0fa118aea2e7bdf7142b802e7490b19398"
+    },
+    {
+      "file": "up80_recovery/offline_rebuild/run_offline.py",
+      "sha256": "5e495428da6ad7b190185b050e970e7c29b9bce7e8a418cf4e503573f91e9824"
+    },
+    {
+      "file": "up80_recovery/offline_rebuild/requirements.txt",
+      "sha256": "6979eeaed30ec7f45ff725f33240136e49c396fdf8a5ef12964fb2960c8a5d1e"
+    },
+    {
+      "file": "up80_recovery/offline_rebuild/measure_run.py",
+      "sha256": "e2132fd21f4504ea50b56fc285fe311eecdde2e7c309cf4866f510edebd1f56e"
+    },
+    {
+      "file": "up80_recovery/offline_rebuild/VALIDATED_REBUILD.json",
+      "sha256": "e45fd1568d69b08a5fd805bb049059e4634827bccbfbe4b4cdc2bbe7727da8e2"
+    },
+    {
+      "file": "up80_recovery/offline_rebuild/SOURCE_INVENTORY_DRAFT.json",
+      "sha256": "77d93a8e52350d99ab7d232205c01a92e6646466be4e73881d7c3d6c2ee1e108"
+    },
+    {
+      "file": "up80_recovery/offline_rebuild/README.md",
+      "sha256": "1f905f4e8ecdb865f5ab361276f061bdc880773b4b950a5ca23821df54c7670d"
+    },
+    {
+      "file": "up80_recovery/research/merge_recovered_holders.py",
+      "sha256": "6889f3d5ace1491838b41bc6702ce62bf804643644fe73b94df35d55e6139e0b"
+    },
+    {
+      "file": "up80_recovery/research/audit_holder_merge_local.py",
+      "sha256": "1fa5ce54346d2654ce140d30ff14f3cfb7650156691a48b8f6de5f616f686241"
+    },
+    {
+      "file": "up80_recovery/research/build_superset.py",
+      "sha256": "c3e1937b5aca7c0d5dfe376fc1c9742aa18aad1f08180d65e7453ea128923f73"
+    },
+    {
+      "file": "up80_recovery/research/clean_holders.py",
+      "sha256": "fb273b0fcf034576dc35bddf7210e52db568a406ccc68bcf093d6a0b5f63c534"
+    },
+    {
+      "file": "up80_recovery/research/holder_capture/verify_resume_complete.py",
+      "sha256": "f1513b9aca4b9695556cbafb0e9e71ec5f6eb8b8592a64a41713a3d192ab9e3e"
+    },
+    {
+      "file": "up80_recovery/research/lookback_pipeline/prepare_lookback_panels.py",
+      "sha256": "668e339b8b9091fc4f27a374508a28a64e97067dfdd079fb2bcff6cebfd84a09"
+    },
+    {
+      "file": "up80_recovery/research/lookback_pipeline/aggregate.py",
+      "sha256": "61099f71325a4c885a1b43b8ea8e0756e11c1aa8047bb62329a65ccba61ad3ef"
+    },
+    {
+      "file": "shareholder_query_up80/migrate_up80.py",
+      "sha256": "0f624fc7273e369094ad019117f429ab92a0e700c7845d2bed22dbb1de633e12"
+    }
+  ]
+}

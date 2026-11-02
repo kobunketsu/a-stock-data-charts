@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "frozen_existing_files": 1200,
+  "changed": [],
+  "completed_at": "2026-11-02T08:32:23.382350+00:00",
+  "newly_recovered": 294,
+  "total_price_files": 1494,
+  "old_blocked_status_is_historical": true,
+  "checkpoint_archives_unchanged": true
+}

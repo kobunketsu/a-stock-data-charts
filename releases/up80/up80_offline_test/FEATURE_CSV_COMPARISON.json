@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "lookback": 10,
+      "file": "model/event_panel.csv",
+      "exact_bytes_equal": true
+    },
+    {
+      "lookback": 10,
+      "file": "threshold_curves/ranges_uniform60/lookback_feature_audit.csv",
+      "exact_bytes_equal": true
+    },
+    {
+      "lookback": 10,
+      "file": "threshold_curves/ranges_uniform60/matched_all_years_event_membership.csv",
+      "exact_bytes_equal": true
+    },
+    {
+      "lookback": 20,
+      "file": "model/event_panel.csv",
+      "exact_bytes_equal": true
+    },
+    {
+      "lookback": 20,
+      "file": "threshold_curves/ranges_uniform60/lookback_feature_audit.csv",
+      "exact_bytes_equal": true
+    },
+    {
+      "lookback": 20,
+      "file": "threshold_curves/ranges_uniform60/matched_all_years_event_membership.csv",
+      "exact_bytes_equal": true
+    },
+    {
+      "lookback": 30,
+      "file": "model/event_panel.csv",
+      "exact_bytes_equal": true
+    },
+    {
+      "lookback": 30,
+      "file": "threshold_curves/ranges_uniform60/lookback_feature_audit.csv",
+      "exact_bytes_equal": true
+    },
+    {
+      "lookback": 30,
+      "file": "threshold_curves/ranges_uniform60/matched_all_years_event_membership.csv",
+      "exact_bytes_equal": true
+    },
+    {
+      "lookback": 60,
+      "file": "model/event_panel.csv",
+      "exact_bytes_equal": true
+    },
+    {
+      "lookback": 60,
+      "file": "threshold_curves/ranges_uniform60/lookback_feature_audit.csv",
+      "exact_bytes_equal": true
+    },
+    {
+      "lookback": 60,
+      "file": "threshold_curves/ranges_uniform60/matched_all_years_event_membership.csv",
+      "exact_bytes_equal": true
+    },
+    {
+      "lookback": 120,
+      "file": "model/event_panel.csv",
+      "exact_bytes_equal": true
+    },
+    {
+      "lookback": 120,
+      "file": "threshold_curves/ranges_uniform60/lookback_feature_audit.csv",
+      "exact_bytes_equal": true
+    },
+    {
+      "lookback": 120,
+      "file": "threshold_curves/ranges_uniform60/matched_all_years_event_membership.csv",
+      "exact_bytes_equal": true
+    }
+  ]
+}

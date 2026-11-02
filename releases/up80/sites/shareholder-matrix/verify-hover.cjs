@@ -1,0 +1,5 @@
+const fs=require('fs'),assert=require('assert');const D=JSON.parse(fs.readFileSync('fixtures/all.json'));const src=fs.readFileSync('dist/app.js','utf8');const bounds=Function('D',src.slice(src.indexOf('function curveBounds('),src.indexOf('function bandArea('))+'return curveBounds;')(D);
+let count=0;for(const c of D.curves){let [lo,hi]=bounds(c,true);assert(hi>lo);for(const k of ['mean','median','p10','p90'])for(const v of c[k])if(v!==null){assert(v>=lo&&v<=hi);count++;}}
+const band=Function(src.slice(src.indexOf('function bandArea('),src.indexOf('let clearMiniHover='))+'return bandArea;')();
+const X=x=>x,Y=x=>x;for(const c of D.curves){const a=band(c,X,Y);assert.equal(!!a,!c.empty);assert(!a.includes('NaN'));if(a)assert(a.includes('fill="#d4d4d4"'));}
+assert(src.includes('b.onmouseenter'));assert(src.includes('b.onmouseleave'));assert(src.includes('clearMiniHover()'));assert(src.indexOf("withBand?bandArea")<src.indexOf('<g data-series="mean">'));console.log('PASS hover band domain '+count+' finite values, empty skipped, neutral band behind dual lines, enter/leave cleanup');

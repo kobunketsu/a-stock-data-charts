@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "only_changes": "Two default baseline paths changed to package-relative defaults; runner explicitly supplies both CLI paths",
+  "original_sha256": "61099f71325a4c885a1b43b8ea8e0756e11c1aa8047bb62329a65ccba61ad3ef",
+  "packaged_sha256": "39028304ff12609a8532356b273ef0f66996d6609454a35b8e1103600ac933c2",
+  "exact_expected_two_replacements_match": true,
+  "executed_packaged_source": true
+}

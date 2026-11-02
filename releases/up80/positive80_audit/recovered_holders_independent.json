@@ -1,0 +1,33 @@
+{
+  "status": "PASS_SOURCE_RECOVERY_ONLY",
+  "main_rows": 241976,
+  "stocks": 1494,
+  "baseline_rows": 1465,
+  "pages_hash_and_sequences_verified": 343,
+  "old216_pages_unchanged": true,
+  "old972_frozen_rows": 137345,
+  "old_fields_verified": [
+    "SECUCODE",
+    "SECURITY_NAME_ABBR",
+    "HOLDER_NUM",
+    "PRE_HOLDER_NUM",
+    "HOLDER_NUM_CHANGE",
+    "HOLDER_NUM_RATIO",
+    "INTERVAL_CHRATE",
+    "PRE_END_DATE",
+    "PRE_E_DATE",
+    "AVG_MARKET_CAP",
+    "AVG_HOLD_NUM",
+    "TOTAL_MARKET_CAP",
+    "TOTAL_A_SHARES",
+    "HOLD_N_DATE",
+    "CHANGE_SHARES",
+    "CHANGE_REASON",
+    "CLOSE_PRICE",
+    "TRADE_MARKET_CODE",
+    "ORG_CODE",
+    "REPORT"
+  ],
+  "negative_lag_raw": 984,
+  "limitation": "Does not establish unavailable old1494 full individual-event membership; published old8 regression still required."
+}

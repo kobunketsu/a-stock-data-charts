@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "all_perN_features_and_member_keys_rebuilt": true,
+  "results": [
+    {
+      "n": 10,
+      "panel": 148095,
+      "base": 103518,
+      "stocks": 1401,
+      "recent": 82787,
+      "published_event_id_hash_matches": true
+    },
+    {
+      "n": 20,
+      "panel": 147902,
+      "base": 103250,
+      "stocks": 1396,
+      "recent": 82622,
+      "published_event_id_hash_matches": true
+    },
+    {
+      "n": 30,
+      "panel": 147706,
+      "base": 102991,
+      "stocks": 1397,
+      "recent": 82483,
+      "published_event_id_hash_matches": true
+    },
+    {
+      "n": 60,
+      "panel": 146989,
+      "base": 102238,
+      "stocks": 1395,
+      "recent": 82036,
+      "published_event_id_hash_matches": true
+    },
+    {
+      "n": 120,
+      "panel": 145253,
+      "base": 100460,
+      "stocks": 1387,
+      "recent": 80947,
+      "published_event_id_hash_matches": true
+    }
+  ],
+  "limitation": "ID hash is an extra check, not unavailable old1494 canonical-member archive comparison"
+}
