@@ -1,0 +1,42 @@
+{
+  "status": "PASS_ALL_OLD1494_CANONICAL_FIELDS_AND_PATHS",
+  "results": [
+    {
+      "N": 10,
+      "old_event_keys_unchanged": 148095,
+      "exact_feature_columns": 54,
+      "exact_price_paths": 296190,
+      "days_each": 251
+    },
+    {
+      "N": 20,
+      "old_event_keys_unchanged": 147902,
+      "exact_feature_columns": 54,
+      "exact_price_paths": 295804,
+      "days_each": 251
+    },
+    {
+      "N": 30,
+      "old_event_keys_unchanged": 147706,
+      "exact_feature_columns": 54,
+      "exact_price_paths": 295412,
+      "days_each": 251
+    },
+    {
+      "N": 60,
+      "old_event_keys_unchanged": 146989,
+      "exact_feature_columns": 54,
+      "exact_price_paths": 293978,
+      "days_each": 251
+    },
+    {
+      "N": 120,
+      "old_event_keys_unchanged": 145253,
+      "exact_feature_columns": 54,
+      "exact_price_paths": 290506,
+      "days_each": 251
+    }
+  ],
+  "excluded_from_field_comparison": "Only globally reassigned event_id; keys mapped explicitly",
+  "new_root": "shareholder_model_2343"
+}

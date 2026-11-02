@@ -1,0 +1,28 @@
+{
+  "status": "AUDITED_COMPLETE",
+  "audit_scope": "Only five full-history reference matrices: independent numerical/membership/final-SHA passed; not whole-project publication approval",
+  "reference_pool_count": 2343,
+  "pool_sha256": "6aa054abc8416c8cf92bc915f25fae1e801cde2895cdcb9fff426cc43d8f7ad8",
+  "matrices": {
+    "10": {
+      "path": "lookbacks/lookback_10/holder_matrix_9rows/curves_ui.json",
+      "sha256": "3dbc0d0ae816b659ec9e69a3e3015892befc31bc154d33dc924f5b02a1fe161b"
+    },
+    "20": {
+      "path": "lookbacks/lookback_20/holder_matrix_9rows/curves_ui.json",
+      "sha256": "8fe5a057a90b4f809e052e4f35bb0d91fedcf097bd05bff02d9767fe86ce2569"
+    },
+    "30": {
+      "path": "lookbacks/lookback_30/holder_matrix_9rows/curves_ui.json",
+      "sha256": "fb5586b2d5c6e1a7262c37f49f8f384e7482e8e50bc172993c53da7d3626914d"
+    },
+    "60": {
+      "path": "lookbacks/lookback_60/holder_matrix_9rows/curves_ui.json",
+      "sha256": "700b1693fbc6e5010e459b360bd1b24ddcc8d662a5a3e01464674a1465a13abe"
+    },
+    "120": {
+      "path": "lookbacks/lookback_120/holder_matrix_9rows/curves_ui.json",
+      "sha256": "70dbff89874708f87a0390d52cea8fc903cc02c2af379b7223681d50ed59cc32"
+    }
+  }
+}

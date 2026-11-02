@@ -1,0 +1,12 @@
+{
+  "status": "PASS_FINAL_CORE_AND_UI_ARCHIVE_INTEGRITY_PRIVACY_PATTERNS",
+  "core_sha256": "3e9c63a2bc8f20e716d88b22fbdcfaf76adc7272ac6e89dc4267000c8a9b1138",
+  "core_manifest_files": 86,
+  "ui_manifest_files": 11144,
+  "ui_parts": 5,
+  "text_members_scanned_including_decompressed_gzip": 11235,
+  "actual_credential_or_private_path_findings": 0,
+  "reviewed_generic_path_guard_literal_hits": 2,
+  "scope": "Pattern scan is not a guarantee against every secret format; source-data rights remain separate",
+  "requires_three_frozen_dependency_groups": true
+}

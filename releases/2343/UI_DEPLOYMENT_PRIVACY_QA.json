@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "files_including_decompressed_gzip_scanned": 11144,
+  "native_deployment_or_project_id_hits": 0,
+  "private_site_url_or_identity_slug_hits": 0,
+  "source_template_deployment_settings_excluded": true,
+  "no_additional_content_redaction_required": true
+}

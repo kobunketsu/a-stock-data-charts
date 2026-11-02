@@ -1,0 +1,13 @@
+{
+  "status": "PASS_FALSE_DRIFT_BUG_DIAGNOSIS_AND_MINIMAL_FIX",
+  "holder_cached_pages_sha_verified": 5,
+  "price_success_triples_sha_verified": 20,
+  "first_closing_bytes_identical": true,
+  "old_alias_reproduced_rows": 1421,
+  "fixed_first_rows": 500,
+  "fixed_accumulated_rows": 1421,
+  "actual_executed_vs_fixed_only_change": "rows=list(rows)",
+  "stop_marker_preserved": true,
+  "network_requests": 0,
+  "recommendation": "Root may explicitly archive false-stop evidence and resume fixed authorized collector; do not weaken real count/page/first-page/refusal stops"
+}

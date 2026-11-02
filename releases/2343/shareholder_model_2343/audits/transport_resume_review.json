@@ -1,0 +1,7 @@
+{
+  "status": "PASS_LOCAL_REFUSAL_CLASSIFIER_REGRESSION",
+  "EOF_not_refusal": true,
+  "HTTP403_429_tunnel403_still_refusal": true,
+  "evidence": "Archived actual ordinary SSL UNEXPECTED_EOF_WHILE_READING; root authorized finite same-source completion; no TLS disabling found",
+  "network_calls": 0
+}

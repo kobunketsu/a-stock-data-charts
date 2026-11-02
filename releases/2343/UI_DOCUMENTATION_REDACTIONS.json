@@ -1,0 +1,30 @@
+{
+  "status": "PASS_DOCUMENTATION_ONLY_REDACTION",
+  "file": "sites/shareholder-matrix/QA.md",
+  "source_sha256": "61e0ab52985257b892fe5022ee23a7da5e4d18c709e8db0b905fea024ed25530",
+  "snapshot_sha256": "0df82fc57c8ed33376667786435ff6fb16b1a25f7effdb1fb3d27eae4cb5c974",
+  "changes": [
+    {
+      "file": "sites/shareholder-matrix/QA.md",
+      "change_id": 1,
+      "before": "<internal absolute historical evidence path redacted>",
+      "after": "shareholder_lookbacks_v1/audit/viewer_browser_qa.json.",
+      "content_type": "documentation_only"
+    },
+    {
+      "file": "sites/shareholder-matrix/QA.md",
+      "change_id": 2,
+      "before": "<internal absolute historical evidence path redacted>",
+      "after": "shareholder_query_all_a/audit/viewer_browser_qa.json.",
+      "content_type": "documentation_only"
+    },
+    {
+      "file": "sites/shareholder-matrix/QA.md",
+      "change_id": 3,
+      "before": "<internal absolute historical evidence path redacted>",
+      "after": "positive80_audit/viewer_browser_qa.json.",
+      "content_type": "documentation_only"
+    }
+  ],
+  "all_other_files_unchanged": true
+}

@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "scope": "old1494_canonical_and_paths_preserved",
+  "key": [
+    "code",
+    "notice",
+    "endpoint"
+  ],
+  "event_id_is_not_row_index": true,
+  "checks": [
+    {
+      "kind": "canonical_clean",
+      "events": 150628,
+      "status": "PASS"
+    },
+    {
+      "kind": "superset",
+      "events": 148154,
+      "status": "PASS"
+    },
+    {
+      "kind": "lookback10",
+      "events": 148095,
+      "status": "PASS"
+    },
+    {
+      "kind": "lookback20",
+      "events": 147902,
+      "status": "PASS"
+    },
+    {
+      "kind": "lookback30",
+      "events": 147706,
+      "status": "PASS"
+    },
+    {
+      "kind": "lookback60",
+      "events": 146989,
+      "status": "PASS"
+    },
+    {
+      "kind": "lookback120",
+      "events": 145253,
+      "status": "PASS"
+    }
+  ]
+}

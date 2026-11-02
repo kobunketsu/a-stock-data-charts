@@ -1,0 +1,14 @@
+{
+  "status": "PASS_INDEPENDENT_HOLDER_SOURCE_AND_MERGE",
+  "pages": 180,
+  "closing_probes": 18,
+  "DET_rows": 74464,
+  "F10_rows": 79365,
+  "F10_overlap_joint_exact": 73975,
+  "F10_supplement_A_only": 4714,
+  "F10_missing_or_nonpositive_A": 524,
+  "F10_nonfinite_or_null_A": 493,
+  "F10_invalid_dates_after_positive_A": 746,
+  "old1494_rows_exact_prefix": 243441,
+  "added_rows": 79178
+}

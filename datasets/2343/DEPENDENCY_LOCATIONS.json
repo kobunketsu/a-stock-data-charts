@@ -1,0 +1,240 @@
+[
+  {
+    "group": "old_up80",
+    "file": "UP80_INPUT_META.zip",
+    "repo_path": "datasets/up80/inputs/UP80_INPUT_META.zip",
+    "bytes": 986160,
+    "sha256": "af10854bee82a16c7b3f9ed3be0f0603e5632bfa6e31916319da54e079cc0891"
+  },
+  {
+    "group": "old_up80",
+    "file": "UP80_INPUT_DATA_01.zip",
+    "repo_path": "datasets/up80/inputs/UP80_INPUT_DATA_01.zip",
+    "bytes": 46022934,
+    "sha256": "32181ea43db896c75be6f5cf0ba6cfb56cea4b711110a1f0f6add6157da12a8b"
+  },
+  {
+    "group": "old_up80",
+    "file": "UP80_INPUT_DATA_02.zip",
+    "repo_path": "datasets/up80/inputs/UP80_INPUT_DATA_02.zip",
+    "bytes": 46037855,
+    "sha256": "b906f308faccc0055daa155f2b484a1553f65e34895130ed448464ebac4410cf"
+  },
+  {
+    "group": "old_up80",
+    "file": "UP80_INPUT_DATA_03.zip",
+    "repo_path": "datasets/up80/inputs/UP80_INPUT_DATA_03.zip",
+    "bytes": 46007746,
+    "sha256": "c00b8de67c31287632265bf63ed11dcdf16477d8b29265dbfaf420d8d06a7c80"
+  },
+  {
+    "group": "old_up80",
+    "file": "UP80_INPUT_DATA_04.zip",
+    "repo_path": "datasets/up80/inputs/UP80_INPUT_DATA_04.zip",
+    "bytes": 40346911,
+    "sha256": "176ce41f74153e2ce81ec41de4d06eab49eaca4c5adb550797ff806978db550b"
+  },
+  {
+    "group": "old_up80",
+    "file": "UP80_INPUT_DATA_05.zip",
+    "repo_path": "datasets/up80/inputs/UP80_INPUT_DATA_05.zip",
+    "bytes": 45861972,
+    "sha256": "38409ed91838cada0ec1b34d1dbf42d2379fee997aa28946592572c5f46fcfb7"
+  },
+  {
+    "group": "old_up80",
+    "file": "UP80_INPUT_DATA_06.zip",
+    "repo_path": "datasets/up80/inputs/UP80_INPUT_DATA_06.zip",
+    "bytes": 46057205,
+    "sha256": "20ade731b84c6934965eec0adefc604969cbf70fd9c945e63e08513e3c2c92f8"
+  },
+  {
+    "group": "old_up80",
+    "file": "UP80_INPUT_DATA_07.zip",
+    "repo_path": "datasets/up80/inputs/UP80_INPUT_DATA_07.zip",
+    "bytes": 45492830,
+    "sha256": "95134ba5b52be8014d08724d15ea2fec73797bb3a859688f437093236c126742"
+  },
+  {
+    "group": "old_up80",
+    "file": "UP80_INPUT_DATA_08.zip",
+    "repo_path": "datasets/up80/inputs/UP80_INPUT_DATA_08.zip",
+    "bytes": 45389230,
+    "sha256": "853a3b9b8a9850758268d859c4d68ffd195c801cf6dbf2a45009a59340139179"
+  },
+  {
+    "group": "old_up80",
+    "file": "UP80_INPUT_DATA_09.zip",
+    "repo_path": "datasets/up80/inputs/UP80_INPUT_DATA_09.zip",
+    "bytes": 45518800,
+    "sha256": "484ac6785716d4a2b01b77a25d0e43064319bcd8c7b0844f3eb8d61c2b6bf24f"
+  },
+  {
+    "group": "old_up80",
+    "file": "UP80_INPUT_DATA_10.zip",
+    "repo_path": "datasets/up80/inputs/UP80_INPUT_DATA_10.zip",
+    "bytes": 45877291,
+    "sha256": "4f6a8c325e2a82a548f8febdb4a169dbcee9518601b48cae536d07dab2a499c4"
+  },
+  {
+    "group": "old_up80",
+    "file": "UP80_INPUT_DATA_11.zip",
+    "repo_path": "datasets/up80/inputs/UP80_INPUT_DATA_11.zip",
+    "bytes": 21729851,
+    "sha256": "8271ea5d0b1640dad013f01b644eb0dd838f77691eff80bc6ee4d4a8458d2350"
+  },
+  {
+    "group": "old_up80",
+    "file": "UP80_CODE_RESULTS_META.zip",
+    "repo_path": "datasets/up80/code_results/UP80_CODE_RESULTS_META.zip",
+    "bytes": 648147,
+    "sha256": "63f6877f5c032ed2e44c22ee4a1d4c7064baf6c8d2694b0a2f0aa2806ee62b46"
+  },
+  {
+    "group": "old_up80",
+    "file": "UP80_CODE_RESULTS_DATA_01.zip",
+    "repo_path": "datasets/up80/code_results/UP80_CODE_RESULTS_DATA_01.zip",
+    "bytes": 45432570,
+    "sha256": "054b5b786ebc3d68015087b69b13543ae4ef041cabee7909cea9a86125b1894c"
+  },
+  {
+    "group": "old_up80",
+    "file": "UP80_CODE_RESULTS_DATA_02.zip",
+    "repo_path": "datasets/up80/code_results/UP80_CODE_RESULTS_DATA_02.zip",
+    "bytes": 45436118,
+    "sha256": "44c3f1f4795240e868abbc4f56d2f3a9adcc20907db10611800ea4f03fe1b9e2"
+  },
+  {
+    "group": "old_up80",
+    "file": "UP80_CODE_RESULTS_DATA_03.zip",
+    "repo_path": "datasets/up80/code_results/UP80_CODE_RESULTS_DATA_03.zip",
+    "bytes": 45528197,
+    "sha256": "d2202f97d9f63c436f97367108a71b9699c31ce16f1bd585eae92cc253eb39db"
+  },
+  {
+    "group": "old_up80",
+    "file": "UP80_CODE_RESULTS_DATA_04.zip",
+    "repo_path": "datasets/up80/code_results/UP80_CODE_RESULTS_DATA_04.zip",
+    "bytes": 45693309,
+    "sha256": "d98a9b176f01a061cf8b07ac453bf0eec3fba582b51e46a23d3fc7f676ff9335"
+  },
+  {
+    "group": "old_up80",
+    "file": "UP80_CODE_RESULTS_DATA_05.zip",
+    "repo_path": "datasets/up80/code_results/UP80_CODE_RESULTS_DATA_05.zip",
+    "bytes": 4039744,
+    "sha256": "7f22d8c583328c414122ce700a68b65296e17dfae28f8630819922a2c41b6469"
+  },
+  {
+    "group": "old_up80",
+    "file": "UP80_PACKAGED_REBUILD_VALIDATION.zip",
+    "repo_path": "datasets/up80/acceptance/UP80_PACKAGED_REBUILD_VALIDATION.zip",
+    "bytes": 11346,
+    "sha256": "094c9d8de613dc30031c78abf6f575ce1e43a319222c5bbe18c2611c91326a13"
+  },
+  {
+    "group": "new849_capture",
+    "file": "EXPANSION_2343_CAPTURE_01.zip",
+    "repo_path": "datasets/2343/capture/EXPANSION_2343_CAPTURE_01.zip",
+    "bytes": 4617783,
+    "sha256": "e71dca94a37bf78c2d2267924607917a8ffafcf8b1d2045b1e21d2708de3255c"
+  },
+  {
+    "group": "new849_capture",
+    "file": "EXPANSION_2343_CAPTURE_02.zip",
+    "repo_path": "datasets/2343/capture/EXPANSION_2343_CAPTURE_02.zip",
+    "bytes": 5043542,
+    "sha256": "11be84b0b8f817c97b1652cde38b789c7d1bd084712aac1eafffa9209b7bf112"
+  },
+  {
+    "group": "new849_capture",
+    "file": "EXPANSION_2343_CAPTURE_03.zip",
+    "repo_path": "datasets/2343/capture/EXPANSION_2343_CAPTURE_03.zip",
+    "bytes": 4966042,
+    "sha256": "dd608e1163e0eb514c4ccbb2743e4ced4d2ae23395928b61172abe49dcb7773c"
+  },
+  {
+    "group": "new849_capture",
+    "file": "EXPANSION_2343_CAPTURE_04.zip",
+    "repo_path": "datasets/2343/capture/EXPANSION_2343_CAPTURE_04.zip",
+    "bytes": 4414139,
+    "sha256": "122ee74c8b616a206bb5cb5ae027843416e4f5d24586fa7e1ed8834a01cf82f8"
+  },
+  {
+    "group": "new849_capture",
+    "file": "EXPANSION_2343_CAPTURE_05.zip",
+    "repo_path": "datasets/2343/capture/EXPANSION_2343_CAPTURE_05.zip",
+    "bytes": 9001794,
+    "sha256": "ff3bdd29d4d201efc77bfa45e20d33ff50d0eae6d3a28ca7c3a964565b1c140a"
+  },
+  {
+    "group": "new849_capture",
+    "file": "EXPANSION_2343_CAPTURE_06.zip",
+    "repo_path": "datasets/2343/capture/EXPANSION_2343_CAPTURE_06.zip",
+    "bytes": 11433497,
+    "sha256": "ca833bb2ee898725f8310208c3a8ef13b3b580c3e5dae7a0141b6af0d3ecc1da"
+  },
+  {
+    "group": "new849_capture",
+    "file": "EXPANSION_2343_CAPTURE_07.zip",
+    "repo_path": "datasets/2343/capture/EXPANSION_2343_CAPTURE_07.zip",
+    "bytes": 11633935,
+    "sha256": "277ea1f4755c37462e986cedd2d69139e627750fefaf852f7613beceadc584cf"
+  },
+  {
+    "group": "new849_capture",
+    "file": "EXPANSION_2343_CAPTURE_08.zip",
+    "repo_path": "datasets/2343/capture/EXPANSION_2343_CAPTURE_08.zip",
+    "bytes": 12055528,
+    "sha256": "934feba1c93c50dd526d26e21e0c2743e3fac230161b1c47512518ee5c9e9b71"
+  },
+  {
+    "group": "new849_capture",
+    "file": "EXPANSION_2343_CAPTURE_09.zip",
+    "repo_path": "datasets/2343/capture/EXPANSION_2343_CAPTURE_09.zip",
+    "bytes": 12198290,
+    "sha256": "b0d6f2037d2031128a8c1751850d842c40f1b1648b947c914927a39f29d7529a"
+  },
+  {
+    "group": "new849_capture",
+    "file": "EXPANSION_2343_CAPTURE_10.zip",
+    "repo_path": "datasets/2343/capture/EXPANSION_2343_CAPTURE_10.zip",
+    "bytes": 13079505,
+    "sha256": "d9c94239c866d3e454fbf98cea3a9d27d74e0011e422b39bd8f113ed6a0c5c48"
+  },
+  {
+    "group": "new849_capture",
+    "file": "EXPANSION_2343_CAPTURE_11.zip",
+    "repo_path": "datasets/2343/capture/EXPANSION_2343_CAPTURE_11.zip",
+    "bytes": 11427756,
+    "sha256": "369bf70b5573fe8fafd9e8be46a7cd8fbf7213cd8c249dd8b070cd5ed1586b6a"
+  },
+  {
+    "group": "new849_capture",
+    "file": "EXPANSION_2343_CAPTURE_12.zip",
+    "repo_path": "datasets/2343/capture/EXPANSION_2343_CAPTURE_12.zip",
+    "bytes": 22570064,
+    "sha256": "e7c5b25746c4005ae658e10986c4c382ba986ef02c71299f8cee02c77bb056ae"
+  },
+  {
+    "group": "new849_capture",
+    "file": "EXPANSION_2343_CAPTURE_13.zip",
+    "repo_path": "datasets/2343/capture/EXPANSION_2343_CAPTURE_13.zip",
+    "bytes": 3904725,
+    "sha256": "992954ce48b3b8e1a29bf7faf67230b95d2070582f0a2d4a5baf2da7e8bac5cb"
+  },
+  {
+    "group": "new849_capture",
+    "file": "EXPANSION_2343_CAPTURE_META.zip",
+    "repo_path": "datasets/2343/capture/EXPANSION_2343_CAPTURE_META.zip",
+    "bytes": 290341,
+    "sha256": "ea79ca18103fa3a3f1a6cc93a448c44d43029a99f3f00c8e002c9066f09095ad"
+  },
+  {
+    "group": "complete_selector",
+    "file": "SHAREHOLDER_MULTYEAR_MAC_COMPLETE_201510_202610.zip",
+    "repo_path": "datasets/2343/selector/SHAREHOLDER_MULTYEAR_MAC_COMPLETE_201510_202610.zip",
+    "bytes": 27160835,
+    "sha256": "27f8a49a497a25a90bc29704b201c584b5116876c0167804d6d2bc5cf0f30783"
+  }
+]

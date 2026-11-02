@@ -1,0 +1,12 @@
+{
+  "status": "PASS_FULL_INCREMENTAL_REBUILD_INDEPENDENT_ACTUAL_OUTPUT_COMPARISON",
+  "matrix_JSON_exact": 15,
+  "CSV_exact": 15,
+  "NPZ_arrays_exact_including_NaN": 15,
+  "merged_inputs_and_completeness_exact": true,
+  "run_executed_by": "holder agent; auditor independently compared actual outputs",
+  "query_rebuild": "PASS",
+  "query_gzip_byte_exact": 11108,
+  "query_indexes_byte_exact": 2,
+  "per_stock_eligibility_exact": true
+}

@@ -1,68 +1,71 @@
 # a-stock-data-charts
 
-A股股东人数与股价研究系统。最新版本 **UP80：1494股研究池、5554股单股查询、5个前置观察期、双起点各81格**。数据截止2026-10-30，为冻结历史研究，非实时行情。
+A股股东人数与股价研究系统。最新已审版本：**2343股研究池、5554股单股查询、5个前置观察期、双起点各81格**。行情冻结至2026-10-30，选池元数据截至2026-10-31，非实时行情。
 
-## 查看完整网页
+## 最短网页启动
 
-克隆仓库或下载GitHub项目ZIP后，在仓库根目录运行：
+下载完整项目或克隆后，在仓库根目录运行：
 
 ```bash
-python3 -m http.server 8000 --bind 127.0.0.1 --directory releases/up80/sites/shareholder-matrix/dist
+python3 -m http.server 8000 --bind 127.0.0.1 --directory releases/2343/sites/shareholder-matrix/dist
 ```
 
-打开 <http://127.0.0.1:8000>。网页按需读取单股gzip文件，请通过本机HTTP服务使用。5个前置市场交易日观察期为10、20、30、60、120；两种起点均提供81格、均值和中位数双曲线、分位带、单股查询及键盘导航。横纵区间从有符号负值到正值排列，新增此前股价上涨≥80%列；默认后续20个交易日。颜色为红正绿负，低样本保留提示。
+浏览器打开 <http://127.0.0.1:8000>。需本机HTTP服务以按需读取单股gzip，不能用file方式保证完整查询。
 
-## 源码与数据目录
+参考研究池2343股；查询范围仍5554股。此前观察期N为10/20/30/60/120个市场交易日。新增曲线显示长度L六档10/20/30/60/120/250（默认250），同步矩阵小图、详情和单股；**L只裁剪显示，不改变样本或数据**。后续收益观察日h默认20，与L独立。保留双曲线、分位灰带、红正绿负、样本提示、键盘导航和缩放。前端冻结commit为`702b6a8c47f714eb2bb67f079d313f4c02f7fb51`。
+
+## 可维护源码和三组完整冻结依赖
 
 | 路径 | 内容 |
 | --- | --- |
-| `releases/up80/sites/shareholder-matrix/` | 可编辑网页脚本、样式、静态查询数据、测试与fixtures |
-| `releases/up80/up80_recovery/research/` | 研究源码、15份矩阵JSON、特征与成员CSV、审计结果 |
-| `releases/up80/up80_recovery/offline_rebuild/` | 离线编排入口、依赖版本和复现说明 |
-| `releases/up80/shareholder_query_up80/` | 5554股查询快照迁移源码及数据合同 |
-| `releases/up80/positive80_audit/` | 独立审计源码、旧8列回归与新增区间审计 |
-| `datasets/up80/inputs/` | 原12份输入ZIP：冻结原始输入与历史发布快照，约453.3MiB |
-| `scripts/restore_up80.py` | 离线安全还原、包及逐文件SHA校验；拒绝覆盖不同文件 |
-| `releases/up80/*MANIFEST.jsonl`、`*PARTS.json` | 原交付SHA、源SHA、包结构及净化记录 |
-| `shareholder_system_972/`、`shareholder_system_972_web/` | 保留的旧972版项目，勿与UP80混用 |
+| `releases/2343/shareholder_model_2343/` | 研究源码、131窗选池程序、名单、方法、15份冻结研究JSON及独立审计 |
+| `releases/2343/sites/shareholder-matrix/` | 可编辑网页、11108份查询gzip、2索引、fixtures与11项自检 |
+| `releases/2343/validation/acceptance/` | 实际独立解包重建和输出比较的最终验收 |
+| `datasets/up80/inputs/`、`code_results/`、`acceptance/` | UP80原19份输入、代码/结果及验收ZIP，字节保留 |
+| `datasets/2343/capture/` | 新增849股原始full/因子/CSV/股东页及SHA，14份完整ZIP |
+| `datasets/2343/selector/` | 完整2015Oct–2026Oct选池源：14段839页416286条及131窗独立审计 |
+| `datasets/2343/DEPENDENCY_LOCATIONS.json` | 全部34份只读依赖的仓库路径、大小与SHA |
+| `datasets/2343/source_archives/` | 原始CORE ZIP，保留精确来源；网页和源码正常展开可编辑 |
+| `scripts/restore_2343_dependencies.py` | 全离线安全还原；先校验全部ZIP/路径/已有文件，拒绝覆盖不同内容 |
+| `releases/up80/`与旧972目录 | 历史版本保留，不与新版混用 |
 
-源码、网页和结果以普通文件保存，冻结研究输入及作为迁移依据的历史快照保持分包。临时NPZ与重复事件面板由重建生成，不提交Git。Git保留原始行尾字节，以保护冻结SHA。
+依赖可以从本仓库完整恢复，不能只用代码或网页均值代替。原始34ZIP不可变；临时canonical面板和NPZ由重建生成，留在独立work目录，不提交Git。
 
-## 还原与离线重建
+## 完整离线重建
 
-需要Python及NumPy 2.3.5、Pandas 2.2.3。云端已验证环境为Python 3.12.14/x86_64；本机Mac ARM/Python 3.13.1完整运行在10日窗口旧8列回归处停止：第36日正收益占比有2个值超出既有容忍，最大差约0.000114758，不能称该环境已完整复现。详见[Mac验证记录](releases/up80/validation/MAC_REBUILD_COMPARISON.json)。正式发布结果未改；完整复建已验证环境为云端Python 3.12.14/x86_64。依赖已存在时，以下过程全部离线，无运行时自动安装：
+已验证云端环境为Python3.12.14/x86_64、NumPy2.3.5、pandas2.2.3；依赖见新版requirements.txt。没有自动联网安装、抓取、交易或部署。先准备匹配环境，再执行：
 
 ```bash
-# 仅核对输入分包SHA和清单，不写文件
-python3 scripts/restore_up80.py --check-only
-# 在releases/up80还原全部冻结输入；保留已存在且SHA一致的文件
-python3 scripts/restore_up80.py
-# 再核对17,329个已还原输入的精确SHA
-python3 scripts/restore_up80.py --verify-restored
-# 检查输入并显示重建计划，不执行计算
-python3 releases/up80/up80_recovery/offline_rebuild/run_offline.py --package-root releases/up80 --work-root work/up80_rebuild
-# 工作目录必须全新或为空；显式执行完整重建
-python3 releases/up80/up80_recovery/offline_rebuild/run_offline.py --package-root releases/up80 --work-root work/up80_rebuild --execute
+# 仓库根目录：仅校验34依赖包SHA与安全路径，不解压、不计算
+python3 scripts/restore_2343_dependencies.py --check-only
+# 还原到独立工作目录，保留源码目录与冻结ZIP
+python3 scripts/restore_2343_dependencies.py --destination work/2343_inputs
+# 先重建旧1494基线（已有完整只读基线可直接使用）
+python3 work/2343_inputs/old_up80/up80_recovery/offline_rebuild/run_offline.py --package-root work/2343_inputs/old_up80 --work-root work/up80_reference --execute
+# 再重现131窗选池、2343研究、旧1494保全与5554查询迁移
+python3 releases/2343/shareholder_model_2343/repro_bundle/rebuild_incremental.py --bundle-root releases/2343/shareholder_model_2343 --old-root work/up80_reference/research --capture-export-root work/2343_inputs/new849_capture --screening-root work/2343_inputs/complete_selector/shareholder_pool_screening_multiyear --baseline work/2343_inputs/old_up80/positive80_audit/baseline --baseline60 work/2343_inputs/old_up80/positive80_audit/baseline60 --old-query-base work/up80_reference/query_output/single_stock --old-query-patch work/up80_reference/query_output/lookback_patch --work-root work/2343_rebuild --execute
 ```
 
-如需安装依赖，可自行创建虚拟环境并安装 `releases/up80/up80_recovery/offline_rebuild/requirements.txt`。安装与冻结输入的离线重建为两步，脚本不自动联网。重建只写独立工作目录，不覆盖发布数据、不交易或部署。运行前预留ZIP、约1.99GB解压输入与结果、独立重建目录及系统余量；云端每10秒采样的工作目录峰值约4.95GB，不能当作其他机器瞬时峰值保证。
+省略新版入口的`--execute`仅检查/显示计划。工作目录必须全新或为空，原输入保持只读。可按原入口使用`--research-only`，研究通过后`--resume-query-only`继续；不能跳过回归。
 
-还原工具允许通过 `--destination` 指定独立目录；若修改目的地，请同时将最终源码与结果目录结构置于该包根目录，再给重建入口传入对应 `--package-root`。不要把输入包还原到旧972目录。
+云端已从实际独立ZIP解包完成研究与查询两阶段执行：131窗精确重现2343集合，15研究JSON、15CSV、15路径数组、11108查询gzip和2索引精确一致，未忽略metadata。研究约870.68秒、查询约109秒；最终工作目录约7.03GiB，不含只读输入、旧基线和临时开销，不能作为所有平台峰值保证。
 
-[详细重建说明](releases/up80/up80_recovery/offline_rebuild/README.md) · [输入说明](releases/up80/README_完整输入存档.md) · [源码与结果说明](releases/up80/README_代码结果与离线使用.md) · [旧972版说明](docs/archive/README_972.md)
+**本机没有重跑新全模型。** Mac ARM/Python3.13只做语法、清单、还原小测试和UI自检；旧UP80在该环境的零收益边界差异继续保留于旧验证记录，不保证新全链逐位一致，也不放宽数学阈值。请预留显著多于工作目录数值的磁盘空间。
 
-## 真实复现范围与读图口径
+[原增量运行说明](releases/2343/shareholder_model_2343/README_INCREMENTAL.md) · [最终验收](releases/2343/validation/acceptance/验收说明.md) · [UP80历史说明](docs/archive/README_UP80.md)
 
-- **1494股研究**：可从冻结的全历史股东记录、真实行情和市场交易日历重建观测、前置特征及0–250日未来路径，再逐事件重聚合。5个前置观察期各自按实际窗口准入，新增上涨≥80%列来自真实聚合。
-- **5554股查询**：从冻结的已发布base查询和5N补丁迁移新增区间及参考统计；旧4060只池外查询股的全部原供应商响应未保留，不能宣称从全部5554股原始抓取源端到端重生。查询股票池大于研究池，不代表这些股票都参与训练统计。
-- 公布后模式使用公布后首个市场交易日开盘；统计日模式含事后信息，当时股东人数通常尚未公布，不是可交易信号。供应商公布日未逐条对照首次公开原文核验。
-- 全样本参考是历史研究关系，不是严格逐时点的样本外预测。同股可重复且观察期重叠，不是组合净值；选池、存续与完整观察期筛选存在偏差。未计费用、滑点和成交限制，不保证预测或未来收益，不据此推断特定资金意图。
-- 输入SHA、成员、日期、分组、计数及缺失位置须精确一致；聚合浮点既有比较标准为绝对误差1e-12、相对0。文件SHA差异单独记录，不以数值容忍冒充逐字节一致。原全1494旧逐事件档不可得，旧15曲线回归通过不等于已逐成员证明旧1494完全相同。
+## 研究口径与复现边界
 
-## 来源、许可与发布记录
+- 2343为2015-10至2026-10的131个三自然月窗口中至少一次满足原月频规则的并集，并非始终月频。默认N60完整样本为125732条/2139股。旧1494的canonical事件、54字段及双251路径保全；新1620格×251日×5统计及136080分期统计经独立核验。
+- 1494旧研究从原19包冻结输入重建；新增849完整原始行情、因子和股东来源可恢复。三组输入均参与可搬运重建，选池不能只靠最终名单冒充复现。
+- 5554查询采用冻结已发布base及5N快照迁移参考统计，并非全部5554原始供应商响应端到端重生。查询覆盖大于参考研究池，不等于每股都参与训练。
+- 公布后模式与统计日模式必须区分；统计日起点含事后信息，当时股东人数通常尚未公开，不作可交易信号。供应商公布日期未逐条原文核验首次公开时间。
+- 近期名册、回溯选池、存续及完整250日选择存在偏差；同股重复与观察期重叠，不是组合净值。未计费用、滑点和成交限制，不保证因果、稳定性或预测收益。
 
-[第三方来源与权利说明](releases/up80/up80_recovery/SOURCES_AND_RIGHTS_ZH.md)和原AKShare许可证保留。行情及股东数据权利归其权利人；本仓库没有为第三方数据新增开源许可或商业转售授权。
+## 来源、许可与发布说明
 
-输入和结果使用各自独立SHA清单；路径净化前源SHA与包内SHA分别记录，源码冻结清单保留历史验收对应版本。历史中断/拒绝记录属于来源证据，不表示当前仍缺输入，也不改写其发生经过。
+第三方原始数据权利归来源权利人，不因入库获得本项目开源或商业转售许可。旧来源说明、AKShare解码器许可证、原始请求URL/时间/SHA、停止和恢复证据均保留。私人日志不入库；来源包中需要保全的日志采用脱敏文本及双SHA。
 
-本公开仓库不包含凭据、个人笔记、持仓或部署身份。网页不包含线上站点的访问控制。同步不启用GitHub Pages，不创建自动刷新或交易任务。UP80最终验收及本机结果见版本目录的验收记录；原交付文档中的已验证环境与范围应结合对应记录阅读。
+CORE有两份仅大小写不同的静态审计文件名。为兼容Mac，仅将小写独立报告改名为`independent_old1494_preservation.json`，原内容SHA不变；原manifest、原CORE ZIP和映射记录保留，算法与数值未改。历史准备/pending文案表示当时状态，最终结论以新版validation最终PASS为准。
+
+本轮不改变在线站点、仓库可见性、Pages、账号、网络或安全设置；仓库不含凭据或部署身份。本地静态网页不继承在线私有访问控制。

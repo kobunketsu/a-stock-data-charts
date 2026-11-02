@@ -1,0 +1,18 @@
+{
+  "status": "prepared_syntax_checked_not_executed",
+  "files": [
+    {
+      "file": "merge_added_holders.py",
+      "sha256": "dec84e20f5686078756046f00cd7f9c2bfbb9182828b7fd115a4738af65ac2ee"
+    },
+    {
+      "file": "FROZEN1494_INPUT_SHA.json",
+      "sha256": "f525819c52a4c1e0e7b306a77bc5a00440dd6d9a6c280566a7be7dd7d3f94473"
+    },
+    {
+      "file": "MERGE_HOLDERS_README.md",
+      "sha256": "d139c47a6bcbc10c6178ddccc62e11f3917f443e930a690c9b6d2327b05c02fd"
+    }
+  ],
+  "merge_job_identity_guard": "Added 2026-11-02 before any actual merge: exact18 job IDs and each request plan object; syntax rechecked."
+}

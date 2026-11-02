@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "canonical_checks": [
+    {
+      "lookback_market_days": 10,
+      "preserved_old1494_nonoverlapping_events": 6911,
+      "status": "PASS"
+    },
+    {
+      "lookback_market_days": 20,
+      "preserved_old1494_nonoverlapping_events": 6884,
+      "status": "PASS"
+    },
+    {
+      "lookback_market_days": 30,
+      "preserved_old1494_nonoverlapping_events": 6865,
+      "status": "PASS"
+    },
+    {
+      "lookback_market_days": 60,
+      "preserved_old1494_nonoverlapping_events": 6808,
+      "status": "PASS"
+    },
+    {
+      "lookback_market_days": 120,
+      "preserved_old1494_nonoverlapping_events": 6699,
+      "status": "PASS"
+    }
+  ]
+}

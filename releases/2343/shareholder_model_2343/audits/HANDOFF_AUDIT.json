@@ -1,0 +1,11 @@
+{
+  "status": "PASS_CAPTURE_HANDOFF_ONLY",
+  "sha256": "34075295cfdbf1d25711bd3de3e43d89380500ef9e18bbe85911a8639e9ba44a",
+  "members": 25,
+  "added_stocks": 849,
+  "reused_DET_rows_exact": 69054,
+  "new_holder_batches": 18,
+  "shared_global_refusal_stop": "PASS_STATIC_REVIEW",
+  "no_network_audit": true,
+  "not_model_release": true
+}

@@ -1,0 +1,48 @@
+{
+  "status": "PASS_ALL5554_REFERENCE_ONLY_MIGRATION",
+  "counts": {
+    "10": {
+      "anchors": 113160,
+      "old_eligible": 53874,
+      "new_eligible": 53874,
+      "newly_eligible": 0,
+      "newly_ineligible": 0
+    },
+    "20": {
+      "anchors": 113160,
+      "old_eligible": 53938,
+      "new_eligible": 53938,
+      "newly_eligible": 0,
+      "newly_ineligible": 0
+    },
+    "30": {
+      "anchors": 113160,
+      "old_eligible": 53968,
+      "new_eligible": 53968,
+      "newly_eligible": 0,
+      "newly_ineligible": 0
+    },
+    "60": {
+      "anchors": 113160,
+      "old_eligible": 53967,
+      "new_eligible": 53967,
+      "newly_eligible": 0,
+      "newly_ineligible": 0
+    },
+    "120": {
+      "anchors": 113160,
+      "old_eligible": 53847,
+      "new_eligible": 53848,
+      "newly_eligible": 1,
+      "newly_ineligible": 0
+    }
+  },
+  "immutable_prices_calendar_nodes_features_bins_verified": true,
+  "reference_5matrix_sha_verified": {
+    "10": "3dbc0d0ae816b659ec9e69a3e3015892befc31bc154d33dc924f5b02a1fe161b",
+    "20": "8fe5a057a90b4f809e052e4f35bb0d91fedcf097bd05bff02d9767fe86ce2569",
+    "30": "fb5586b2d5c6e1a7262c37f49f8f384e7482e8e50bc172993c53da7d3626914d",
+    "60": "700b1693fbc6e5010e459b360bd1b24ddcc8d662a5a3e01464674a1465a13abe",
+    "120": "70dbff89874708f87a0390d52cea8fc903cc02c2af379b7223681d50ed59cc32"
+  }
+}

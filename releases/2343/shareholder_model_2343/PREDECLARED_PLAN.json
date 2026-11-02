@@ -1,0 +1,30 @@
+{
+  "status": "offline_preparation_no_new_network",
+  "pool": 2343,
+  "frozen_reference_pool": 1494,
+  "added": 849,
+  "screening_notice_range": [
+    "2015-10-01",
+    "2026-10-31"
+  ],
+  "complete_three_calendar_month_windows": 131,
+  "model_start": "2010-01-01",
+  "warmup_start": "2009-01-01",
+  "price_cutoff": "2026-10-30",
+  "lookbacks": [
+    10,
+    20,
+    30,
+    60,
+    120
+  ],
+  "rows": 9,
+  "columns": 9,
+  "keep_old_inputs": true,
+  "capture_only_added_codes": true,
+  "query_universe": 5554,
+  "source_metadata_sha256": "94092fe744a21f1e9fdae659ded1e6b6144377488fab392c65c9d96ef306d5cc",
+  "frozen_old_pool_sha256": "5825c40d9e82c6f3b4cb1d4f9a2a4a2240df60862bcd91da3b5817fff4eda104",
+  "network_executor": "parent-coordinated authorized Mac only",
+  "publication_gate": "complete source, old1494 canonical event/path regression, independent full audit"
+}

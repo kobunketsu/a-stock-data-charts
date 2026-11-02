@@ -1,0 +1,42 @@
+{
+  "status": "PASS_LOCAL_PUBLICATION_CHECKS",
+  "new_release_source_commit": "702b6a8c47f714eb2bb67f079d313f4c02f7fb51",
+  "library_zip_sha_checks": 7,
+  "core_content_sha_entries": 86,
+  "ui_sha_entries": 11144,
+  "dependency_archives_exact": 34,
+  "dependency_bytes": 815915992,
+  "python_syntax_files": 16,
+  "ui_self_checks_passed": 11,
+  "production_js_syntax": "PASS",
+  "restore_small_test": "PASS: dry-check, exact byte preservation, repeated exact-file reuse, conflict refusal, traversal refusal",
+  "privacy": {
+    "gzip_checked": 11108,
+    "candidates": [
+      {
+        "file": "shareholder_model_2343/repro_bundle/rebuild_incremental.py",
+        "category": "private_path"
+      },
+      {
+        "file": "shareholder_model_2343/query_migration/migrate_reference.py",
+        "category": "private_path"
+      }
+    ],
+    "reviewed_false_positives": [
+      {
+        "file": "shareholder_model_2343/repro_bundle/rebuild_incremental.py",
+        "reason": "Negative assertion checks for forbidden path literals; no actual absolute work path."
+      },
+      {
+        "file": "shareholder_model_2343/query_migration/migrate_reference.py",
+        "reason": "O/root/ is a Path division expression using a variable, not an absolute path string."
+      }
+    ]
+  },
+  "case_sensitive_path_mapping": "PUBLICATION_PATH_MAPPING.json; static independent audit renamed, all source bytes preserved and original core ZIP retained",
+  "cloud_rebuild_acceptance": "acceptance/实际输出独立比对.json; actual extracted research/query phases,15JSON/15CSV/15arrays/11108gzip/2index exact",
+  "Mac_full_model_rerun": false,
+  "Mac_limit": "OldUP80 ARM3.13 positive-return zero-boundary failure remains documented; no new full native numerical comparison claimed.",
+  "input_dependencies_in_repo": true,
+  "models_or_market_data_recomputed": false
+}

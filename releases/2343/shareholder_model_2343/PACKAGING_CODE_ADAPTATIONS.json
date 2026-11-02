@@ -1,0 +1,7 @@
+{
+  "pipeline/aggregate.py": {
+    "original_sha256": "deb2eb56530ea3cba55448c7d28760beb4a4b84058df3d0cd554e4f12a95a5b6",
+    "packaged_sha256": "c24441130f7fb87e6925054d548766adb369d54a6019d0cee1cfb4aaa703b2e9",
+    "change": "Only two default baseline paths made relative; numerical code untouched"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "research_phase_entry_sha256": "a5834cd72873a554d925c9a6359d83555449497c47b8dab85bf6dd9956c8cdbb",
+  "final_query_phase_entry_sha256": "b37bfcbf93766f9ed8355ff5e670609b1eed5824db6fdf0059db3320c4635534",
+  "only_change_after_research_started": "Final report limitation wording corrected from two inputroots to three explicit dependencies; no numerical logic changed",
+  "research_actual_unpacked_entry_unchanged": true
+}

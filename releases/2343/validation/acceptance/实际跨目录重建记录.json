@@ -1,0 +1,37 @@
+{
+  "status": "PASS_ACTUAL_CROSS_DIRECTORY_REBUILD_PENDING_INDEPENDENT_FINAL_CHECK",
+  "checked_utc": "2026-11-02T12:12:38.529431+00:00",
+  "research": {
+    "exit_code": 0,
+    "elapsed_seconds": 870.6820816993713,
+    "work_peak_allocated_bytes_sampled": 6596132864,
+    "sampling_seconds": 10,
+    "python": "3.12.14",
+    "dependencies": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3"
+    },
+    "actual_independent_zip_extraction_used": true,
+    "old_reference_read_only": true,
+    "capture_source_read_only": true,
+    "screening_source_read_only": true,
+    "research_only_query_pending": true
+  },
+  "query_migration_approx_seconds_from_artifact_mtimes": 109.1372377872467,
+  "final_work_allocated_bytes": 7544307712,
+  "three_readonly_dependencies": true,
+  "selection_131windows_recomputed_same2343": true,
+  "merged_holders_and_input_manifest_bytes_equal_formal": true,
+  "fifteen_research_json_bytes_equal_formal": true,
+  "query_gzip_files_equal": 11108,
+  "query_indexes_equal": 2,
+  "per_stock_eligibility_equal": true,
+  "no_metadata_differences_ignored": true,
+  "query120_newly_eligible": 1,
+  "limits": [
+    "Query migration uses frozen5554base+5N snapshots, not all original provider responses",
+    "MacARM/Python3.13 model execution not tested",
+    "Research and query ran in two phases using actual independently unpacked ZIP sources; final entry differs only in output wording clarifying three inputs",
+    "Final work allocation and10s sampled research peak exclude frozen input roots"
+  ]
+}

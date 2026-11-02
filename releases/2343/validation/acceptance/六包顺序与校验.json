@@ -1,0 +1,44 @@
+{
+  "status": "ALL_SIX_PACKAGES_FROZEN_INDEPENDENTLY_VERIFIED",
+  "parts": [
+    {
+      "file": "EXPANSION_2343_INCREMENTAL_CORE.zip",
+      "bytes": 8609073,
+      "sha256": "3e9c63a2bc8f20e716d88b22fbdcfaf76adc7272ac6e89dc4267000c8a9b1138"
+    },
+    {
+      "file": "UI_DATA_01.zip",
+      "bytes": 25489498,
+      "sha256": "b537fa24909d9f4b2bdbc8b2c2370c7f077c5f7075e7b047a1a664c228072928",
+      "files": 1654,
+      "crc": "PASS"
+    },
+    {
+      "file": "UI_DATA_02.zip",
+      "bytes": 45709230,
+      "sha256": "ab220c6316da8a614404687d39eca5bfe718b49a0019b70593e40dd6066a364a",
+      "files": 4298,
+      "crc": "PASS"
+    },
+    {
+      "file": "UI_DATA_03.zip",
+      "bytes": 46219869,
+      "sha256": "82a9ceeacb2c974a5fd58dd7ffbc95a6e1e4f21c11ea6aba2c031214b9509dbc",
+      "files": 3084,
+      "crc": "PASS"
+    },
+    {
+      "file": "UI_DATA_04.zip",
+      "bytes": 28448060,
+      "sha256": "fb373d9e55f67e5d863076a7b984978429c95bbf58c90ba993dfaedda58e2159",
+      "files": 2108,
+      "crc": "PASS"
+    },
+    {
+      "file": "UI_META.zip",
+      "bytes": 585548,
+      "sha256": "5f3b25ea38e9821e60e83070ce43e2e1cf904cda04f65f4c4baebf533de06f76",
+      "crc": "PASS"
+    }
+  ]
+}

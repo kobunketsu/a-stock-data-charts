@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "n": 20,
+  "rows": 27216,
+  "max_error": 4.440892098500626e-16,
+  "dual_anchor_nonoverlap_events": 9362,
+  "id_to_row_not_assumed": true
+}

@@ -1,0 +1,47 @@
+{
+  "status": "OFFLINE_PREPARATION_PASS_NOT_EXECUTED",
+  "syntax_compilation": "PASS",
+  "missing_inputs_gate": "PASS: correctly refused without creating model/results",
+  "old_data_write_actions": 0,
+  "network_calls": 0,
+  "files": [
+    {
+      "file": "pipeline/aggregate.py",
+      "sha256": "b2c7969230a4d16cb97e1627926b5ebc3fd3e0f5394733d3b7d62e9f5cbedeab"
+    },
+    {
+      "file": "pipeline/assemble_inputs.py",
+      "sha256": "42451e855d56cd3719d81b63906643db6de22d77114db1796e6ab73aa403be7f"
+    },
+    {
+      "file": "pipeline/audit_preservation.py",
+      "sha256": "5f90b410da3cab07a9158ee3e09e8548fa9d6b2fc624c10500b7828792c3c1c4"
+    },
+    {
+      "file": "pipeline/build_superset.py",
+      "sha256": "bb82e735fe42e9b419c0830d7dae8ab88fe42571d65b35689bf48892b3cd17ec"
+    },
+    {
+      "file": "pipeline/clean_holders.py",
+      "sha256": "fb273b0fcf034576dc35bddf7210e52db568a406ccc68bcf093d6a0b5f63c534"
+    },
+    {
+      "file": "pipeline/compare_stability.py",
+      "sha256": "7e184e5c246221fff703236425a928cb49c5498bea290cebba251b7a3df817bc"
+    },
+    {
+      "file": "pipeline/guard_inputs.py",
+      "sha256": "9ec88f3bb4f524a7ecc24a6d4554b37b374530a7afc044618a5001f3906464d2"
+    },
+    {
+      "file": "pipeline/prepare_lookback_panels.py",
+      "sha256": "bf6f29fc42d9da34a258c0f9be74cc3d70436caf3eba8360c9c3dbe80f40f1cd"
+    },
+    {
+      "file": "pipeline/run_offline.py",
+      "sha256": "bc8f5f7106a53cfa8f04a41c6c5dd72de32751dc63ef1ffa84bceb39d2ac8d06"
+    }
+  ],
+  "scope": "Model preparation scripts only; holder-merge script maintained by separate owner",
+  "merge_job_identity_guard": "Added 2026-11-02 before any actual merge: exact18 job IDs and each request plan object; syntax rechecked."
+}

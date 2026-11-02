@@ -1,0 +1,22 @@
+{
+  "pool_count": 2343,
+  "frozen_previous_pool": 1494,
+  "added_stocks": 849,
+  "screening_dates": {
+    "start": "2015-10-01",
+    "end": "2026-10-31",
+    "calendar_months": 133,
+    "complete_three_month_windows": 131,
+    "selection": "union_of_qualifying_windows",
+    "meaning": "期间曾在至少一个完整三自然月窗口满足原月频条件，不代表全程或当前持续月频"
+  },
+  "criteria": {
+    "minimum_valid_disclosures": 3,
+    "minimum_span_calendar_days": 60,
+    "mean_gap_calendar_days_max": 30,
+    "last_notice_freshness_calendar_days_max": 30
+  },
+  "registry": "same frozen5554 provider A-share registry; not a complete historical listing/delisting registry",
+  "selection_uses_returns": false,
+  "survivorship_selection_warning": "Current-registry and retrospective-frequency selection biases remain; enlarging window/pool does not guarantee stability."
+}

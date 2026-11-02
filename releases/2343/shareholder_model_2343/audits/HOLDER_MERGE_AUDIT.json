@@ -1,0 +1,154 @@
+{
+  "status": "merged_pending_independent_audit",
+  "frozen1494": 1494,
+  "added849": 849,
+  "total_pool": 2343,
+  "reused_DET_rows": 69054,
+  "new_early_DET_rows": 5410,
+  "F10_raw_rows": 79365,
+  "F10_added_endpoint_missing_DET_rows": 4714,
+  "F10_overlap_rows": 73975,
+  "overlap_joint_conflicts": 0,
+  "F10_missing_nonpositive_A": 524,
+  "F10_invalid_dates": 746,
+  "F10_exact_duplicates_removed": 0,
+  "DET_source_precedence": true,
+  "TOTAL_A_SHARES_unknown_not_inferred": true,
+  "frozen1494_never_refetched": true,
+  "input_captures": [
+    {
+      "job": "DET_early_00",
+      "table": "RPT_HOLDERNUM_DET",
+      "rows": 1199,
+      "sha256": "bcc743184557b1cd97a1333ebb32ac1bae4781f8c5903c7321a76054e6f074aa"
+    },
+    {
+      "job": "DET_early_01",
+      "table": "RPT_HOLDERNUM_DET",
+      "rows": 1421,
+      "sha256": "a6878d54e64773dbaf0bd4482fb6656c6c641f8f08ff9005d348055d4c9ef00f"
+    },
+    {
+      "job": "DET_early_02",
+      "table": "RPT_HOLDERNUM_DET",
+      "rows": 711,
+      "sha256": "6e6772c59f52904d8fe08f96d43160fc74641d192446e55b1428c4ce3fe2eeaa"
+    },
+    {
+      "job": "DET_early_03",
+      "table": "RPT_HOLDERNUM_DET",
+      "rows": 1081,
+      "sha256": "f8c0dede5af9558968ca91780db211abbe9ef75c8ed707ab9b19b41e0c709b8b"
+    },
+    {
+      "job": "DET_early_05",
+      "table": "RPT_HOLDERNUM_DET",
+      "rows": 55,
+      "sha256": "446fc484f2f5096de60fc1ca0fd418d142e08bcc0669b9f12c9cce7df5ebae8c"
+    },
+    {
+      "job": "DET_early_04",
+      "table": "RPT_HOLDERNUM_DET",
+      "rows": 122,
+      "sha256": "fbde4044c638a305ca162e3e87eb3c868df8699f711d1488c0ea0dd456bdf6e9"
+    },
+    {
+      "job": "DET_early_07",
+      "table": "RPT_HOLDERNUM_DET",
+      "rows": 63,
+      "sha256": "6aeb34a5d93025a012a929c7703ece06035cd683d9f324409b91858f433c6157"
+    },
+    {
+      "job": "DET_early_06",
+      "table": "RPT_HOLDERNUM_DET",
+      "rows": 747,
+      "sha256": "9fad4de1876ac151519fa9087aec36619994802e16b67c6f0f4c20adcd68e715"
+    },
+    {
+      "job": "DET_early_08",
+      "table": "RPT_HOLDERNUM_DET",
+      "rows": 11,
+      "sha256": "d56e32db325cfa195c9205367f4b5947bc2bdb7d5dc329a53250402d70cf8a65"
+    },
+    {
+      "job": "F10_full_01",
+      "table": "RPT_F10_EH_HOLDERNUM",
+      "rows": 13175,
+      "sha256": "1a532250784e00344f7c9609abf0da2a6e667b78fc9ce4d13432315282ebc401"
+    },
+    {
+      "job": "F10_full_00",
+      "table": "RPT_F10_EH_HOLDERNUM",
+      "rows": 13430,
+      "sha256": "3cd616a0ef69764bd973d4516b25113effb25699606d557f0ab42cfb4da9c46a"
+    },
+    {
+      "job": "F10_full_02",
+      "table": "RPT_F10_EH_HOLDERNUM",
+      "rows": 10624,
+      "sha256": "ab9e0d7ce6df5b65f36b57e98ca74df2fb4a20b3d3785c8fc25d2ba0bae2f6f6"
+    },
+    {
+      "job": "F10_full_03",
+      "table": "RPT_F10_EH_HOLDERNUM",
+      "rows": 11315,
+      "sha256": "2981dd0587b7be8ffe32aaa6252bd0e011fbb03d9127726a6d9e64c37b91274d"
+    },
+    {
+      "job": "F10_full_05",
+      "table": "RPT_F10_EH_HOLDERNUM",
+      "rows": 4744,
+      "sha256": "a9a242b0045ee080bdfe926425bd973ff5ba96c5cd9f729c9cd626c8bf4ccfc2"
+    },
+    {
+      "job": "F10_full_04",
+      "table": "RPT_F10_EH_HOLDERNUM",
+      "rows": 9308,
+      "sha256": "1cd06e19110f1b58d65fd025a3508c4e3c2dd29542dd3833de13f84f5660d790"
+    },
+    {
+      "job": "F10_full_07",
+      "table": "RPT_F10_EH_HOLDERNUM",
+      "rows": 5644,
+      "sha256": "f45a54c884f5ec78791c433b24206e41c89f679b9829e4e97b7535e4dd71ee55"
+    },
+    {
+      "job": "F10_full_06",
+      "table": "RPT_F10_EH_HOLDERNUM",
+      "rows": 9310,
+      "sha256": "2b791a3d88b4f085404fd029d81f45318f0bbaceaf7113f0ca5c653e5fd8a72b"
+    },
+    {
+      "job": "F10_full_08",
+      "table": "RPT_F10_EH_HOLDERNUM",
+      "rows": 1815,
+      "sha256": "ed16a61425270ba49f6dc6c295135d83898f3b62c20a632aeefb18e11ef54491"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "holders/events_raw.csv",
+      "old_rows": 241976,
+      "added_rows": 78422,
+      "total_rows": 320398,
+      "old_bytes_exact_prefix": true,
+      "old_sha256": "536e2e18410a744d19ffd4f38796aa084ae72395546a843d95eb91bf83613a7d",
+      "merged_sha256": "be2e3ae0e8152f6512b285394104153f1ca0cf7ec34752148d0320f6e37dda91"
+    },
+    {
+      "file": "holders_baseline_2009/events_raw.csv",
+      "old_rows": 1465,
+      "added_rows": 756,
+      "total_rows": 2221,
+      "old_bytes_exact_prefix": true,
+      "old_sha256": "4132be6959f2e09eee24a71c070e956205860091e83c4ca8cea0ddbe4fbf9a5b",
+      "merged_sha256": "43577fb65ad3b1068c9df01dbe64550ab3586bb5cb97ff237ac7edf5ace2d06e"
+    }
+  ],
+  "limits": [
+    "No source notice dates inferred from statistical endpoints",
+    "Provider dates not universally verified first-public dates",
+    "2015+ DET reused from completed metadata snapshot; missing endpoints supplemented only by valid F10 A records",
+    "Overlap conflicts retain DET and remain separately auditable"
+  ]
+}

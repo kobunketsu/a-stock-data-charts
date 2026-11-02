@@ -1,0 +1,113 @@
+{
+  "status": "AUDITED_COMPLETE",
+  "reference_pool_count": 2343,
+  "pool_sha256": "6aa054abc8416c8cf92bc915f25fae1e801cde2895cdcb9fff426cc43d8f7ad8",
+  "files": [
+    {
+      "lookback": 10,
+      "kind": "all",
+      "file": "frozen_results/prior/10/all.json",
+      "rebuilt_file": "lookbacks/lookback_10/holder_matrix_9rows/curves_ui.json",
+      "sha256": "3dbc0d0ae816b659ec9e69a3e3015892befc31bc154d33dc924f5b02a1fe161b"
+    },
+    {
+      "lookback": 10,
+      "kind": "recent",
+      "file": "frozen_results/prior/10/recent.json",
+      "rebuilt_file": "lookbacks/lookback_10/holder_matrix_9rows_2020plus/curves_ui.json",
+      "sha256": "8c441be48ac1a4bcec195d23c74cce15a5bd2ad6e474500e88d41451ab1060ad"
+    },
+    {
+      "lookback": 10,
+      "kind": "stability",
+      "file": "frozen_results/prior/10/stability.json",
+      "rebuilt_file": "lookbacks/lookback_10/stability/stability_ui.json",
+      "sha256": "00655395774a7569eec7d4a6857341cf078013612466c6cce260c305c880da50"
+    },
+    {
+      "lookback": 20,
+      "kind": "all",
+      "file": "frozen_results/prior/20/all.json",
+      "rebuilt_file": "lookbacks/lookback_20/holder_matrix_9rows/curves_ui.json",
+      "sha256": "8fe5a057a90b4f809e052e4f35bb0d91fedcf097bd05bff02d9767fe86ce2569"
+    },
+    {
+      "lookback": 20,
+      "kind": "recent",
+      "file": "frozen_results/prior/20/recent.json",
+      "rebuilt_file": "lookbacks/lookback_20/holder_matrix_9rows_2020plus/curves_ui.json",
+      "sha256": "0f3a261718395a86859af1d42f19928cae2333b207f5f91fa47be15318beaa50"
+    },
+    {
+      "lookback": 20,
+      "kind": "stability",
+      "file": "frozen_results/prior/20/stability.json",
+      "rebuilt_file": "lookbacks/lookback_20/stability/stability_ui.json",
+      "sha256": "11494423168afca8d06e3138623d0cba89c9ee54f40a52e7eeb862b0f5025774"
+    },
+    {
+      "lookback": 30,
+      "kind": "all",
+      "file": "frozen_results/prior/30/all.json",
+      "rebuilt_file": "lookbacks/lookback_30/holder_matrix_9rows/curves_ui.json",
+      "sha256": "fb5586b2d5c6e1a7262c37f49f8f384e7482e8e50bc172993c53da7d3626914d"
+    },
+    {
+      "lookback": 30,
+      "kind": "recent",
+      "file": "frozen_results/prior/30/recent.json",
+      "rebuilt_file": "lookbacks/lookback_30/holder_matrix_9rows_2020plus/curves_ui.json",
+      "sha256": "45be762be7c8bcb8965b49b0084db3618225d381be580288ad557aa8dbc30d16"
+    },
+    {
+      "lookback": 30,
+      "kind": "stability",
+      "file": "frozen_results/prior/30/stability.json",
+      "rebuilt_file": "lookbacks/lookback_30/stability/stability_ui.json",
+      "sha256": "f94e757472e8dd43ab2299d533d0ed7ab0bb62677b56e7e5d385faf7be038d68"
+    },
+    {
+      "lookback": 60,
+      "kind": "all",
+      "file": "frozen_results/prior/60/all.json",
+      "rebuilt_file": "lookbacks/lookback_60/holder_matrix_9rows/curves_ui.json",
+      "sha256": "700b1693fbc6e5010e459b360bd1b24ddcc8d662a5a3e01464674a1465a13abe"
+    },
+    {
+      "lookback": 60,
+      "kind": "recent",
+      "file": "frozen_results/prior/60/recent.json",
+      "rebuilt_file": "lookbacks/lookback_60/holder_matrix_9rows_2020plus/curves_ui.json",
+      "sha256": "14c75734783cefa7ca8f19ba4b715fa363823953e197b5ec9aeda81d29212cdc"
+    },
+    {
+      "lookback": 60,
+      "kind": "stability",
+      "file": "frozen_results/prior/60/stability.json",
+      "rebuilt_file": "lookbacks/lookback_60/stability/stability_ui.json",
+      "sha256": "d50c3315eb08d5bae4f224a7bc4a34ed327dfe75ae9ea10877eeb907c120fe42"
+    },
+    {
+      "lookback": 120,
+      "kind": "all",
+      "file": "frozen_results/prior/120/all.json",
+      "rebuilt_file": "lookbacks/lookback_120/holder_matrix_9rows/curves_ui.json",
+      "sha256": "70dbff89874708f87a0390d52cea8fc903cc02c2af379b7223681d50ed59cc32"
+    },
+    {
+      "lookback": 120,
+      "kind": "recent",
+      "file": "frozen_results/prior/120/recent.json",
+      "rebuilt_file": "lookbacks/lookback_120/holder_matrix_9rows_2020plus/curves_ui.json",
+      "sha256": "f84f3ece4b024e0d61e657b9f6ea5e0949fde3902a13a33379c1d2c9957eda6d"
+    },
+    {
+      "lookback": 120,
+      "kind": "stability",
+      "file": "frozen_results/prior/120/stability.json",
+      "rebuilt_file": "lookbacks/lookback_120/stability/stability_ui.json",
+      "sha256": "3ac867a7c54bfef3f8b5912b227979a13ab65649dda7c07dc6bee638044a042a"
+    }
+  ],
+  "audit_authority": "Parent confirmed independent all5N matrix/136080period/6720comparison/10128concentration PASS before snapshot"
+}

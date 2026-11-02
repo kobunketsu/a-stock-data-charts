@@ -1,0 +1,23 @@
+{
+  "status": "READY_NOT_EXECUTED",
+  "real_new_matrices": false,
+  "outputs_generated": false,
+  "query_stocks": 5554,
+  "reference_pool_stocks": 2343,
+  "pool_subset_query": true,
+  "unit_cases": 4,
+  "files": [
+    {
+      "file": "CONTRACT_ZH.md",
+      "sha256": "6d7dfe17aef505b95100c4a6f85b3cdadce0bd4915e0faf5ddec3876dc9faab1"
+    },
+    {
+      "file": "migrate_reference.py",
+      "sha256": "d69d6b89571da4352b97065c1b60ac2bead189ba96decc9db36c76bcb93fe33c"
+    },
+    {
+      "file": "test_contract.py",
+      "sha256": "8f1a23dd5cc8694a318f65b9a7de10d532bd490993d1fffc3a5e676514926628"
+    }
+  ]
+}

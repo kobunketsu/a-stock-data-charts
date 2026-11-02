@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "all_perN_features_and_member_keys_rebuilt": true,
+  "results": [
+    {
+      "n": 10,
+      "panel": 179185,
+      "base": 127773,
+      "stocks": 2169,
+      "recent": 96047
+    },
+    {
+      "n": 20,
+      "panel": 178908,
+      "base": 127363,
+      "stocks": 2156,
+      "recent": 95822
+    },
+    {
+      "n": 30,
+      "panel": 178592,
+      "base": 126944,
+      "stocks": 2152,
+      "recent": 95616
+    },
+    {
+      "n": 60,
+      "panel": 177456,
+      "base": 125732,
+      "stocks": 2139,
+      "recent": 94964
+    },
+    {
+      "n": 120,
+      "panel": 174773,
+      "base": 122957,
+      "stocks": 2108,
+      "recent": 93465
+    }
+  ],
+  "comparison": "Original1494 canonical preservation separately audited"
+}

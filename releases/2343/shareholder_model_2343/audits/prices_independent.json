@@ -1,0 +1,7 @@
+{
+  "status": "PASS_ADDED849_PRICE_RAW_RECOMPUTATION",
+  "stocks": 849,
+  "rows": 2268791,
+  "maximum_numeric_error": 0,
+  "allRawOHLCVolumeFactorsVerified": true
+}

@@ -1,0 +1,606 @@
+{
+  "tool": "CUA cloud browser",
+  "numeric": [
+    {
+      "code": "000426",
+      "n": 120,
+      "a": "public_nextopen",
+      "nodeMatch": true,
+      "points": 20,
+      "maxPixelError": 0.005661717290572111,
+      "countMatch": true,
+      "indexMatch": true,
+      "up4Label": true,
+      "smallSampleWarning": true
+    },
+    {
+      "code": "000426",
+      "n": 120,
+      "a": "stat_close",
+      "nodeMatch": true,
+      "points": 20,
+      "maxPixelError": 0.006490207727572805,
+      "countMatch": true,
+      "indexMatch": true,
+      "up4Label": true,
+      "smallSampleWarning": true
+    },
+    {
+      "code": "000426",
+      "n": 120,
+      "a": "public_nextopen",
+      "nodeMatch": true,
+      "points": 20,
+      "maxPixelError": 0.0062172027686443095,
+      "countMatch": true,
+      "indexMatch": true,
+      "up4Label": true,
+      "smallSampleWarning": true
+    },
+    {
+      "code": "000426",
+      "n": 60,
+      "a": "stat_close",
+      "nodeMatch": true,
+      "points": 20,
+      "maxPixelError": 0.007033822962901109,
+      "countMatch": true,
+      "indexMatch": true,
+      "up4Label": true,
+      "smallSampleWarning": true
+    },
+    {
+      "code": "000506",
+      "n": 20,
+      "a": "stat_close",
+      "nodeMatch": true,
+      "points": 20,
+      "maxPixelError": 0.006065461325964999,
+      "countMatch": true,
+      "indexMatch": true,
+      "up4Label": true,
+      "smallSampleWarning": true
+    },
+    {
+      "code": "000506",
+      "n": 30,
+      "a": "stat_close",
+      "nodeMatch": true,
+      "points": 20,
+      "maxPixelError": 0.006347387611559251,
+      "countMatch": true,
+      "indexMatch": true,
+      "up4Label": true,
+      "smallSampleWarning": true
+    },
+    {
+      "code": "000506",
+      "n": 60,
+      "a": "stat_close",
+      "nodeMatch": true,
+      "points": 20,
+      "maxPixelError": 0.006735033268249717,
+      "countMatch": true,
+      "indexMatch": true,
+      "up4Label": true,
+      "smallSampleWarning": true
+    },
+    {
+      "code": "000506",
+      "n": 30,
+      "a": "stat_close",
+      "nodeMatch": true,
+      "points": 20,
+      "maxPixelError": 0.00496179577581815,
+      "countMatch": true,
+      "indexMatch": true,
+      "up4Label": true,
+      "smallSampleWarning": true
+    },
+    {
+      "code": "000510",
+      "n": 30,
+      "a": "public_nextopen",
+      "nodeMatch": true,
+      "points": 20,
+      "maxPixelError": 0.005764761893311398,
+      "countMatch": true,
+      "indexMatch": true,
+      "up4Label": true,
+      "smallSampleWarning": true
+    },
+    {
+      "code": "000510",
+      "n": 60,
+      "a": "public_nextopen",
+      "nodeMatch": true,
+      "points": 20,
+      "maxPixelError": 0.0055322662053738664,
+      "countMatch": true,
+      "indexMatch": true,
+      "up4Label": true,
+      "smallSampleWarning": true
+    },
+    {
+      "code": "000547",
+      "n": 20,
+      "a": "public_nextopen",
+      "nodeMatch": true,
+      "points": 20,
+      "maxPixelError": 0.006494882873011344,
+      "countMatch": true,
+      "indexMatch": true,
+      "up4Label": true,
+      "smallSampleWarning": true
+    },
+    {
+      "code": "000547",
+      "n": 20,
+      "a": "public_nextopen",
+      "nodeMatch": true,
+      "points": 20,
+      "maxPixelError": 0.006281033019199775,
+      "countMatch": true,
+      "indexMatch": true,
+      "up4Label": true,
+      "smallSampleWarning": true
+    },
+    {
+      "code": "000636",
+      "n": 10,
+      "a": "public_nextopen",
+      "nodeMatch": true,
+      "points": 20,
+      "maxPixelError": 0.004842410092538671,
+      "countMatch": true,
+      "indexMatch": true,
+      "up4Label": true,
+      "smallSampleWarning": true
+    },
+    {
+      "code": "000636",
+      "n": 10,
+      "a": "stat_close",
+      "nodeMatch": true,
+      "points": 20,
+      "maxPixelError": 0.0066089257841825426,
+      "countMatch": true,
+      "indexMatch": true,
+      "up4Label": true,
+      "smallSampleWarning": true
+    },
+    {
+      "code": "002343",
+      "n": 10,
+      "a": "public_nextopen",
+      "nodeMatch": true,
+      "points": 20,
+      "maxPixelError": 0.005502246363899155,
+      "countMatch": true,
+      "indexMatch": true,
+      "up4Label": true,
+      "smallSampleWarning": true
+    }
+  ],
+  "clippedNumeric": [
+    {
+      "L": 10,
+      "points": 8,
+      "maxPixelError": 0.005252136028845775,
+      "endXError": 0.0032231404958622534,
+      "nodeMatch": true
+    },
+    {
+      "L": 20,
+      "points": 12,
+      "maxPixelError": 0.00616639165571631,
+      "endXError": 0.003636363636360329,
+      "nodeMatch": true
+    },
+    {
+      "L": 30,
+      "points": 12,
+      "maxPixelError": 0.005813732494357526,
+      "endXError": 0.0004958677685920065,
+      "nodeMatch": true
+    },
+    {
+      "L": 60,
+      "points": 16,
+      "maxPixelError": 0.004612501723797772,
+      "endXError": 0.0010743801652779439,
+      "nodeMatch": true
+    },
+    {
+      "L": 120,
+      "points": 16,
+      "maxPixelError": 0.005219532870624274,
+      "endXError": 0.002231404958706662,
+      "nodeMatch": true
+    },
+    {
+      "L": 250,
+      "points": 20,
+      "maxPixelError": 0.005661717290572111,
+      "endXError": 0,
+      "nodeMatch": true
+    }
+  ],
+  "matrixDisplayStates": [
+    {
+      "L": "10",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "10",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "20",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "10",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "30",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "10",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "60",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "10",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "120",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "10",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "250",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "10",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "10",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "20",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "20",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "20",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "30",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "20",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "60",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "20",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "120",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "20",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "250",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "20",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "10",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "30",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "20",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "30",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "30",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "30",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "60",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "30",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "120",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "30",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "250",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "30",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "10",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "60",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "20",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "60",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "30",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "60",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "60",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "60",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "120",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "60",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "250",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "60",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "10",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "120",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "20",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "120",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "30",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "120",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "60",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "120",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "120",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "120",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    },
+    {
+      "L": "250",
+      "bad": false,
+      "cells": 81,
+      "day": "10",
+      "n": "120",
+      "pool": "股票池筛选期：2015-10-01至2026-10-31 · 候选研究池2,343只",
+      "xs": [
+        5,
+        155
+      ]
+    }
+  ],
+  "singleNewSample": {
+    "id": "hn_364c00b12fcd32b9a9dbaeed",
+    "info": "统计日：2026-07-20；公布日：2026-07-27。前期户数17,269 → 本期12,048，变化-30.23%。实际起算：2026-07-20，统计日或之前最近市场交易日收盘（事后观察）；起算价23.750元（统一复权尺度）；此前120个市场交易日变化-40.15%。",
+    "reference": "股东人数减少超过30%；此前120个交易日股价下跌40%—不到80%。历史参考：1条记录、1只股票。样本不足，保留参考但不可过度解读。全样本历史参考可能包含节点之后的数据，不是严格当时可得预测。",
+    "meanMedianCoincident": true,
+    "band": true
+  },
+  "checks": [
+    "defaults250/20/prior60",
+    "L10clamps future20to10 withnotice; increasingLkeepsN",
+    "shared scale unchanged acrossanchor atL10",
+    "allXY/extrema visible segment only",
+    "statistics unchangedfull250cohort",
+    "nextdisclosure rematch warning; no shortterm confidence"
+  ]
+}

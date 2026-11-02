@@ -1,0 +1,8 @@
+{
+  "status": "PASS_PAIRED_SAME_CONDITION_COMPARISON",
+  "paired_rows": 136080,
+  "shared_era_metric_rows": 6720,
+  "concentration_rows": 10128,
+  "common_sufficient_rows": 18264,
+  "not_significance_or_independent_effective_sample_size": true
+}

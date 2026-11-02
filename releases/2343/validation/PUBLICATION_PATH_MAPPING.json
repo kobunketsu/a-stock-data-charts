@@ -1,0 +1,9 @@
+{
+  "reason": "Mac case-insensitive filesystem: distinguish two frozen independent audit names, no algorithm or numeric changes.",
+  "mapping": {
+    "shareholder_model_2343/audits/old1494_preservation.json": "shareholder_model_2343/audits/independent_old1494_preservation.json"
+  },
+  "source_manifest_sha256": "9b4a46d7f4501ac319be030fb2b682d6ed45da6937b1b9f8b8c9f2dfb03fa366",
+  "published_manifest_sha256": "61f694c78358191dd0c9f69e04711ac16418d471a78af6cc0aa85723bb936f00",
+  "all_file_content_hashes_match_source": true
+}
