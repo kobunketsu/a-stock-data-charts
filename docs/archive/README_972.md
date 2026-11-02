@@ -7,7 +7,7 @@ A stock data charts project
 
 ### 查看网页
 
-克隆仓库或从 GitHub 的 Code → Download ZIP 下载并解压，打开 [`shareholder_system_972_web/打开系统.html`](shareholder_system_972_web/打开系统.html)。请保留整个网页目录。若浏览器限制本地文件脚本，可在仓库根目录运行：
+克隆仓库或从 GitHub 的 Code → Download ZIP 下载并解压，打开 [`shareholder_system_972_web/打开系统.html`](../../shareholder_system_972_web/打开系统.html)。请保留整个网页目录。若浏览器限制本地文件脚本，可在仓库根目录运行：
 
 ```bash
 python3 -m http.server 8000 --bind 127.0.0.1 --directory shareholder_system_972_web/dist
@@ -68,7 +68,7 @@ node verify.cjs
 node verify-colors.cjs
 ```
 
-详细说明见[研究系统README](shareholder_system_972/README_972_ZH.md)、[选池方法](shareholder_system_972/METHOD_MONTHLY972_ZH.md)和[字段字典](shareholder_system_972/DATA_DICTIONARY_ZH.md)。历史抓取脚本仅供来源审阅，其旧路径已替换为通用 `historical-capture/` 占位目录，不是默认重算入口，运行前需自行配置目录和检查外部接口。
+详细说明见[研究系统README](../../shareholder_system_972/README_972_ZH.md)、[选池方法](../../shareholder_system_972/METHOD_MONTHLY972_ZH.md)和[字段字典](../../shareholder_system_972/DATA_DICTIONARY_ZH.md)。历史抓取脚本仅供来源审阅，其旧路径已替换为通用 `historical-capture/` 占位目录，不是默认重算入口，运行前需自行配置目录和检查外部接口。
 
 ### 数据口径与限制
 
@@ -81,6 +81,6 @@ node verify-colors.cjs
 
 ### 来源、许可与公开范围
 
-保留原数据来源清单、解码器归属和[AKShare许可证](shareholder_system_972/AKSHARE_LICENSE.txt)。第三方行情与股东数据的权利归其权利人；本仓库没有为这些数据新增开源许可或商业转售授权。历史来源脚本和证据中保留候选982/新增529等采集批次名，以最终 `qualified_972.csv` 和 `POOL_METHOD.json` 为准。
+保留原数据来源清单、解码器归属和[AKShare许可证](../../shareholder_system_972/AKSHARE_LICENSE.txt)。第三方行情与股东数据的权利归其权利人；本仓库没有为这些数据新增开源许可或商业转售授权。历史来源脚本和证据中保留候选982/新增529等采集批次名，以最终 `qualified_972.csv` 和 `POOL_METHOD.json` 为准。
 
 本次同步仅含交付项目和公开股票市场数据，不含凭据、账户部署配置或个人持仓。离线网页不继承在线站点的登录保护。本仓库同步不启用GitHub Pages，也不修改原在线网站。
