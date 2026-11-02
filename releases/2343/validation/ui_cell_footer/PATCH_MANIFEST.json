@@ -1,0 +1,24 @@
+{
+  "base_commit": "702b6a8c47f714eb2bb67f079d313f4c02f7fb51",
+  "final_commit": "4abf0fd20ca341ce9ea4bcb03eac113eb91008d8",
+  "files": [
+    {
+      "path": "dist/app.js",
+      "base_sha256": "db7751a570d7920d04cdaa64de0306c92066ea671e7f58140312a2318c3b0a9d",
+      "final_sha256": "0ca07b2c2c754b77a62b7d12ce87431895dedbb17edb5851ff169a59415e9ec7"
+    },
+    {
+      "path": "dist/viewer.css",
+      "base_sha256": "af30ac9fd57b14e7953e61574166fe5f384671e81db56778b08705deb221161d",
+      "final_sha256": "476e82943a35845fe7494b862103f8cf3729bdbbea4ba7f314bfe75451cdd188"
+    },
+    {
+      "path": "verify-cell-footer.cjs",
+      "base_sha256": null,
+      "final_sha256": "43f5e379b817541254b2c3907b00f60aa7dd1208cbab243b33f84ec020a2ece4"
+    }
+  ],
+  "patch_sha256": "522e5e621a087e9466ce31eca232b530ad91f89100e7cde33c081eda0ea418a4",
+  "data_changed": false,
+  "note": "Patch contains runtime files and verification script only. Internal cumulative QA.md is intentionally excluded; public QA_CURRENT.md replaces that documentation for GitHub."
+}
