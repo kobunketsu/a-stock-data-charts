@@ -1,0 +1,52 @@
+diff --git a/dist/app.js b/dist/app.js
+index 3cd746b6..3c864574 100644
+--- a/dist/app.js
++++ b/dist/app.js
+@@ -24,7 +24,7 @@ function bandArea(c,X,Y){
+  return '<path data-band="p10-p90" d="'+points.map(([i,v],j)=>(j?'L':'M')+X(i).toFixed(2)+','+Y(v).toFixed(2)).join(' ')+'Z" fill="#d4d4d4" fill-opacity=".7"/>';
+ }
+ let clearMiniHover=null;
+-function cellFooter(c,show=false){if(!show)return `${num(c.count_events)}条 · ${c.count_stocks}只`;const high=c.p90[day],low=c.p10[day];return c.empty||!Number.isFinite(high)||!Number.isFinite(low)?'暂无区间':`<span style="color:${signColor(high)}">高 ${pct(high)}</span>｜<span style="color:${signColor(low)}">低 ${pct(low)}</span>`;}
++function cellFooter(c,show=false){if(!show)return `${num(c.count_events)}条 · ${c.count_stocks}只`;const high=c.p90[day],low=c.p10[day];return c.empty||!Number.isFinite(high)||!Number.isFinite(low)?'暂无区间':`<span style="color:${signColor(high)}">高 ${pct(high)}</span><span style="color:${signColor(low)}">低 ${pct(low)}</span>`;}
+ function bindCellHover(b,bounds){
+  const c=cell(b.dataset.row,b.dataset.col);if(view!=='curves')return;
+  const normal=axis==='shared'?bounds:curveBounds(c);let active=false;
+@@ -33,7 +33,7 @@ function bindCellHover(b,bounds){
+  b.onfocus=()=>{if(b.matches(':focus-visible'))change(true);};b.onblur=()=>change(false);
+ }
+ function miniCurve(c,bounds,withBand=false){c=visibleCurve(c);if(c.empty)return '<span class="empty-curve" aria-label="此分组无记录，不绘制曲线"></span>';const [lo,hi]=bounds,actual=[...c.mean,...c.median,...(withBand?[...c.p10,...c.p90]:[])].filter(Number.isFinite),actualLow=Math.min(...actual),actualHigh=Math.max(...actual),X=i=>5+i/displayLength*150,Y=v=>110-(v-lo)/(hi-lo)*88;return `<svg class="mini-curve" viewBox="0 0 160 130" role="img" aria-label="${label(c)}，后续0至${displayLength}个市场交易日平均收益实线与收益中位数虚线，${withBand?'悬停分位区间临时局部纵轴':'两条曲线共用纵轴'}${pct(lo)}至${pct(hi)}"><text x="5" y="13" style="fill:${signColor(actualHigh)}">${withBand?'区间高':'高'} ${pct(actualHigh)}</text><text x="5" y="126" style="fill:${signColor(actualLow)}">${withBand?'区间低':'低'} ${pct(actualLow)}</text>${withBand?bandArea(c,X,Y):''}<line x1="5" x2="155" y1="${Y(0)}" y2="${Y(0)}" stroke="#b9b9b9"/><g data-series="mean">${signPaths(c.mean,X,Y,1.8,'',false)}</g><g data-series="median">${signPaths(c.median,X,Y,1.8,'5 3',false)}</g><line x1="${X(day)}" x2="${X(day)}" y1="22" y2="110" stroke="#aaa" stroke-dasharray="2 2"/><circle cx="${X(day)}" cy="${Y(c[stat][day])}" r="2" fill="${signColor(c[stat][day])}"/></svg>`;}
+-function render(){document.querySelectorAll('[data-path-length]').forEach(e=>e.textContent=displayLength);$('slider').max=displayLength;$('horizon').querySelectorAll('option').forEach(o=>o.disabled=+o.value>displayLength);$('matrix').style.setProperty('--matrix-columns',String(D.columns.length));if(clearMiniHover)clearMiniHover();$('view').querySelector('[value="curves"]').textContent=`${D.rows.length*D.columns.length}格走势图`;const max=symmetricScale(day,stat),meta=D.metadata[anchor],bounds=curveBounds();$('matrix').classList.toggle('curve-matrix',view==='curves');$('axis-control').hidden=view!=='curves';$('scale').hidden=view==='curves';$('legend').textContent=view==='curves'?'红＝相对起点上涨，绿＝相对起点下跌；不是当天涨跌或预测。零线为灰色，竖线标所选日；平均收益为实线，中位数为虚线，两条始终同时显示。样本不足保留文字提示（少于50条记录或10只股票），不改变统计量线型。悬停或键盘聚焦时，底部高/低表示竖线对应日的第90/10百分位收益，不是整段极值或保证范围；移出恢复样本数。各格股票可能重复。':'红＝相对起点上涨，绿＝相对起点下跌；不是当天涨跌或预测。样本不足仍按收益红绿显示并保留提示，空格无记录；各格股票可能重复。';$('view-note').textContent=view==='curves'?(axis==='shared'?`${D.rows.length*D.columns.length}格共用横轴0-${displayLength}交易日；统一纵轴${pct(bounds[0])}至${pct(bounds[1])}；竖线＝第${day}日。纵轴由两个起点的均值和中位数全部曲线共同确定，切换起点不变。高/低为本格两条可见曲线合计的实际最大/最小值。`:`${D.rows.length*D.columns.length}格自动缩放，只比较形状；比较涨跌大小请看数值或切换统一刻度。所有小图横轴0-${displayLength}交易日；竖线＝第${day}日；高/低为本格均值与中位数两条可见曲线合计的实际最大/最小收益，不是预测。两条线共用本格纵轴。`):'色块显示所选后续时点的收益，不代表完整走势。';$('day-label').textContent=day;$('slider').value=day;$('horizon').value=String(day);$('summary').textContent=`后续第${day}个市场交易日 · ${stat==='mean'?'平均收益':'收益中位数'} · 当前矩阵 ${num(meta.main_grid_events)}条记录 · 两个起点共用固定样本${num(D.metadata.cohort.count_events)}条、${D.metadata.cohort.count_stocks}只股票`;$('scale').textContent=`两个起点共用对称色阶：${pct(-max)} 至 ${pct(max)}（当前观察长度与统计量；切换起点不变）。`;
++function render(){document.querySelectorAll('[data-path-length]').forEach(e=>e.textContent=displayLength);$('slider').max=displayLength;$('horizon').querySelectorAll('option').forEach(o=>o.disabled=+o.value>displayLength);$('matrix').style.setProperty('--matrix-columns',String(D.columns.length));if(clearMiniHover)clearMiniHover();$('view').querySelector('[value="curves"]').textContent=`${D.rows.length*D.columns.length}格走势图`;const max=symmetricScale(day,stat),meta=D.metadata[anchor],bounds=curveBounds();$('matrix').classList.toggle('curve-matrix',view==='curves');$('axis-control').hidden=view!=='curves';$('scale').hidden=view==='curves';$('legend').textContent=view==='curves'?'红＝相对起点上涨，绿＝相对起点下跌；不是当天涨跌或预测。零线为灰色，竖线标所选日；平均收益为实线，中位数为虚线，两条始终同时显示。样本不足保留文字提示（少于50条记录或10只股票），不改变统计量线型。悬停或键盘聚焦时，底部高/低表示竖线对应日的第90/10百分位收益，不是整段极值或保证范围；上高下低分两行显示，悬停时隐藏样本不足文字；移出恢复样本数和警示。各格股票可能重复。':'红＝相对起点上涨，绿＝相对起点下跌；不是当天涨跌或预测。样本不足仍按收益红绿显示并保留提示，空格无记录；各格股票可能重复。';$('view-note').textContent=view==='curves'?(axis==='shared'?`${D.rows.length*D.columns.length}格共用横轴0-${displayLength}交易日；统一纵轴${pct(bounds[0])}至${pct(bounds[1])}；竖线＝第${day}日。纵轴由两个起点的均值和中位数全部曲线共同确定，切换起点不变。高/低为本格两条可见曲线合计的实际最大/最小值。`:`${D.rows.length*D.columns.length}格自动缩放，只比较形状；比较涨跌大小请看数值或切换统一刻度。所有小图横轴0-${displayLength}交易日；竖线＝第${day}日；高/低为本格均值与中位数两条可见曲线合计的实际最大/最小收益，不是预测。两条线共用本格纵轴。`):'色块显示所选后续时点的收益，不代表完整走势。';$('day-label').textContent=day;$('slider').value=day;$('horizon').value=String(day);$('summary').textContent=`后续第${day}个市场交易日 · ${stat==='mean'?'平均收益':'收益中位数'} · 当前矩阵 ${num(meta.main_grid_events)}条记录 · 两个起点共用固定样本${num(D.metadata.cohort.count_events)}条、${D.metadata.cohort.count_stocks}只股票`;$('scale').textContent=`两个起点共用对称色阶：${pct(-max)} 至 ${pct(max)}（当前观察长度与统计量；切换起点不变）。`;
+ $('matrix').innerHTML=`<table><thead><tr><th scope="col">此前股价变化 →<br>股东人数变化 ↓</th>${D.columns.map(c=>`<th scope="col" title="${c.label}" aria-label="${c.label}">${compactCol(c)}</th>`).join('')}</tr></thead><tbody>${D.rows.map(r=>`<tr><th scope="row" title="${r.label}" aria-label="${r.label}">${compactRow(r)}</th>${D.columns.map(c=>{const v=cell(r.id,c.id),value=v[stat][day];return `<td><button data-row="${r.id}" data-col="${c.id}" class="${v.small_sample?'small':''}" style="background-color:${v.empty?'#eeeeee':color(value,view==='curves'?max*4:max)}" aria-pressed="${r.id===row&&c.id===col}" aria-label="${label(v)}，后续${day}个交易日${stat==='mean'?'平均收益':'收益中位数'}${pct(value)}，${v.count_events}条记录，${v.count_stocks}只股票${v.small_sample?'，样本不足':''}">${view==='curves'?miniCurve(v,axis==='shared'?bounds:curveBounds(v)):''}<strong style="color:${signColor(value)}">${v.empty?'无记录':pct(value)}</strong><span class="cell-footer" title="${num(v.count_events)}条 · ${v.count_stocks}只">${cellFooter(v)}</span><small class="cell-warning">${v.small_sample&&!v.empty?'样本不足':''}</small></button></td>`;}).join('')}</tr>`).join('')}</tbody></table>`;
+ $('matrix').querySelectorAll('button').forEach(b=>{b.onclick=()=>{row=b.dataset.row;col=b.dataset.col;render();};bindCellHover(b,bounds);});renderDetail();renderCounts();renderStability();}
+ function renderDetail(){const c=visibleCurve(cell());$('selection').textContent=label(c)+'｜'+anchorText(anchor);$('selected-value').textContent=`${num(c.count_events)}条记录 · ${c.count_stocks}只股票；后续第${day}个市场交易日：平均${pct(c.mean[day])}，中位数${pct(c.median[day])}。${c.small_sample?'样本不足：少于50条记录或10只股票，勿过度解读。':''}`;
+diff --git a/dist/viewer.css b/dist/viewer.css
+index d4929f5d..f7466c1e 100644
+--- a/dist/viewer.css
++++ b/dist/viewer.css
+@@ -28,3 +28,18 @@
+ #matrix .cell-warning{display:block;height:16px;line-height:16px;white-space:nowrap;margin:0}
+ /* Keep endpoint percentiles on one readable line, even in narrow desktops. */
+ @media(min-width:681px){.curve-matrix table{min-width:calc(150px + var(--matrix-columns,9)*150px)}}
++
++/* Hover uses the existing footer+warning slots: two clear lines, no height shift. */
++#matrix.curve-matrix td button>.mini-curve,#matrix.curve-matrix td button>.empty-curve{grid-row:1}
++#matrix.curve-matrix td button>strong{grid-row:2}
++#matrix.curve-matrix .cell-footer{grid-row:3}
++#matrix.curve-matrix .cell-warning{grid-row:4}
++#matrix.curve-matrix button[data-distribution=true] .cell-footer{grid-row:3 / 5;display:flex;flex-direction:column;justify-content:center;align-self:stretch;line-height:19px;font-size:11px;letter-spacing:0}
++#matrix.curve-matrix button[data-distribution=true] .cell-footer>span{display:block;white-space:nowrap;line-height:19px}
++#matrix.curve-matrix button[data-distribution=true] .cell-warning{visibility:hidden}
++/* Explicit single column: a hidden warning still occupies its grid area. */
++#matrix td button{grid-template-columns:minmax(0,1fr)}
++#matrix td button>*{grid-column:1;min-width:0;max-width:100%;justify-self:stretch}
++#matrix td button>strong{white-space:nowrap;overflow-wrap:normal;word-break:normal;line-height:24px;text-align:center}
++#matrix .cell-footer{text-align:center}
++#matrix .cell-footer>span{align-self:stretch;min-width:0;text-align:center}
+diff --git a/verify-cell-layout.cjs b/verify-cell-layout.cjs
+new file mode 100644
+index 00000000..da78edc7
+--- /dev/null
++++ b/verify-cell-layout.cjs
+@@ -0,0 +1 @@
++const fs=require('fs'),assert=require('assert');const css=fs.readFileSync('dist/viewer.css','utf8');assert(css.includes('#matrix td button{grid-template-columns:minmax(0,1fr)}'));assert(css.includes('#matrix td button>*{grid-column:1;min-width:0;max-width:100%;justify-self:stretch}'));assert(/button>strong\{white-space:nowrap/.test(css));assert(/data-distribution=true\] \.cell-footer\{grid-row:3 \/ 5;display:flex;flex-direction:column/.test(css));assert(/data-distribution=true\] \.cell-warning\{visibility:hidden}/.test(css));require('./verify-cell-footer.cjs');console.log('PASS explicit one-column layout, direct children pinned, no-wrap value, two-line h footer and hidden hover warning');

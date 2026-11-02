@@ -28,3 +28,18 @@
 #matrix .cell-warning{display:block;height:16px;line-height:16px;white-space:nowrap;margin:0}
 /* Keep endpoint percentiles on one readable line, even in narrow desktops. */
 @media(min-width:681px){.curve-matrix table{min-width:calc(150px + var(--matrix-columns,9)*150px)}}
+
+/* Hover uses the existing footer+warning slots: two clear lines, no height shift. */
+#matrix.curve-matrix td button>.mini-curve,#matrix.curve-matrix td button>.empty-curve{grid-row:1}
+#matrix.curve-matrix td button>strong{grid-row:2}
+#matrix.curve-matrix .cell-footer{grid-row:3}
+#matrix.curve-matrix .cell-warning{grid-row:4}
+#matrix.curve-matrix button[data-distribution=true] .cell-footer{grid-row:3 / 5;display:flex;flex-direction:column;justify-content:center;align-self:stretch;line-height:19px;font-size:11px;letter-spacing:0}
+#matrix.curve-matrix button[data-distribution=true] .cell-footer>span{display:block;white-space:nowrap;line-height:19px}
+#matrix.curve-matrix button[data-distribution=true] .cell-warning{visibility:hidden}
+/* Explicit single column: a hidden warning still occupies its grid area. */
+#matrix td button{grid-template-columns:minmax(0,1fr)}
+#matrix td button>*{grid-column:1;min-width:0;max-width:100%;justify-self:stretch}
+#matrix td button>strong{white-space:nowrap;overflow-wrap:normal;word-break:normal;line-height:24px;text-align:center}
+#matrix .cell-footer{text-align:center}
+#matrix .cell-footer>span{align-self:stretch;min-width:0;text-align:center}

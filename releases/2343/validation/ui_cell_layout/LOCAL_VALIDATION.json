@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "verified_at": "2026-11-02T12:52:37.265398+00:00",
+  "base_git_commit": "b403e75b08d203c41da07c6320982a675fc7edc1",
+  "frontend_source_commit": "028118a05c0681a3dae3dd366b9fa907e78f5997",
+  "source_zip_sha256": "7e16c65ca61a3c1392fcf3c76f65b4ba3c93421f407edf0a1855ac4b8b57e574",
+  "base_and_final_sha": "PASS per PATCH_MANIFEST.json",
+  "git_apply_check": "PASS before apply",
+  "UI_self_checks": [
+    {
+      "file": "verify-cell-footer.cjs",
+      "exit_code": 0,
+      "output": "PASS 11340 vertical-marker footer checks: five N, both ranges/anchors, seven marker days; missing never zero"
+    },
+    {
+      "file": "verify-cell-layout.cjs",
+      "exit_code": 0,
+      "output": "PASS 11340 vertical-marker footer checks: five N, both ranges/anchors, seven marker days; missing never zero\nPASS explicit one-column layout, direct children pinned, no-wrap value, two-line h footer and hidden hover warning"
+    },
+    {
+      "file": "verify-colors.cjs",
+      "exit_code": 0,
+      "output": "PASS: exact interpolated zero crossing; red positive/green negative; flat zero gray; empty omitted; optional muted helper; production small samples use red/green"
+    },
+    {
+      "file": "verify-display-length.cjs",
+      "exit_code": 0,
+      "output": "PASS6display lengths, visible-onlyshared/autoY, futurehiddenextrema excluded,476160values inbounds; daysclamp; stockreferenceclips"
+    },
+    {
+      "file": "verify-dual.cjs",
+      "exit_code": 0,
+      "output": "PASS dual-line domains, all 80320 finite observations inside per-cell and global range; fixed data version; no low-sample line-style override"
+    },
+    {
+      "file": "verify-history.cjs",
+      "exit_code": 0,
+      "output": "PASS historical/recent datasets exact audited hashes; 1296 unique stability series, four horizons/nulls/counts; both81 grids; early years0; synchronous data bundling"
+    },
+    {
+      "file": "verify-hover.cjs",
+      "exit_code": 0,
+      "output": "PASS hover band domain 160640 finite values, empty skipped, neutral band behind dual lines, enter/leave cleanup"
+    },
+    {
+      "file": "verify-prior-state.cjs",
+      "exit_code": 0,
+      "output": "PASS atomic prior-window loading, 10→120 out-of-order protection, cached60 exact original, old panel hidden during request"
+    },
+    {
+      "file": "verify-query-status.cjs",
+      "exit_code": 0,
+      "output": "PASS query/reference separation, source gap vs disclosure facts, missing A count, no price, excluded vs unknown codes"
+    },
+    {
+      "file": "verify-stock-band.cjs",
+      "exit_code": 0,
+      "output": "PASS stock band default, null-segment gaps, neutral fill, behind actual/dual curves, Y range includes p10/p90"
+    },
+    {
+      "file": "verify-stock.cjs",
+      "exit_code": 0,
+      "output": "PASS5554gzip/nodes and2343 reference members; fullsample/no future dates; null segmentation; delayed old request cannot overwrite new stock; null/empty rendering"
+    },
+    {
+      "file": "verify-zoom.cjs",
+      "exit_code": 0,
+      "output": "PASS button-only 30–200% zoom, bounded steps, reset, no native shortcut interception, no viewport zoom lock"
+    },
+    {
+      "file": "verify.cjs",
+      "exit_code": 0,
+      "output": "PASS: 9×9×2; 251 horizons; counts/exclusions reconcile; finite series; ordered percentiles; small-cell flags; zero baseline."
+    }
+  ],
+  "JS_syntax": "PASS all production JS",
+  "data_assets_unchanged": true,
+  "recompute": false,
+  "privacy_scan": "PASS all changed/new text",
+  "browser_checks": "Cloud QA_CURRENT.md evidence; no additional local browser run claimed.",
+  "superseded_intermediate_patch": "Not applied or committed.",
+  "manifest_provenance": "Earlier frozen manifests and validation retained as historical evidence; current exact runtime overrides are in this PATCH_MANIFEST.json."
+}

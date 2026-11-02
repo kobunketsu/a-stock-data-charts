@@ -1,0 +1,24 @@
+{
+  "base_commit": "4abf0fd20ca341ce9ea4bcb03eac113eb91008d8",
+  "final_commit": "028118a05c0681a3dae3dd366b9fa907e78f5997",
+  "files": [
+    {
+      "path": "dist/app.js",
+      "base_sha256": "0ca07b2c2c754b77a62b7d12ce87431895dedbb17edb5851ff169a59415e9ec7",
+      "final_sha256": "2aa24fba552248a0b66934e78654775fdbd69235d5d7b528b2dd451b7e516c59"
+    },
+    {
+      "path": "dist/viewer.css",
+      "base_sha256": "476e82943a35845fe7494b862103f8cf3729bdbbea4ba7f314bfe75451cdd188",
+      "final_sha256": "63d3f9b9a69419b0c249b21f8a1a61613b67770343f4796b8311139b739bea33"
+    },
+    {
+      "path": "verify-cell-layout.cjs",
+      "base_sha256": null,
+      "final_sha256": "539f6ce8365a94243ecbbd3d6adce73c2e23192fd7b9c50470d7b23d854902d0"
+    }
+  ],
+  "patch_sha256": "68284ecacf58b719373ffda2d465f086bb421998d21ba49c163261ad2a5b432a",
+  "data_changed": false,
+  "supersedes_intermediate_two_line_patch": true
+}

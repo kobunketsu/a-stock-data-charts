@@ -12,14 +12,14 @@ python3 -m http.server 8000 --bind 127.0.0.1 --directory releases/2343/sites/sha
 
 浏览器打开 <http://127.0.0.1:8000>。需本机HTTP服务以按需读取单股gzip，不能用file方式保证完整查询。
 
-参考研究池2343股；查询范围仍5554股。此前观察期N为10/20/30/60/120个市场交易日。新增曲线显示长度L六档10/20/30/60/120/250（默认250），同步矩阵小图、详情和单股；**L只裁剪显示，不改变样本或数据**。后续收益观察日h默认20，与L独立。保留双曲线、分位灰带、红正绿负、样本提示、键盘导航和缩放。前端基于冻结commit `702b6a8c47f714eb2bb67f079d313f4c02f7fb51`，已同步界面修复版 `4abf0fd20ca341ce9ea4bcb03eac113eb91008d8`：81格走势图统一220px高；悬停或键盘聚焦时，底部显示竖线当前收益日 h 的p90[h]/p10[h]，移出恢复样本数。缺失分位值显示“暂无区间”，低样本提示保留。该修复不改变研究或查询数据；[界面验证](releases/2343/sites/shareholder-matrix/QA_CURRENT.md)与[补丁SHA清单](releases/2343/validation/ui_cell_footer/PATCH_MANIFEST.json)可核验。
+参考研究池2343股；查询范围仍5554股。此前观察期N为10/20/30/60/120个市场交易日。新增曲线显示长度L六档10/20/30/60/120/250（默认250），同步矩阵小图、详情和单股；**L只裁剪显示，不改变样本或数据**。后续收益观察日h默认20，与L独立。保留双曲线、分位灰带、红正绿负、样本提示、键盘导航和缩放。前端基于冻结commit `702b6a8c47f714eb2bb67f079d313f4c02f7fb51`，已同步界面修复版 `028118a05c0681a3dae3dd366b9fa907e78f5997`：81格走势图统一220px高；悬停或键盘聚焦时，底部上高下低分两行显示竖线当前收益日 h 的p90[h]/p10[h]，隐藏“样本不足”文字，移出恢复样本数和警示。单列布局保持曲线全宽、主收益不折行，缺失分位值显示“暂无区间”。该修复不改变研究或查询数据；[界面验证](releases/2343/sites/shareholder-matrix/QA_CURRENT.md)与[补丁SHA清单](releases/2343/validation/ui_cell_layout/PATCH_MANIFEST.json)可核验。
 
 ## 可维护源码和三组完整冻结依赖
 
 | 路径 | 内容 |
 | --- | --- |
 | `releases/2343/shareholder_model_2343/` | 研究源码、131窗选池程序、名单、方法、15份冻结研究JSON及独立审计 |
-| `releases/2343/sites/shareholder-matrix/` | 可编辑网页、11108份查询gzip、2索引、fixtures与12项自检 |
+| `releases/2343/sites/shareholder-matrix/` | 可编辑网页、11108份查询gzip、2索引、fixtures与13项自检 |
 | `releases/2343/validation/acceptance/` | 实际独立解包重建和输出比较的最终验收 |
 | `datasets/up80/inputs/`、`code_results/`、`acceptance/` | UP80原19份输入、代码/结果及验收ZIP，字节保留 |
 | `datasets/2343/capture/` | 新增849股原始full/因子/CSV/股东页及SHA，14份完整ZIP |
